@@ -1,92 +1,55 @@
-.H1Contactanos {
-    display: flex;
-    justify-content: center;
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-  }
-  
-  h3.H3Contactanos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-    padding: 10px;
-  }
-  
-  .ant-col .contC {
-    width: 50%;
-    padding: 10px;
-  }
-  
-  .textC {
-    color: #fe642c !important;
-  }
-  
-  .H3Contactanos {
-    display: flex;
-    justify-content: center;
-  }
-  .H1Contactanos {
-    display: flex;
-    justify-content: center;
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-  }
-  
-  .H3Contactanos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-    padding: 10px;
-  }
-  
-  .contC {
-    width: 50%;
-    padding: 20px;
-  }
-  
-  .textC {
-    color: #fe642c !important;
-  }
-  
-  .H3Contactanos {
-    display: flex;
-    justify-content: center;
-  }
-  
-  @media only screen and (max-width: 769px) {
-    #contC {
-      flex-direction: row;
-    }
-  }
-  
-  @media only screen and (min-width: 830px) {
-    .ContainerContactanos {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-    .ant-col .ContC1 {
-      width: 20%;
-  
-      float: left;
-    }
-    .ant-col .ContC1 {
-      width: 20%;
-  
-      float: right;
-    }
-  }
-  
-  @media only screen and (min-width: 539px) {
-    textarea#basic_message.ant-input {
-      margin-left: 20px;
-    }
-  }
+.contact{
+    background-color: rgb(237, 237, 237);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;
+}
+.head{
+    background-color: rgb(99, 185, 146);
+    border-radius: 5px;
+    margin-top: -70px;
+    -webkit-box-shadow: 3px 3px 5px 9px rgba(194,194,194,0.79);
+-moz-box-shadow: 3px 3px 5px 9px rgba(194,194,194,0.79);
+box-shadow: 3px 3px 5px 9px rgba(194,194,194,0.79);
+
+}
+.effect-1{
+    border: 0;
+    outline: none;
+    width: 100%;
+    padding: 7px 0;
+    border-bottom: 1px solid rgb(56, 55, 55);
+
+}
+.effect-1 ~ .Focus-border{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background-color: rgb(99, 185, 146);
+    transition: 0.4s;
+
+}
+.effect-1:focus ~ .Focus-border{
+    width: 100%;
+    transition: 0.4s;
+    left: 0;
+
+}
+
+.btn1{
+    background: rgb(99, 185, 146) ;
+    color: aliceblue;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 145px;
+}
+.btn1:hover{
+    -webkit-box-shadow: 3px 3px 5px 9px rgba(194,194,194,0.79);
+    -moz-box-shadow: 3px 3px 5px 9px rgba(194,194,194,0.79);
+    box-shadow: 3px 3px 5px 9px rgba(194,194,194,0.79);
+
+}

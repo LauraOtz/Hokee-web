@@ -1,177 +1,71 @@
-import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
-import { Button, Form, Input, Row, Col } from "antd";
+import React from "react";
 import contacto from "../css/contacto.css";
-const { TextArea } = Input;
 
 const Contacto = () => {
-  const form = useRef();
-  //envío de email js
-  const sendEmail = (e) => {
-    console.log(e);
-    emailjs
-      .send("service_j674jg8", "template_vay33bg", e, "p-NgmvCaKTkomPPlV")
-      .then(
-        (result) => {
-          console.log(result.text);
-          alert("Mensaje enviado");
-        },
-
-        (error) => {
-          error(error.text);
-        }
-      );
-  };
-
   return (
-    <>
-      <hr className="hr" />
-
-      <Row>
-        <div className="ContainerContactanos">
-          <Col offset={0} className="contC">
-            <div>
-              <h1 span={12} className="H1Contactanos">
-                Contáctanos
-              </h1>
-
-              <h3 className="H3Contactanos">
-                ¿Querés hacer tus tareas más faciles, responder a tus clientes
-                al instante y mejorar la dinamica de tu empresa? dejanos tus
-                datos y responderemos a la brevedad.
-              </h3>
-              <h3 className="H3Contactanos textC">
-                Personalizamos tu cuenta a tus necesitades!
-              </h3>
+    <section className="contact">
+      <div className="container py-5">
+        <div className="row">
+          <div className="col-lg-6 mx-auto">
+            <div className="card">
+              <div className="card-body">
+                <div className="row">
+                  <div className="col-lg-12">
+                    <div className="head text-center text-white py-3">
+                      <h3>Contactanos</h3>
+                    </div>
+                  </div>
+                </div>
+                <div className="form py-3">
+                  <div className="form-row my-4">
+                    <div className="col-lg-12">
+                      <input
+                        type="text"
+                        className="effect-1"
+                        placeholder="Ingrese su nombre"
+                      />
+                      <span className="Focus-border"></span>
+                    </div>
+                  </div>
+                  <div className="form-row pb-4 ">
+                    <div className="col-lg-12 ">
+                      <input
+                        type="text"
+                        className="effect-1 "
+                        placeholder="Ingrese su correo electrónico"
+                      ></input>
+                      <span className="Focus-border"></span>
+                    </div>
+                  </div>
+                  <div className="form-row pt-2">
+                    <div className="col-lg-12">
+                      <input
+                        type="text"
+                        className="effect-1"
+                        placeholder="Ingrese su mensaje"
+                      ></input>
+                      <span className="Focus-border"></span>
+                    </div>
+                  </div>
+                  <div className="form-row pt-4 ">
+                    <div className="offset-4 col-lg-12">
+                      <p>
+                        <input type="checkbox" />
+                        No soy un robot
+                      </p>
+                    </div>
+                    <div className="offset-4 col-lg-12">
+                      <button className="btn1">Enviar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </Col>
-          <Col offset={0} className="contC" id="contC">
-            <Form
-              className="FormContactanos"
-              ref={form}
-              onFinish={sendEmail}
-              name="basic"
-              id="FormContactanos"
-              labelCol={{
-                span: 8,
-              }}
-              wrapperCol={{
-                span: 16,
-              }}
-              initialValues={{
-                remember: true,
-              }}
-              autoComplete="off"
-            >
-              <Form.Item
-                label="Nombre"
-                name="name"
-                rules={[
-                  {
-                    required: true,
-                    message: "Por favor introduzca su nombre",
-                  },
-
-                  {
-                    type: "regexp",
-                    pattern: new RegExp("^[a-zA-Z]*$"),
-                    message: "Por favor ingrese un nombre válido",
-                  },
-
-                  {
-                    min: 2,
-                    max: 20,
-                    message: "En nombre debe contener entre 2 y 20 Caracteres",
-                  },
-                  {
-                    validator: (_, value) =>
-                      value.match(/^[a-zA-Z]+$/)
-                        ? Promise.resolve()
-                        : Promise.reject(
-                            "Por favor ingrese sólo letras en el nombre."
-                          ),
-                  },
-                ]}
-                hasFeedback
-              >
-                <Input placeholder="Ingrese su nombre." />
-              </Form.Item>
-              <Form.Item
-                label="Correo electrónico"
-                name="email"
-                rules={[
-                  {
-                    required: true,
-                    message: "Por favor introduzca su correo electrónico.",
-                  },
-                  {
-                    type: "email",
-                    message: "Por favor ingrese un correo electrónico válido",
-                  },
-                  {
-                    whitespace: true,
-                  },
-                ]}
-                hasFeedback
-              >
-                <Input placeholder="Ingrese su correo electrónico" />
-              </Form.Item>
-
-              <Form.Item
-                name="message"
-                label="Mensaje"
-                rules={[
-                  {
-                    required: true,
-                    message: "Por favor ingrese un mensaje",
-                  },
-                  {
-                    min: 4,
-                    max: 400,
-                    message:
-                      "Ingrese un mensaje válido, entre 4 y 400 caracteres",
-                  },
-
-                  {
-                    whitespace: true,
-                  },
-                ]}
-                hasFeedback
-              >
-                <TextArea
-                  name="textarea"
-                  cols={100}
-                  rows={4}
-                  showCount
-                  maxLength={400}
-                  hasFeedback
-                  placeholder="Ingrese su consulta"
-                />
-              </Form.Item>
-
-              <Form.Item
-                wrapperCol={{
-                  offset: 20,
-                  span: 16,
-                }}
-              >
-                <Button
-                  type="primary"
-                  htmlType="submit"
-                  id="botoncontacto"
-                  value="Send"
-                  class="ant-btn ant-btn-default add-new"
-                  className="add-new "
-                  style={{ fontWeight: "bold" }}
-                >
-                  Enviar
-                </Button>
-              </Form.Item>
-            </Form>
-          </Col>
+          </div>
         </div>
-      </Row>
-    </>
+      </div>
+    </section>
   );
 };
+
 export default Contacto;

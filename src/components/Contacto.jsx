@@ -1,32 +1,39 @@
-import React, { useRef } from "react";
+import React, { useState } from "react";
 import contacto from "../css/contacto.css";
 import emailjs from "@emailjs/browser";
 
-const Contacto = () => {
-  const form = useRef();
-  //envío de email js
-  const sendEmail = (e) => {
-    e.preventDefault();
-    console.log(e);
+function Contacto() {
+  const [to_name, setTo_name] = useState("");
+  const [from_name, setFrom_name] = useState("");
+  const [message, setMessage] = useState("");
+
+  const submitInfo = (event) => {
+    event.preventDefault(event);
+
+    console.log(to_name + from_name + message);
+
+    const emailContent = {
+      to_name: to_name,
+      from_name: from_name,
+      message: message,
+    };
+
     emailjs
       .send(
-        "service_LUrroJlhrmiBuTqpOckCq",
+        "service_w5b2q8p",
         "template_p4th3sl",
-        e,
-        "E-V4j6nx65nmB6oVJ"
+        emailContent,
+        "VZCDTgZoOTA3lePFn"
       )
       .then(
         (result) => {
           console.log(result.text);
-          //alert("Mensaje enviado");
         },
         (error) => {
           console.log(error.text);
-          //alert("error");
         }
       );
   };
-
   return (
     <div className="contact container py-5">
       <div className="row">
@@ -40,14 +47,20 @@ const Contacto = () => {
                   </div>
                 </div>
               </div>
-              <form className="form py-3" onSubmit={sendEmail}>
+              <form className="form py-3">
                 <div className="form-row my-4">
                   <div className="col-lg-12">
                     <input
                       type="text"
-                      name="name"
+                      name="to_name"
+                      tabIndex="1"
                       className="effect-1"
                       placeholder="Ingrese su nombre"
+                      onChange={(event) => {
+                        setTo_name(event.target.value);
+                      }}
+                      required
+                      autoFocus
                     />
                     <span className="Focus-border"></span>
                   </div>
@@ -56,22 +69,32 @@ const Contacto = () => {
                   <div className="col-lg-12 ">
                     <input
                       type="email"
-                      name="email"
+                      name="from_name"
+                      tabIndex="2"
                       className="effect-1 "
                       placeholder="Ingrese su correo electrónico"
+                      onChange={(event) => {
+                        setFrom_name(event.target.value);
+                      }}
+                      required
                     ></input>
                     <span className="Focus-border"></span>
                   </div>
                 </div>
                 <div className="form-row pt-2">
                   <div className="col-lg-12">
-                    <input
+                    <textarea
                       type="text"
+                      tabIndex="3"
                       name="message"
-                      className="effect-1"
+                      className="effect-1 "
                       placeholder="Ingrese su mensaje"
-                    ></input>
-                    <span className="Focus-border"></span>
+                      onChange={(event) => {
+                        setMessage(event.target.value);
+                      }}
+                      required
+                    ></textarea>
+                    <span className="Focus-border"></span>;
                   </div>
                 </div>
                 <div className="form-row pt-4 ">
@@ -82,7 +105,7 @@ const Contacto = () => {
                     </p>
                   </div>
                   <div className="offset-4 col-lg-12">
-                    <button className="btn1" type="submit" value="Send">
+                    <button className="btn1" type="submit" onClick={submitInfo}>
                       Enviar
                     </button>
                   </div>
@@ -94,6 +117,5 @@ const Contacto = () => {
       </div>
     </div>
   );
-};
-
+}
 export default Contacto;

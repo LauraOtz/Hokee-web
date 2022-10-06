@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 
 import '../css/Modal.css';
+import ellipse from "../assets/ellipse.png"
+import uparrow from "../assets/uparrow.png"
 
 function upload_img(event, pinDetails, setPinDetails, setShowLabel, setShowModalPin) {
     if (event.target.files && event.target.files[0]) {
@@ -52,7 +54,7 @@ function save_pin(pinDetails, add_pin) {
 }
 
 
-function Modal (props) {
+function Modal(props) {
     const [pinDetails, setPinDetails] = useState({
         author: '',
         board: '',
@@ -71,7 +73,7 @@ function Modal (props) {
                 <div className="side" id="left_side">
                     <div className="section1">
                         <div className="pint_mock_icon_container">
-                            <img src="./images/ellipse.png" alt="edit" className="pint_mock_icon" />
+                            <img src= {ellipse}alt="edit" className="pint_mock_icon" />
                         </div>
                     </div>
 
@@ -83,10 +85,10 @@ function Modal (props) {
                             <div className="upload_img_container">
                                 <div id="dotted_border">
                                     <div className="pint_mock_icon_container">
-                                        <img src="./images/up-arrow.png" alt="upload_img" className="pint_mock_icon" />
+                                        <img src={uparrow} alt="upload_img" className="pint_mock_icon" />
                                     </div>
-                                    <div>Click to upload</div>
-                                    <div>Recommendation: Use high-quality .jpg less than 20MB</div>
+                                    <div>Haga clic para cargar</div>
+                                    <div>Recomendación: use .jpg de alta calidad de menos de 20 MB</div> 
                                 </div>
                             </div>
 
@@ -104,7 +106,7 @@ function Modal (props) {
                     </div>
 
                     <div className="section3">
-                        <div className="save_from_site">Save from site</div>
+                     
                     </div>
                 </div>
 
@@ -112,19 +114,19 @@ function Modal (props) {
                     <div className="section1">
                         <div className="select_size">
                             <select defaultValue="Select" name="pin_size" id="pin_size">
-                                <option value="">Select</option>
-                                <option value="small">small</option>
-                                <option value="medium">medium</option>
-                                <option value="large">large</option>
+                                <option value="">Seleccionar</option>
+                                <option value="small">Pequeño</option>
+                                <option value="medium">Mediano</option>
+                                <option value="large">Grande</option>
                             </select>
-                            <div onClick={() => save_pin(pinDetails, props.add_pin)} className="save_pin">Save</div>
+                            <div onClick={() => save_pin(pinDetails, props.add_pin)} className="save_pin">Subir</div>
                         </div>
                     </div>
 
                     <div className="section2">
-                        <input placeholder="Add your title" type="text" className="new_pin_input" id="pin_title" />
-                        <input placeholder="Tell everyone what your Pin is about" type="text" className="new_pin_input" id="pin_description" />
-                        <input placeholder="Add a destination link" type="text" className="new_pin_input" id="pin_destination" />
+                        <input placeholder="Agrega un título" type="text" className="new_pin_input" id="pin_title" />
+                        <input placeholder="Dile a las personas de qué trata la imagen" type="text" className="new_pin_input" id="pin_description" />
+                        
                     </div>
                 </div>
             </div>

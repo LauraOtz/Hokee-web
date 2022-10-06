@@ -1,8 +1,8 @@
 import React from 'react';
 
 import '../css/FinalBoard.css';
-import Pin from '../components/Pin';
-import Modal from '../components/Modal';
+import Pin from '../components/Pin.jsx';
+import Modal from '../components/Modal.jsx';
 import add from "../assets/add.png"
 
 class FinalBoard extends React.Component {
@@ -34,10 +34,15 @@ class FinalBoard extends React.Component {
 
     render() {
         return (
-            <div>
+            <section>
+                
                 <div className="navigation_bar">
                     <div onClick={() => this.setState({ show_modal: true })} className="pint_mock_icon_container add_pin">
-                        <img src={ add} alt="add_pin" className="pint_mock_icon" />
+                    
+                        
+                        
+                        <img src={add} alt="add_pin" className="pint_mock_icon" />
+                        
                     </div>
                 </div>
 
@@ -53,7 +58,7 @@ class FinalBoard extends React.Component {
                             <Modal add_pin={this.add_pin} /> : null
                     }
                 </div>
-            </div >
+            </section>
         )
     }
 }

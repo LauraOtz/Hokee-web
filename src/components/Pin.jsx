@@ -1,7 +1,23 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 
-import '../css/Pin.css';
+import '../css/pin.css';
+import send from "../assets/send.png"
+import ellipse from "../assets/ellipse.png"
+import upperarrow from "../assets/upperarrow.png"
 
+// function upload_img(event, setPinImage) {
+//     if (event.target.files && event.target.files[0]) {
+//         if (/image\/*/.test(event.target.files[0].type)) {
+//             const reader = new FileReader();
+
+//             reader.onload = function() {
+//                 setPinImage(reader.result);
+//             }
+
+//             reader.readAsDataURL(event.target.files[0]);
+//         }
+//     }
+// }
 
 function check_size(event) {
     const image = event.target;
@@ -19,7 +35,7 @@ function check_size(event) {
     image.style.opacity = 1;
 }
 
-function Pin (props) {
+function Pin(props) {
     // const [pinImage, setPinImage] = useState();
 
     return (
@@ -32,23 +48,23 @@ function Pin (props) {
 
             <div className="pin_modal">
                 <div className="modal_head">
-                    <div className="save_card">Save</div>
+                    <div className="save_card">Subir</div>
                 </div>
 
                 <div className="modal_foot">
                     <div className="destination">
                         <div className="pint_mock_icon_container">
-                            <img src="./images/upper-right-arrow.png" alt="destination" className="pint_mock_icon" />
+                            <img src={upperarrow} alt="destination" className="pint_mock_icon" />
                         </div>
                         <span>{props.pinDetails.destination}</span>
                     </div>
 
                     <div className="pint_mock_icon_container">
-                        <img src="./images/send.png" alt="send" className="pint_mock_icon" />
+                        <img src={send} alt="send" className="pint_mock_icon" />
                     </div>
 
                     <div className="pint_mock_icon_container">
-                        <img src="./images/ellipse.png" alt="edit" className="pint_mock_icon" />
+                        <img src={ellipse} alt="edit" className="pint_mock_icon" />
                     </div>
                 </div>
             </div>
@@ -61,4 +77,4 @@ function Pin (props) {
     )
 }
 
-export default Pin ;
+export default Pin;

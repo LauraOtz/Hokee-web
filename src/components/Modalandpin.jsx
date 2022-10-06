@@ -1,8 +1,8 @@
 import React from 'react';
 
 import '../css/ModalAndPin.css';
-import Pin from '../components/Pin';
-import Modal from '../components/Modal';
+import Pin from './Pin';
+import Modal from './Modal';
 import add from "../assets/add.png"
 
 class ModalAndPin extends React.Component {
@@ -37,7 +37,7 @@ class ModalAndPin extends React.Component {
             <div>
                 <div className="navigation_bar">
                     <div onClick={() => this.setState({ show_modal: true })} className="pint_mock_icon_container add_pin">
-                        <img src={add} alt="add_pin" className="pint_mock_icon" />
+                        <img src= {add}  alt="add_pin" className="pint_mock_icon" />
                     </div>
                 </div>
 

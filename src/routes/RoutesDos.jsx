@@ -8,7 +8,7 @@ import Paquetes from "../pages/Paquetes";
 import SobreMi from "../pages/SobreMi";
 import PreguntasFrecuentes from "../pages/PreguntasFrecuentes";
 import NotFound from "../pages/NotFound";
-import FinalBoard from "../pages/FinalBoard";
+import Galeria from "../pages/Galeria";
 
 const RoutesDos = () => {
   return (
@@ -16,7 +16,7 @@ const RoutesDos = () => {
       <NavBar />
       <Routes>
         <Route path="/home" element={<Home />} />
-        <Route path="/galeria" element={<FinalBoard
+        <Route path="/galeria" element={<Galeria
          />} />
         <Route path="/experiencias" element={<Experiencias />} />
         <Route path="/paquetes" element={<Paquetes />} />

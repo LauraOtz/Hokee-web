@@ -31,7 +31,7 @@ const Contacto = () => {
   return (
     <div className="contact container py-5">
       <div className="row">
-        <div className="col-lg-6 mx-auto">
+        <div className="col-lg-12 mx-auto ">
           <div className="card">
             <div className="card-body">
               <div className="row">

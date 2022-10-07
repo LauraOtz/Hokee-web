@@ -1,5 +1,5 @@
 import React from "react";
-import slider1 from "../assets/slider1.jpg";
+// import slider1 from "../assets/slider1.jpg";
 import slider2 from "../assets/slider2.jpg";
 import slider3 from "../assets/slider3.jpg";
 import slider4 from "../assets/slider4.jpg";
@@ -14,11 +14,21 @@ const Slider = () => {
       data-bs-ride="carousel"
     >
       <div class="carousel-inner">
-        <div class="carousel-item active " data-bs-interval="3000">
+        {/* <div class="carousel-item active " data-bs-interval="3000">
           <img src={slider1} class="d-block w-100" alt="..." />
-        </div>
-        <div class="carousel-item" data-bs-interval="3000">
+        </div> */}
+        <div class="carousel-item active" data-bs-interval="3000">
           <img src={slider2} class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <button className="btn btn2">
+              <h3>Reserva tu sesión ahora</h3>
+            </button>
+          </div>
+          <div class="carousel-caption d-none d-md-block">
+            <button className="btn btn3 col-lg-6">
+              <h3>Quiero saber más</h3>
+            </button>
+          </div>
         </div>
         <div class="carousel-item" data-bs-interval="3000">
           <img src={slider3} class="d-block w-100" alt="..." />

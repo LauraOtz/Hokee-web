@@ -1,39 +1,33 @@
-import React, { useState } from "react";
-import contacto from "../css/contacto.css";
+import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import contacto from "../css/contacto.css";
 
-function Contacto() {
-  const [to_name, setTo_name] = useState("");
-  const [from_name, setFrom_name] = useState("");
-  const [message, setMessage] = useState("");
+// npm i @emailjs/browser
 
-  const submitInfo = (event) => {
-    event.preventDefault(event);
+const Contacto = () => {
+  const form = useRef();
 
-    console.log(to_name + from_name + message);
-
-    const emailContent = {
-      to_name: to_name,
-      from_name: from_name,
-      message: message,
-    };
+  const sendEmail = (e) => {
+    e.preventDefault();
 
     emailjs
-      .send(
+      .sendForm(
         "service_w5b2q8p",
         "template_p4th3sl",
-        emailContent,
+        form.current,
         "VZCDTgZoOTA3lePFn"
       )
       .then(
         (result) => {
           console.log(result.text);
+          alert("Mensaje enviado");
         },
         (error) => {
           console.log(error.text);
         }
       );
   };
+
   return (
     <div className="contact container py-5">
       <div className="row">
@@ -47,20 +41,16 @@ function Contacto() {
                   </div>
                 </div>
               </div>
-              <form className="form py-3">
+
+              <form className="form py-3" ref={form} onSubmit={sendEmail}>
                 <div className="form-row my-4">
                   <div className="col-lg-12">
                     <input
                       type="text"
-                      name="to_name"
-                      tabIndex="1"
+                      name="user_name"
                       className="effect-1"
                       placeholder="Ingrese su nombre"
-                      onChange={(event) => {
-                        setTo_name(event.target.value);
-                      }}
                       required
-                      autoFocus
                     />
                     <span className="Focus-border"></span>
                   </div>
@@ -69,46 +59,37 @@ function Contacto() {
                   <div className="col-lg-12 ">
                     <input
                       type="email"
-                      name="from_name"
-                      tabIndex="2"
+                      name="user_email"
                       className="effect-1 "
                       placeholder="Ingrese su correo electrónico"
-                      onChange={(event) => {
-                        setFrom_name(event.target.value);
-                      }}
                       required
-                    ></input>
+                    />
+
                     <span className="Focus-border"></span>
                   </div>
                 </div>
                 <div className="form-row pt-2">
                   <div className="col-lg-12">
                     <textarea
-                      type="text"
-                      tabIndex="3"
+                      rows="5"
                       name="message"
                       className="effect-1 "
                       placeholder="Ingrese su mensaje"
-                      onChange={(event) => {
-                        setMessage(event.target.value);
-                      }}
                       required
-                    ></textarea>
+                    />
                     <span className="Focus-border"></span>;
                   </div>
                 </div>
                 <div className="form-row pt-4 ">
                   <div className="offset-4 col-lg-12">
                     <p>
-                      <input type="checkbox" />
+                      <input type="checkbox" required />
                       No soy un robot
                     </p>
                   </div>
-                  <div className="offset-4 col-lg-12">
-                    <button className="btn1" type="submit" onClick={submitInfo}>
-                      Enviar
-                    </button>
-                  </div>
+                </div>
+                <div className="offset-4 col-lg-12">
+                  <input type="submit" value="Enviar" className="btn1" />
                 </div>
               </form>
             </div>
@@ -117,5 +98,6 @@ function Contacto() {
       </div>
     </div>
   );
-}
+};
+
 export default Contacto;

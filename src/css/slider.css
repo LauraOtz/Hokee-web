@@ -11,10 +11,11 @@ div#root{
    outline: none;
    transition: background-color .1s linear;
    padding: 21px 34px;
+      margin-top: 30px;
   
-   border-radius: 5px;
-   height: 200px;
-   width: 480px;
+   border-radius: 50px;
+   height: 150px;
+   width: 400px;
    font-size: 15px;
     font-weight: 700;
     font-style: normal;
@@ -28,9 +29,7 @@ div#root{
    -webkit-box-shadow: 4px 5px 32px 19px rgba(194,194,194,0.95);
    -moz-box-shadow: 4px 5px 32px 19px rgba(194,194,194,0.95);
 } 
-button.btn2{
-   margin: 350px;
-}
+
 
 .btn.btn3{
 
@@ -39,11 +38,11 @@ button.btn2{
    border: solid 2px #fff;
    outline: none;
    transition: background-color .1s linear;
-   padding: 21px 21px;
+ 
+   margin-top: 60px;
   
-   border-radius: 5px;
-   height: 100px;
-   width: 280px;
+   border-radius: 50px;
+ ;
    font-size: 8px;
     font-weight: 700;
     font-style: normal;
@@ -57,6 +56,5 @@ button.btn2{
    -webkit-box-shadow: 4px 5px 32px 19px rgba(194,194,194,0.95);
    -moz-box-shadow: 4px 5px 32px 19px rgba(194,194,194,0.95);
 } 
-button.btn3{
-   margin: 150px;
-}
+
+

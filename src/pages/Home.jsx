@@ -11,9 +11,15 @@ const Home = () => {
     <>
       <Slider />
       <br />
+      <section id="Presentacion">
       <Presentacion />
+
+      </section>
       <br />
+      <section id="Experiencias">
+
       <Experiencias/>
+      </section>
       <br />
       <Contacto />
       <br />

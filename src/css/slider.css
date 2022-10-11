@@ -3,3 +3,58 @@ div#root{
    max-width: 100% !important;
    padding: 0rem !important;
 }
+.btn.btn2{
+
+   background-color: transparent;
+   color: #fff;
+   border: solid 2px #fff;
+   outline: none;
+   transition: background-color .1s linear;
+   padding: 21px 34px;
+      margin-top: 30px;
+  
+   border-radius: 50px;
+   height: 150px;
+   width: 400px;
+   font-size: 15px;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+   
+    
+}
+.btn2:hover{
+   box-shadow: 4px 5px 32px 19px rgba(194,194,194,0.95);
+   -webkit-box-shadow: 4px 5px 32px 19px rgba(194,194,194,0.95);
+   -moz-box-shadow: 4px 5px 32px 19px rgba(194,194,194,0.95);
+} 
+
+
+.btn.btn3{
+
+   background-color:#fff;
+   color: rgb(0, 0, 0);
+   border: solid 2px #fff;
+   outline: none;
+   transition: background-color .1s linear;
+ 
+   margin-top: 60px;
+  
+   border-radius: 50px;
+ ;
+   font-size: 8px;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+   
+    
+}
+.btn3:hover{
+   box-shadow: 4px 5px 32px 19px rgba(194,194,194,0.95);
+   -webkit-box-shadow: 4px 5px 32px 19px rgba(194,194,194,0.95);
+   -moz-box-shadow: 4px 5px 32px 19px rgba(194,194,194,0.95);
+} 
+
+

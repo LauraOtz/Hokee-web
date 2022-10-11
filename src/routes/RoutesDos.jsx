@@ -6,7 +6,7 @@ import Galeria from "../pages/Galeria";
 import Experiencias from "../pages/Experiencias";
 import Paquetes from "../pages/Paquetes";
 import SobreMi from "../pages/SobreMi";
-import PreguntasFrecuentes from "../pages/PreguntasFrecuentes";
+// import PreguntasFrecuentes from "../components/PreguntasFrecuentes";
 import NotFound from "../pages/NotFound";
 
 const RoutesDos = () => {
@@ -19,7 +19,7 @@ const RoutesDos = () => {
         <Route path="/experiencias" element={<Experiencias />} />
         <Route path="/paquetes" element={<Paquetes />} />
         <Route path="/sobremi" element={<SobreMi />} />
-        <Route path="/preguntasfrecuentes" element={<PreguntasFrecuentes />} />
+        {/* <Route path="/preguntasfrecuentes" element={<PreguntasFrecuentes />} /> */}
 
         <Route path="*" element={<NotFound />} />
       </Routes>

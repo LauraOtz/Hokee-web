@@ -1,7 +1,12 @@
-import React from "react";
+import React from 'react'
+import FinalBoard from './FinalBoard'
 
 const Galeria = () => {
-  return <div>Galeria</div>;
-};
+  return (
+    <>
+    <FinalBoard/>
+    </>
+  )
+}
 
-export default Galeria;
+export default Galeria

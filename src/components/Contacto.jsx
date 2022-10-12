@@ -36,7 +36,7 @@ const Contacto = () => {
             <div className="card-body">
               <div className="row">
                 <div className="col-lg-12">
-                  <div className="head text-center text-white py-3">
+                  <div className="headC text-center text-white py-3">
                     <h3>Contactanos</h3>
                   </div>
                 </div>

@@ -49,6 +49,7 @@ const Contacto = () => {
                       type="text"
                       name="user_name"
                       className="effect-1"
+                      for="validationServer01"
                       placeholder="Ingrese su nombre"
                       required
                     />
@@ -95,13 +96,7 @@ const Contacto = () => {
             </div>
           </div>
         </div>
-
-        <button type="submit" className="btn btn-primary">
-          Sign in
-        </button>
-       </div>
-      <form/>
-
+      </div>
     </div>
   );
 };

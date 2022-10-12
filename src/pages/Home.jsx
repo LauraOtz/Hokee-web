@@ -4,9 +4,8 @@ import Presentacion from "../components/Presentacion";
 import Contacto from "../components/Contacto";
 import Footer from "../components/Footer";
 
-
 import Experiencias from "../components/Experiencias";
-import "../css/home.css"
+import "../css/home.css";
 
 const Home = () => {
   return (
@@ -14,19 +13,23 @@ const Home = () => {
       <Slider />
       <br />
       <section id="Presentacion">
-      <Presentacion />
-
+        <Presentacion />
       </section>
       <br />
       <section id="Experiencias">
-
-      <Experiencias/>
+        <Experiencias />
       </section>
       <br />
 
       <Contacto />
-      <a href=" https://api.whatsapp.com/send?phone=543816510287"
-       class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+      <a
+        href=" https://api.whatsapp.com/send?phone=543816510287"
+        class="whatsapp"
+        target="_blank"
+      >
+        {" "}
+        <i class="fa fa-whatsapp whatsapp-icon"></i>
+      </a>
       <br />
       <br />
 

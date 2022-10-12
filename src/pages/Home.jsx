@@ -11,8 +11,11 @@ const Home = () => {
       <br />
       <Presentacion />
       <br />
+
       <Contacto />
       <br />
+      <br />
+
       <Footer />
     </>
   );

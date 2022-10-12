@@ -21,8 +21,11 @@ const Home = () => {
       <Experiencias/>
       </section>
       <br />
+
       <Contacto />
       <br />
+      <br />
+
       <Footer />
     </>
   );

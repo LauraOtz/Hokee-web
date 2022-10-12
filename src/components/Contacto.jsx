@@ -1,53 +1,102 @@
 import React, { useRef } from "react";
-import emailjs, { init } from "@emailjs/browser";
 
-function Contacto() {
-  init("M6JhJZxCClH7lHq8_1RPt");
+import emailjs from "@emailjs/browser";
+import contacto from "../css/contacto.css";
+
+// npm i @emailjs/browser
+
+const Contacto = () => {
   const form = useRef();
 
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm("service_0u60yz7", "template_9nch3xa", form.current, "gFG8zgB0wykPF7gqP").then(
-      (result) => {
-        alert("Message Sent Successfully");
-        console.log(result.text);
-      },
-      (error) => {
-        console.log(error.text);
-      }
-    );
+
+    emailjs
+      .sendForm(
+        "service_w5b2q8p",
+        "template_p4th3sl",
+        form.current,
+        "VZCDTgZoOTA3lePFn"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Mensaje enviado");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+
   };
+
   return (
-    <div className="container">
-      <form onSubmit={handleSubmit} ref={form}>
-        <h1 className="text-center">Registration Form</h1>
-        <div className="form-row">
-          <div className="form-group col-md-6">
-            <label htmlFor="First Name">First Name</label>
-            <input type="text" className="form-control" name="firstname" />
-          </div>
-          <div className="form-group col-md-6">
-            <label htmlFor="Last Name">Last Name</label>
-            <input type="text" className="form-control" name="lastname" />
-          </div>
-          <div className="form-group col-12">
-            <label htmlFor="inputAddress">Address</label>
-            <input
-              type="text"
-              className="form-control"
-              id="inputAddress"
-              placeholder="1234 Main St"
-              name="user_address"
-            />
-          </div>{" "}
-          <div className="form-group col-md-6">
-            <label htmlFor="message">message</label>
-            <textarea
-              type="text"
-              className="form-control"
-              id="inputmessage4"
-              name="user_message"
-            />
+
+    <div className="contact container py-5">
+      <div className="row">
+        <div className="col-lg-12 mx-auto ">
+          <div className="card">
+            <div className="card-body">
+              <div className="row">
+                <div className="col-lg-12">
+                  <div className="head text-center text-white py-3">
+                    <h3>Contactanos</h3>
+                  </div>
+                </div>
+              </div>
+
+              <form className="form py-3" ref={form} onSubmit={sendEmail}>
+                <div className="form-row my-4">
+                  <div className="col-lg-12">
+                    <input
+                      type="text"
+                      name="user_name"
+                      className="effect-1"
+                      placeholder="Ingrese su nombre"
+                      required
+                    />
+                    <span className="Focus-border"></span>
+                  </div>
+                </div>
+                <div className="form-row pb-4 ">
+                  <div className="col-lg-12 ">
+                    <input
+                      type="email"
+                      name="user_email"
+                      className="effect-1 "
+                      placeholder="Ingrese su correo electrónico"
+                      required
+                    />
+
+                    <span className="Focus-border"></span>
+                  </div>
+                </div>
+                <div className="form-row pt-2">
+                  <div className="col-lg-12">
+                    <textarea
+                      rows="5"
+                      name="message"
+                      className="effect-1 "
+                      placeholder="Ingrese su mensaje"
+                      required
+                    />
+                    <span className="Focus-border"></span>;
+                  </div>
+                </div>
+                <div className="form-row pt-4 ">
+                  <div className="offset-4 col-lg-12">
+                    <p>
+                      <input type="checkbox" required />
+                      No soy un robot
+                    </p>
+                  </div>
+                </div>
+                <div className="offset-4 col-lg-12">
+                  <input type="submit" value="Enviar" className="btn1" />
+                </div>
+              </form>
+            </div>
+
           </div>
         </div>
 
@@ -57,6 +106,8 @@ function Contacto() {
       </form>
     </div>
   );
-}
+
+};
 
 export default Contacto;
+

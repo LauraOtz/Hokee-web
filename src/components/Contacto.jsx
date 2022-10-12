@@ -49,7 +49,6 @@ const Contacto = () => {
                       type="text"
                       name="user_name"
                       className="effect-1"
-                      for="validationServer01"
                       placeholder="Ingrese su nombre"
                       required
                     />

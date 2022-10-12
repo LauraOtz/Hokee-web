@@ -1,5 +1,5 @@
 import React from "react";
-import slider5 from "../assets/slider5.jpg";
+import yo from "../assets/yo.jpg";
 import presentacion from "../css/presentacion.css";
 
 const Presentacion = () => {
@@ -33,7 +33,7 @@ const Presentacion = () => {
             </small>
           </p>
         </div>
-        <img src={slider5} className="card-img-bottom imgcard" alt="..." />
+        <img src={yo} className="card-img-bottom imgcard" alt="..." />
       </div>
     </>
   );

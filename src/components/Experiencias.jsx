@@ -13,7 +13,7 @@ const PreguntasFrecuentes = () => {
     <>
     <h1 className="Titulop"> Experiencias</h1>
  
-    <div className="card mb-3" >
+    <div className="cardE mb-3" >
     <div className="row g-0">
       <div className="col-md-4">
         <img src={slider1} className="img-fluid rounded-start" alt="..."/>
@@ -29,7 +29,7 @@ const PreguntasFrecuentes = () => {
   </div>
   <hr className="hrp" />
 
-  <div className="card mb-3" >
+  <div className="cardE mb-3" >
   <div className="row g-0">
     <div className="col-md-4">
       <img src={slider2} className="img-fluid rounded-start" alt="..."/>
@@ -44,7 +44,7 @@ const PreguntasFrecuentes = () => {
   </div>
 </div>
 <hr className="hrp" />
-<div className="card mb-3" >
+<div className="cardE mb-3" >
     <div className="row g-0">
       <div className="col-md-4">
         <img src={slider3} className="img-fluid rounded-start" alt="..."/>

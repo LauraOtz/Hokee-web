@@ -35,9 +35,15 @@ const Contacto = () => {
           <div className="card">
             <div className="card-body">
               <div className="row">
+<<<<<<< HEAD
                 <div className="col-lg-12">
                   <div className="head1 text-center text-white py-3">
                     <p>Contactanos</p>
+=======
+                <div className="colC-lg-12">
+                  <div className="headC text-center text-white py-3">
+                    <h3>Contactanos</h3>
+>>>>>>> 43e0e71c1726da5a9e993d72237b0e206f5d1438
                   </div>
                 </div>
               </div>

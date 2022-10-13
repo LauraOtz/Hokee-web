@@ -3,12 +3,13 @@
  
     background-size: 100%;
     width: 100%;
+   
     box-shadow: 4px 4px 48px 14px rgba(99,185,146,0.91);
     -webkit-box-shadow: 4px 4px 48px 14px rgba(99,185,146,0.91);
     -moz-box-shadow: 4px 4px 48px 14px rgba(99,185,146,0.91);
    
 }
-.head{
+.head1{
     background-color: rgb(99, 185, 146);
     border-radius: 5px;
     margin-top: -70px;

@@ -225,3 +225,6 @@ iframe{
 .footer .footer-project {
     font-size: 18px;
 }
+#document iframe.instaP.Header{
+    padding: 0px !important;
+}

@@ -48,10 +48,15 @@ const Contacto = () => {
                     <input
                       type="text"
                       name="user_name"
-                      className="effect-1"
+                      className="effect-1  is-valid "
                       placeholder="Ingrese su nombre"
+                      id="username"
                       required
+                      pattern="[a-zA-Z0-9]+"
+                      minlength="2"
+                      maxlength="20"
                     />
+
                     <span className="Focus-border"></span>
                   </div>
                 </div>
@@ -62,6 +67,8 @@ const Contacto = () => {
                       name="user_email"
                       className="effect-1 "
                       placeholder="Ingrese su correo electrónico"
+                      pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
+                      maxlength="30"
                       required
                     />
 
@@ -76,6 +83,9 @@ const Contacto = () => {
                       className="effect-1 "
                       placeholder="Ingrese su mensaje"
                       required
+                      maxlength="400"
+                      role
+                      minlength="2"
                     />
                     <span className="Focus-border"></span>;
                   </div>

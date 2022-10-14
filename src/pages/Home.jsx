@@ -3,6 +3,8 @@ import Slider from "../components/Slider";
 import Presentacion from "../components/Presentacion";
 import Contacto from "../components/Contacto";
 import Footer from "../components/Footer";
+import Preguntas from "../components/Preguntas";
+import Paquetes from "../components/Paquetes";
 
 import Experiencias from "../components/Experiencias";
 import "../css/home.css";
@@ -19,8 +21,15 @@ const Home = () => {
       <section id="Experiencias">
         <Experiencias />
       </section>
+      <section>
+        <Preguntas />
+      </section>
       <br />
-      <br/>
+      <br />
+      <Paquetes />
+      <br />
+      <br />
+
       <Contacto />
       <a
         href=" https://api.whatsapp.com/send?phone=543816510287"

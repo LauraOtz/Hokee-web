@@ -9,6 +9,7 @@ import SobreMi from "../pages/SobreMi";
 // import PreguntasFrecuentes from "../components/PreguntasFrecuentes";
 import NotFound from "../pages/NotFound";
 import Galeria from "../pages/Galeria";
+import Login from "../pages/Login";
 
 const RoutesDos = () => {
   return (
@@ -16,12 +17,12 @@ const RoutesDos = () => {
       <NavBar />
       <Routes>
         <Route path="/home" element={<Home />} />
-        <Route path="/galeria" element={<Galeria
-         />} />
+        <Route path="/galeria" element={<Galeria />} />
         <Route path="/experiencias" element={<Experiencias />} />
         <Route path="/paquetes" element={<Paquetes />} />
         <Route path="/sobremi" element={<SobreMi />} />
         {/* <Route path="/preguntasfrecuentes" element={<PreguntasFrecuentes />} /> */}
+        <Route path="/login" element={<Login />} />
 
         <Route path="*" element={<NotFound />} />
       </Routes>

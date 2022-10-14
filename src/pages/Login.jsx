@@ -1,33 +1,6 @@
-import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
-import login from "../css/contacto.css";
+import React from "react";
 
-// npm i @emailjs/browser
-
-const Contacto = () => {
-  const form = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_w5b2q8p",
-        "template_p4th3sl",
-        form.current,
-        "VZCDTgZoOTA3lePFn"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          alert("Mensaje enviado");
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
-
+const Login = () => {
   return (
     <div className="contact container py-5">
       <div className="row">
@@ -110,4 +83,4 @@ const Contacto = () => {
   );
 };
 
-export default Contacto;
+export default Login;

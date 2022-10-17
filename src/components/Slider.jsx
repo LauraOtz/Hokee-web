@@ -38,13 +38,13 @@ const Slider = () => {
       <div className="carousel-inner">
         <div className="carousel-item active" data-bs-interval="3000">
           <img src={slider1} className="d-block w-100" alt="..." />
-          <div className="carousel-caption d-none d-md-block">
+          <div className="carousel-caption carru">
             <div>
-              <h1>FOTOGRAFIA DE MASCOTAS</h1>
+              <h1 className="titulo">FOTOGRAFIA DE MASCOTAS</h1>
             </div>
             <div>
-              <button className="btn btn2">
-                <h2>Reserva tu sesión ahora</h2>
+              <button className="btn btnS btn2">
+                <h2 className="titulo2">Reserva tu sesión ahora</h2>
               </button>
             </div>
             <div>
@@ -61,7 +61,7 @@ const Slider = () => {
               <h1>FOTOGRAFIA DE MASCOTAS</h1>
             </div>
             <div>
-              <button className="btn btn2">
+              <button className="btn btn2  ">
                 <h2>Reserva tu sesión ahora</h2>
               </button>
             </div>

@@ -58,4 +58,89 @@ div#root{
    -moz-box-shadow: 4px 5px 32px 19px rgba(194,194,194,0.95);
 } 
 
+/* desde1100 hasta 992 mas abajo */
+@media screen and (min-width: 992px) and (max-width: 1100px){
+   .carousel-caption.carru {
+    margin-bottom: -140px !important;
+    
+   }
+   h1.titulo{
+font-size: 30px;
+   }
+   .btn.btnS{
+      width: 300px;
+   }
 
+}
+   /* desde 992 mas chico y abajo hasta 767 */
+   @media screen and (min-width: 767px) and (max-width: 992px){
+      .carousel-caption.carru {
+        
+         
+        }
+        h1.titulo{
+     font-size: 30px;
+        }
+        .btn.btn3{
+           display: none;
+        }
+        .btn.btnS{
+       width: 250px;
+      }
+     
+   }
+   /* desde 1101 hasta 1276 */
+   @media screen and (min-width: 1101px) and (max-width: 1276px){
+      .carousel-caption.carru {
+       margin-bottom: -140px !important;
+       
+      }
+   }
+
+
+   /* desde 765 hasta 400 solo un boton chico y a abajo */
+   @media screen and (min-width: 400px) and (max-width: 765px){
+      .btn.btn3{
+         display: none;
+      }
+      h1.titulo{
+         display: none;
+      }
+      .btn.btnS{
+         width: 250px;
+         height: 120px;
+        }
+        h2.titulo2{
+         font-size: 18px;
+        }
+   }
+   /* desde 550 a 400 */
+   @media screen and (min-width: 399px) and (max-width: 550px){
+      .btn.btn3{
+         display: none;
+      }
+      h1.titulo{
+         display: none;
+      }
+      .btn.btnS{
+         width: 180px;
+         height: 100px;
+        }
+        h2.titulo2{
+         font-size: 15px;
+        }
+   }
+   @media screen and (min-width: 300px) and (max-width: 398px){
+      .btn.btn3{
+         display: none;
+      }
+      h1.titulo{
+         display: none;
+      }
+      .btn.btnS{
+       display: none;
+        }
+        h2.titulo2{
+      display: none;
+        }
+   }

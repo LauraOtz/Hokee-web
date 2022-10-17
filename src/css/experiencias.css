@@ -1,0 +1,15 @@
+
+.textE{
+    font-size: 30px;
+}
+.cardE{
+    margin: 10%;
+    margin-top: 3%;
+}
+.cardEx{
+    color: rgb(146, 46, 46);
+}
+.card-body.cardEx{
+    padding-top: 8%;
+    padding-left: 5%;
+}

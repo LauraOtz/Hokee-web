@@ -1,12 +1,13 @@
-.contact {
-    /* background-color: rgb(237, 237, 237); */
+.login {
+    
   
     background-size: 100% !important;
-    width: 100% !important;
+    width: 100vw !important;
+
     box-shadow: 4px 4px 48px 14px rgba(99, 185, 146, 0.91) !important;
     -webkit-box-shadow: 4px 4px 48px 14px rgba(99, 185, 146, 0.91) !important;
     -moz-box-shadow: 4px 4px 48px 14px rgba(99, 185, 146, 0.91) !important;
-    margin-top: 20px;
+    margin-top:-200px;
   }
   .headC {
     background-color: rgb(99, 185, 146);
@@ -52,7 +53,9 @@
     -moz-box-shadow: 3px 3px 5px 9px rgba(194, 194, 194, 0.79);
     box-shadow: 3px 3px 5px 9px rgba(194, 194, 194, 0.79);
   }
-  
+  .textCo{
+    justify-content: center;
+  }
   
   
   

@@ -29,6 +29,8 @@ const Home = () => {
       <Paquetes />
       <br />
       <br />
+      <br />
+      <br />
 
       <Contacto />
       <a

@@ -6,10 +6,11 @@ import Home from "../pages/Home";
 import Experiencias from "../pages/Experiencias";
 import Paquetes from "../pages/Paquetes";
 import SobreMi from "../pages/SobreMi";
-// import PreguntasFrecuentes from "../components/PreguntasFrecuentes";
+
 import NotFound from "../pages/NotFound";
 import Galeria from "../pages/Galeria";
 import Login from "../pages/Login";
+import Registro from "../pages/Registro";
 
 const RoutesDos = () => {
   return (
@@ -21,8 +22,9 @@ const RoutesDos = () => {
         <Route path="/experiencias" element={<Experiencias />} />
         <Route path="/paquetes" element={<Paquetes />} />
         <Route path="/sobremi" element={<SobreMi />} />
-        {/* <Route path="/preguntasfrecuentes" element={<PreguntasFrecuentes />} /> */}
+
         <Route path="/login" element={<Login />} />
+        <Route path="/registro" element={<Registro />} />
 
         <Route path="*" element={<NotFound />} />
       </Routes>

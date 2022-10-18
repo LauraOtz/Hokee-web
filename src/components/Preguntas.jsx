@@ -1,88 +1,103 @@
 import React from "react";
-import slider4 from "../assets/slider4.jpg";
+import olaf from "../assets/olaf.jpg";
+import preguntas from "../css/preguntas.css";
 
 const Preguntas = () => {
   return (
     <>
-      <div className="card mb-3">
-        <img src={slider4} className="card-img-top" alt="..." />
+      <div className="card cardPr">
         <div className="card-body">
-          <h5 className="card-title">Preguntas frecuentes</h5>
+          <h1 className="">¿Cómo trabajo?</h1>
+          <img src={olaf} className="card-img-bottom imgcardP" alt="..." />
           <p className="card-text">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum sed
-            placeat, natus quia consequatur necessitatibus. Iure magnam officiis
-            libero sit, ipsa officia fugiat unde quisquam tenetur vel, accusamus
-            ullam rem earum? Eius suscipit neque non iure repudiandae provident
-            tenetur laudantium vel alias molestias, veritatis, facere nisi? Vel
-            eius soluta ipsa beatae commodi eaque, facere, in maxime cumque quia
-            nam suscipit, dicta ea. Nam hic rerum voluptate reprehenderit
-            necessitatibus, ullam in totam enim consequuntur accusamus veniam
-            beatae! Quibusdam ab autem voluptates necessitatibus minus
-            voluptatibus impedit exercitationem vitae eos aliquam accusantium
-            voluptate quis cupiditate, perferendis magni quo doloremque, illo
-            quaerat vero, repudiandae et minima! Animi qui, ipsam nesciunt iusto
-            hic aperiam soluta a reiciendis maxime harum. Dicta adipisci
-            voluptas illum explicabo suscipit facilis porro fuga sequi at?
-            Temporibus, quibusdam illum alias impedit incidunt officia nobis
-            magnam eos laudantium expedita dignissimos veniam velit harum?
-            Voluptate repellat eum officiis pariatur, consequuntur libero
-            recusandae iure!
+          
+<p className="text-dark">
+
+¿Se puede elegir otra opción de entrega? 
+</p>
+<p>
+
+todo el trabajo es personalizable, consulte según su preferencia o una temática especial.
+Cuánto dura la sesión? alrrededor de una hora, todo depende de la mascota y del paquete que hayas contratado.
+</p>
+<p className="text-dark">
+  
+¿Es solo para perros?
+</p>
+<p>
+
+ no, todas las mascotas pueden ser retratadas,el único requisito es que sean amigables.
+</p>
+<p className="text-dark">
+  
+¿Qué tengo que llevar?
+</p>
+<p>
+
+ todas las sesiones incluyen accesorios, moños, anteojos, collares (excepto ropa), si tenes tus accesorios o ropita preferida podes traer lo que mas te guste.
+Dónde se realiza? la sesión de fotos es en estudio de fotos.(zona Av. Mitre y San Martin) (consultar por fotos en exterior) 
+</p>
+<p className="text-dark">
+
+¿Cuánto demoras en entregarme el trabajo? 
+</p>
+<p>
+
+alrrededor de una semana.
+</p>
+<p className="text-dark">
+
+¿Quién tiene que llevar a la mascota? 
+</p>
+<p>
+
+la mascota será acompañada sólo por una persona, sin excepción, y que sea aquella con la que más se sienta cómoda y tenga mas confianza. No puede traerla una persona agena a la mascota.
+</p>
+<p className="text-dark">
+
+¿Se pueden personalizar las sesiones? 
+</p>
+<p>
+
+sí, podemos armar una temática (cumpleaños, regalo sorpresa,o la idea que tengas!)
+</p>
+<p className="text-dark">
+
+Mi mascota es inquieta y no le gustan las fotos, ¿se puede? 
+</p>
+<p>
+
+Sí!, te vas a sorprender con los resultados y sus expresiones!
+</p>
+<p className="text-dark">
+  
+¿Cómo puedo pagar? 
+</p>
+<p>
+
+se requiere una seña del 50% para reservar día y hora, y el resto se entrega el mismo día de la sesión en su totalidad. La forma de pago por ahora es en efectivo.
+</p>
+<p className="text-dark"> 
+
+¿Qué otra pregunta se te ocurre?
+</p>
+
+          <div>
+              <button className="btn btnPreguntas">
+                <h3>Consultame!</h3>
+              </button>
+            </div>
           </p>
-          <p className="card-text">
-            <small className="text-muted">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Necessitatibus, voluptates fugiat? Velit perspiciatis ratione
-              ipsam quae laudantium, praesentium est sed blanditiis non eligendi
-              suscipit vel. Consectetur, hic fugit nostrum expedita voluptatibus
-              alias harum ullam provident, corrupti molestiae quod molestias!
-              Explicabo.
-            </small>
-          </p>
+         
+        
         </div>
-      </div>
-      <div className="card">
-        <div className="card-body">
-          <h5 className="card-title">Tus inquietudes</h5>
-          <p className="card-text">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Perferendis, sit quo? Cumque rem, accusamus molestiae optio sed
-            blanditiis quasi ullam veritatis pariatur ratione, corrupti
-            necessitatibus et quam esse non cum quis accusantium? Nam, vel.
-            Quisquam, voluptatem! Harum earum ducimus consequuntur, repellat,
-            accusantium id reprehenderit quod sapiente alias odit dignissimos
-            nisi ut explicabo cupiditate vel repellendus pariatur quae voluptas
-            ad consectetur, a ratione nam. Architecto, ea vel facere ex et
-            fugiat, autem soluta excepturi rerum eaque dignissimos maxime earum
-            neque! Distinctio deleniti, corrupti numquam rerum sequi nemo
-            inventore nihil cum, voluptas, aut maiores dolorum quidem quod error
-            aliquam vero aspernatur molestiae. Vero, minima. Labore delectus
-            quidem ut placeat totam laborum dolor, blanditiis neque saepe aut
-            illum error voluptatem nihil quam perspiciatis iure distinctio unde
-            dignissimos, ab nostrum velit consequatur? Facere illum vitae ea
-            laborum facilis eius exercitationem, inventore blanditiis nesciunt
-            autem, error architecto animi enim accusamus fuga fugiat ipsa, sed
-            natus.
-          </p>
-          <p className="card-text">
-            <small className="text-muted">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
-              saepe exercitationem recusandae rerum earum sequi quisquam
-              sapiente atque esse illum cumque corrupti voluptatem laborum ex
-              fugit fuga eum repellendus dolorum placeat? Quisquam animi modi
-              unde sapiente suscipit. In quidem sapiente qui placeat alias
-              pariatur veritatis beatae ipsa quas dolore iure quasi dolor enim
-              aspernatur similique nobis, nulla natus dicta deserunt atque
-              quaerat! Accusantium illum earum, porro nostrum architecto alias
-              animi neque, labore aliquid nemo dolor dolores saepe eligendi
-              recusandae similique ex voluptas quas quasi. Eaque natus id nisi
-              distinctio quod soluta at nulla suscipit? Explicabo impedit
-              aliquam eaque fugiat laboriosam?
-            </small>
-          </p>
-        </div>
+       
       </div>
     </>
   );
 };
 
 export default Preguntas;
+
+
+

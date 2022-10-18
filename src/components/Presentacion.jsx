@@ -5,7 +5,7 @@ import presentacion from "../css/presentacion.css";
 const Presentacion = () => {
   return (
     <>
-      <div className="card">
+      <div className="card cardPr">
         <div className="card-body">
           <h5 className="card-title">Conoceme</h5>
           <p className="card-text">
@@ -33,7 +33,7 @@ const Presentacion = () => {
             </small>
           </p>
         </div>
-        <img src={yo} className="card-img-bottom imgcard" alt="..." />
+        <img src={yo} className="card-img-bottom imgcardP" alt="..." />
       </div>
     </>
   );

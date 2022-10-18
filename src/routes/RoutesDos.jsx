@@ -10,6 +10,7 @@ import SobreMi from "../pages/SobreMi";
 import NotFound from "../pages/NotFound";
 import Galeria from "../pages/Galeria";
 
+
 const RoutesDos = () => {
   return (
     <>
@@ -19,6 +20,7 @@ const RoutesDos = () => {
         <Route path="/galeria" element={<Galeria
          />} />
         <Route path="/experiencias" element={<Experiencias />} />
+       
         <Route path="/paquetes" element={<Paquetes />} />
         <Route path="/sobremi" element={<SobreMi />} />
         {/* <Route path="/preguntasfrecuentes" element={<PreguntasFrecuentes />} /> */}

@@ -18,7 +18,8 @@ const PaquetesLink = () => {
               Lorem ipsum dolor sit amet.
             </p>
             <button type="button" className="btn btn-light btn-card">
-              Conoce los paquetes aquí
+            <a className="nav-link" href="/paquetes"> Conoce los paquetes aquí </a>
+             
             </button>
           </div>
         

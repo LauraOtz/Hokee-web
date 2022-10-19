@@ -66,7 +66,7 @@ const PreguntasFrecuentes = () => {
           </div>
           <div className="col-md-8">
             <div className="card-body cardEx">
-              <h5 className="card-title  ">
+              <h5 className="card-title mb-3 ">
                 <strong> Silvia y Otti</strong>
               </h5>
               <p className="card-text textE ">

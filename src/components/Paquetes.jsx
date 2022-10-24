@@ -10,7 +10,7 @@ const Paquetes = () => {
       <img src={rash} className="card-img" alt="..." />
       <div className="card-img-overlay">
         <h5 className="card-title tituloPaq">Card title</h5>
-        <p className="card-text text-dark textoPaq position-absolute">
+        <p className="card-text text-dark textoPaq ">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat odit
           quas quam sequi, perferendis eveniet dolorem quidem exercitationem
           odio neque blanditiis soluta totam natus expedita tempore? Sapiente

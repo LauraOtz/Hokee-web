@@ -38,7 +38,7 @@ const Slider = () => {
       <div className="carousel-inner">
         <div className="carousel-item active" data-bs-interval="3000">
           <img src={slider1} className="d-block w-100" alt="..." />
-          <div className="carousel-caption d-none d-md-block">
+          {/* <div className="carousel-caption d-none d-md-block">
             <div>
               <h1>FOTOGRAFIA DE MASCOTAS</h1>
             </div>
@@ -52,12 +52,12 @@ const Slider = () => {
                 <h3>Quiero saber más</h3>
               </button>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="carousel-item" data-bs-interval="3000">
           <img src={slider2} className="d-block w-100" alt="..." />
           <div className="carousel-caption d-none d-md-block">
-            <div>
+            {/* <div>
               <h1>FOTOGRAFIA DE MASCOTAS</h1>
             </div>
             <div>
@@ -69,13 +69,13 @@ const Slider = () => {
               <button className="btn btn3">
                 <h3>Quiero saber más</h3>
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="carousel-item" data-bs-interval="3000">
           <img src={slider3} className="d-block w-100" alt="..." />
           <div className="carousel-caption d-none d-md-block">
-            <div>
+            {/* <div>
               <h1>FOTOGRAFIA DE MASCOTAS</h1>
             </div>
             <div>
@@ -87,13 +87,13 @@ const Slider = () => {
               <button className="btn btn3">
                 <h3>Quiero saber más</h3>
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="carousel-item" data-bs-interval="3000">
           <img src={slider4} className="d-block w-100" alt="..." />
           <div className="carousel-caption d-none d-md-block">
-            <div>
+            {/* <div>
               <h1>FOTOGRAFIA DE MASCOTAS</h1>
             </div>
             <div>
@@ -105,7 +105,7 @@ const Slider = () => {
               <button className="btn btn3">
                 <h3>Quiero saber más</h3>
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

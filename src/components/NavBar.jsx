@@ -5,12 +5,16 @@ import navBar from "../css/navBar.css";
 const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-lg fixed-top">
-      <div className="container-fluid ">
-        <a className="navbar-brand" href="#">
-          <img src={hokeeLogo} alt="Bootstrap" width="220" height="150" />
+      <div className=" ContenedorN  container-fluid   ">
+        <div className="LogoContenedor ">
+
+        <a className="navbar-brand " href="#">
+          <img className="imgNav " src={hokeeLogo} alt="Bootstrap" width="220" height="150" />
         </a>
+        </div>
         <button
-          className="navbar-toggler"
+        id="NavButtom"
+          className="  navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
@@ -21,6 +25,7 @@ const NavBar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse itemUl " id="navbarNav">
+          <div className="ItemsContenedor">
           <ul className="navbar-nav ">
             <li className="nav-item">
               <a className="nav-link " aria-current="page" href="/home">
@@ -32,7 +37,7 @@ const NavBar = () => {
                 Galería
               </a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item " id="Experiencias">
               <a className="nav-link" href="#Experiencias">
                 Experiencias
               </a>
@@ -53,6 +58,7 @@ const NavBar = () => {
               </a>
             </li>
           </ul>
+          </div>
         </div>
       </div>
     </nav>

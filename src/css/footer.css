@@ -1,11 +1,10 @@
-.foo {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #ffffff;
-}
+/*******************************/
+/********* Footer 4 CSS ********/
+/*******************************/
+
 
 a {
-  transition: 0.3s;
+  transition: .3s;
 }
 
 a:hover,
@@ -54,20 +53,21 @@ a:focus {
   bottom: 0;
   background: #eeeeee;
 }
+
 .footer .footer-social {
   position: relative;
   margin-top: 20px;
 }
 
 .footer .footer-social a {
-  text-align: center;
-  color: #999999;
-  font-size: 14px;
-  border: 1px solid #999999;
   display: inline-block;
   width: 35px;
   height: 35px;
   padding: 6px 0;
+  text-align: center;
+  color: #999999;
+  font-size: 14px;
+  border: 1px solid #999999;
   border-radius: 35px;
 }
 
@@ -76,6 +76,7 @@ a:focus {
   background: #0085ff;
   border-color: #0085ff;
 }
+
 .footer .footer-contact p {
   margin-bottom: 10px;
   font-size: 16px;
@@ -97,10 +98,10 @@ a:focus {
 }
 
 .footer .footer-links a {
+  display: block;
   margin-bottom: 6px;
   padding-left: 15px;
   color: #999999;
-  display: block;
 }
 
 .footer .footer-links a:last-child {
@@ -118,6 +119,7 @@ a:focus {
   font-weight: 900;
   left: 0;
 }
+
 .footer .footer-project {
   float: left;
   font-size: 0;
@@ -127,46 +129,40 @@ a:focus {
   padding: 0 8px 8px 0;
   display: block;
   width: 33.33%;
-
-  height: 150px !important;
   float: left;
 }
 
-.footer .footer-project a iframe {
+.footer .footer-project a img {
   width: 100%;
-}
-.insta #document iframe div.Header {
-  height: 1px !important;
-  padding: 1px !important;
 }
 
 .footer .footer-newsletter {
-  text-align: center;
-  color: #999999;
   margin-bottom: 35px;
   max-width: 700px;
+  text-align: center;
+  color: #999999;
 }
 
 .footer .footer-newsletter input {
-  background: rgba(256, 256, 256, 0.15);
-  margin-bottom: 15px;
   height: 35px;
   border: none;
   border-radius: 5px;
+  background: rgba(256, 256, 256, .15);
+  margin-bottom: 15px;
 }
 
 .footer .footer-newsletter .btn {
+  display: block;
+  width: 100%;
+  height: 35px;
+  font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
   color: #ffffff;
   background: #e9414a;
   border-radius: 5px;
-  display: block;
-  width: 100%;
-  height: 35px;
-  font-size: 14px;
   border: none;
-  transition: 0.3s;
+  transition: .3s;
 }
 
 .footer .footer-newsletter .btn:hover {
@@ -177,6 +173,7 @@ a:focus {
 .footer .footer-newsletter .btn:focus {
   box-shadow: none;
 }
+
 
 .footer .copyright {
   position: relative;
@@ -199,25 +196,40 @@ a:focus {
 .footer .copyright .copy-text p a:hover {
   color: #ff008c;
 }
-iframe .instaP {
-  padding: 100px !important;
+
+.footer .copyright .copy-menu {
+  position: relative;
+  font-size: 0;
+  text-align: right;
 }
-.cont1 {
-  padding-bottom: 3%;
+
+.footer .copyright .copy-menu a {
+  color: #999999;
+  font-size: 16px;
+  font-weight: 400;
+  margin-right: 15px;
+  padding-right: 15px;
+  border-right: 1px solid rgba(255, 255, 255, .3);
 }
-iframe {
-  height: 400px;
+
+.footer .copyright .copy-menu a:hover {
+  color: #0085ff;
 }
-.text1 {
-  color: antiquewhite;
-  margin-top: 40%;
+
+.footer .copyright .copy-menu a:last-child {
+  margin-right: 0;
+  padding-right: 0;
+  border-right: none;
 }
-.instaL {
-  height: 60px;
-}
-.footer .footer-project {
-    font-size: 18px;
-}
-#document iframe.instaP.Header{
-    padding: 0px !important;
+
+@media (max-width: 767.98px) {
+  .footer .copyright .copy-text,
+  .footer .copyright .copy-menu {
+      text-align: center;
+  }
+  
+  .footer .copyright .copy-text p {
+      margin-bottom: 5px;
+  }
+  
 }

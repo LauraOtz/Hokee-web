@@ -6,7 +6,7 @@ const Presentacion = () => {
   return (
     <>
       <div className="card cardPr">
-        <div className="card-body">
+        <div className="card-body" >
           <h5 className="card-title">Conoceme</h5>
           <p className="card-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,

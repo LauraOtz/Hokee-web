@@ -1,35 +1,9 @@
-import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
-import login from "../css/contacto.css";
+import React from "react";
+import login from "../css/login.css";
 
-// npm i @emailjs/browser
-
-const Contacto = () => {
-  const form = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_w5b2q8p",
-        "template_p4th3sl",
-        form.current,
-        "VZCDTgZoOTA3lePFn"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          alert("Mensaje enviado");
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
-
+const Registro = () => {
   return (
-    <div className="contact container py-5">
+    <div className="registro login container py-5">
       <div className="row">
         <div className="col-lg-12 mx-auto ">
           <div className="card">
@@ -37,12 +11,12 @@ const Contacto = () => {
               <div className="row">
                 <div className="colC-lg-12">
                   <div className="headC text-center text-white py-3">
-                    <h3>Contactanos</h3>
+                    <h3>Registro</h3>
                   </div>
                 </div>
               </div>
 
-              <form className="form py-3" ref={form} onSubmit={sendEmail}>
+              <form className="form py-3">
                 <div className="form-row my-4">
                   <div className="col-lg-12">
                     <input
@@ -60,6 +34,7 @@ const Contacto = () => {
                     <span className="Focus-border"></span>
                   </div>
                 </div>
+
                 <div className="form-row pb-4 ">
                   <div className="col-lg-12 ">
                     <input
@@ -77,25 +52,40 @@ const Contacto = () => {
                 </div>
                 <div className="form-row pt-2">
                   <div className="col-lg-12">
-                    <textarea
-                      rows="5"
+                    <input
+                      type="password"
                       name="message"
                       className="effect-1 "
-                      placeholder="Ingrese su mensaje"
+                      placeholder="Ingrese su contraseña"
                       required
-                      maxlength="400"
+                      maxlength="20"
                       role
-                      minlength="2"
+                      minlength="6"
                     />
                     <span className="Focus-border"></span>;
                   </div>
                 </div>
-                <div className="form-row pt-4 ">
-                  <div className="offset-4 col-lg-12">
-                    <p>
-                      <input type="checkbox" required />
-                      No soy un robot
-                    </p>
+                <div className="form-row pt-2">
+                  <div className="col-lg-12">
+                    <input
+                      type="password"
+                      name="message"
+                      className="effect-1 "
+                      placeholder="Repita su contraseña"
+                      required
+                      maxlength="20"
+                      role
+                      minlength="6"
+                    />
+                    <span className="Focus-border"></span>;
+                  </div>
+                </div>
+
+                <div className="form-row  pt-4">
+                  <div className="col-lg-12">
+                    <a href="" className="text">
+                      <p>Volver</p>
+                    </a>
                   </div>
                 </div>
                 <div className="offset-4 col-lg-12">
@@ -110,4 +100,4 @@ const Contacto = () => {
   );
 };
 
-export default Contacto;
+export default Registro;

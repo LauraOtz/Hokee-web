@@ -1,15 +1,16 @@
 import React from "react";
-import hokeeLogo from "../assets/hokeeLogo.png";
+import logoblanco from "../assets/logoblanco.png"
+
 import navBar from "../css/navBar.css";
 
 const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-lg fixed-top">
-      <div className=" ContenedorN  container-fluid   ">
+      <div className=" ContenedorN  container-fluid">
         <div className="LogoContenedor ">
 
         <a className="navbar-brand " href="#">
-          <img className="imgNav " src={hokeeLogo} alt="Bootstrap" width="220" height="150" />
+          <img className="imgNav " src={logoblanco} alt="Bootstrap"  height="80" />
         </a>
         </div>
         <button
@@ -28,7 +29,7 @@ const NavBar = () => {
           <div className="ItemsContenedor">
           <ul className="navbar-nav ">
             <li className="nav-item">
-              <a className="nav-link " aria-current="page" href="/home">
+              <a className="nav-link " aria-current="page" href="/">
                 Home
               </a>
             </li>
@@ -37,18 +38,18 @@ const NavBar = () => {
                 Galería
               </a>
             </li>
-            <li className="nav-item " id="Experiencias">
+            <li className="nav-item " >
               <a className="nav-link" href="#Experiencias">
                 Experiencias
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="#Preguntas">
                 Preguntas frecuentes
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/paquetes">
+              <a className="nav-link" href="#novedades">
                 Paquetes
               </a>
             </li>

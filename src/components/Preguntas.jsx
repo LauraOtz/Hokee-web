@@ -5,7 +5,7 @@ import preguntas from "../css/preguntas.css";
 const Preguntas = () => {
   return (
     <>
-      <div className="card cardPr">
+      <div className="card cardPr" id="Preguntas">
         <div className="card-body">
           <h1 className="tituloEx">¿Cómo trabajo?</h1>
           <img src={olaf} className="card-img-bottom imgPreguntas" alt="..." />

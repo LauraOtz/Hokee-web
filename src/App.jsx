@@ -1,14 +1,17 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import RoutesDos from "../src/routes/RoutesDos";
+import {BrowserRouter} from "react-router-dom";
+import RoutesDos from "./routes/RoutesDos";
+// import RoutesDos from "../src/routes/RoutesDos";
 
 
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/*" element={<RoutesDos />} />
-      </Routes>
+    
+    <RoutesDos/>
+      {/* <Routes>
+        <Route path="*" element={<RoutesDos />} />
+      </Routes> */}
     </BrowserRouter>
   );
 }

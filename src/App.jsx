@@ -1,17 +1,27 @@
 import "./App.css";
-import {BrowserRouter} from "react-router-dom";
-import RoutesDos from "./routes/RoutesDos";
-// import RoutesDos from "../src/routes/RoutesDos";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import RoutesDos from "../src/routes/RoutesDos";
+import Login from "./pages/Login";
+import Registro from "./pages/Registro";
+import ProtectedRoutes from "./routes/ProtectedRoutes";
+
 
 
 function App() {
   return (
     <BrowserRouter>
-    
-    <RoutesDos/>
-      {/* <Routes>
-        <Route path="*" element={<RoutesDos />} />
-      </Routes> */}
+      <Routes>
+        <Route
+          path="/*"
+          element={
+            <ProtectedRoutes>
+              <RoutesDos />
+            </ProtectedRoutes>
+          }
+        />
+        <Route path="/login" element={<Login />} />
+        <Route path="/registro" element={<Registro />} />
+      </Routes>
     </BrowserRouter>
   );
 }

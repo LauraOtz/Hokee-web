@@ -1,7 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
+import { useNavigate} from "react-router-dom";
+import { postAuth} from "../helpers/fetchApp";
 import login from "../css/login.css";
 
 const Login = () => {
+  const navigate = useNavigate();
+
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [message, setMessage] = useState(null);
+
+  const validarDatos = () => {
+    const datos = {
+      email,
+      password,
+    };
+    postAuth(datos).then((respuesta) => {
+      console.log(respuesta);
+      if (respuesta?.token) {
+        setMessage({ ok: true, msg: "Login ok" });
+        localStorage.setItem("token", JSON.stringify(respuesta.token));
+        navigate("/");
+      } else {
+        setMessage(respuesta);
+      }
+    });
+  };
   return (
     <div className="login container py-5">
       <div className="row">
@@ -16,15 +40,17 @@ const Login = () => {
                 </div>
               </div>
 
-              <form className="form py-3">
+              <div className="form py-3">
                 <div className="form-row pb-4 ">
                   <div className="col-lg-12 ">
                     <input
-                      type="email"
-                      name="user_email"
+                      //type="email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      //name="user_email"
                       className="effect-1 "
                       placeholder="Ingrese su correo electrónico"
-                      pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
+                      //pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
                       maxlength="30"
                       required
                     />
@@ -35,8 +61,10 @@ const Login = () => {
                 <div className="form-row pt-2">
                   <div className="col-lg-12">
                     <input
-                      type="password"
-                      name="message"
+                      //type="password"
+                      value={password}
+                      onChange={(e) => setPassword(e.target.value)}
+                      //name="message"
                       className="effect-1 "
                       placeholder="Ingrese su contraseña"
                       required
@@ -62,9 +90,25 @@ const Login = () => {
                   </div>
                 </div>
                 <div className="offset-4 col-lg-12">
-                  <input type="submit" value="Enviar" className="btn1" />
+                <button className="btn btn-success btn-lg" onClick={validarDatos}>
+                Iniciar Sesion
+              </button>
+                  
                 </div>
-              </form>
+              </div>
+              {message && (
+            <div
+              className={
+                message?.ok
+                  ? "alert alert-success mt-3"
+                  : "alert alert-danger mt-3"
+              }
+              role="alert"
+            >
+              {message.msg}
+            </div>
+          )}
+          
             </div>
           </div>
         </div>

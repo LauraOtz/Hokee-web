@@ -2,7 +2,6 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import NavBar from "../components/NavBar";
 import Home from "../pages/Home";
-
 import Paquetes from "../pages/Paquetes";
 import NotFound from "../pages/NotFound";
 import Galeria from "../pages/Galeria";
@@ -17,13 +16,9 @@ const RoutesDos = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/galeria" element={<Galeria />} />
-      
         <Route path="/paquetes" element={<Paquetes />} />
-        
-
         <Route path="/login" element={<Login />} />
         <Route path="/registro" element={<Registro />} />
-
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

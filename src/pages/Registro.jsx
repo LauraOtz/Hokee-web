@@ -1,7 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
+import { postUsuario } from "../helpers/fetchApp";
 import login from "../css/login.css";
 
 const Registro = () => {
+  const [formValues, setFormValues] = useState({
+    nombre: "",
+    email: "",
+    password: "",
+    role: "USER-ROLE",
+  });
+
+  const [message, setMessage] = useState([]);
+
+  const handleChange = (e) => {
+    setFormValues({
+      ...formValues,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    postUsuario(formValues).then((respuesta) => {
+      console.log(respuesta);
+      if (respuesta?.errors) {
+        setMessage(respuesta.errors);
+      } else {
+        setMessage([{ ok: true, msg: "Registro exitoso!" }]);
+        setFormValues({
+          nombre: "",
+          email: "",
+          password: "",
+          role: "USER-ROLE",
+        });
+        setTimeout(() => {
+          setMessage([]);
+        }, 2000);
+      }
+    });
+  };
+
+
   return (
     <div className="registro login container py-5">
       <div className="row">
@@ -16,12 +56,14 @@ const Registro = () => {
                 </div>
               </div>
 
-              <form className="form py-3">
+              <form onSubmit={handleSubmit} className="form py-3">
                 <div className="form-row my-4">
                   <div className="col-lg-12">
                     <input
                       type="text"
-                      name="user_name"
+                      name="nombre"
+                      value={formValues.nombre}
+                      onChange={handleChange}
                       className="effect-1  is-valid "
                       placeholder="Ingrese su nombre"
                       id="username"
@@ -39,7 +81,9 @@ const Registro = () => {
                   <div className="col-lg-12 ">
                     <input
                       type="email"
-                      name="user_email"
+                      name="email"
+                      value={formValues.email}
+                      onChange={handleChange}
                       className="effect-1 "
                       placeholder="Ingrese su correo electrónico"
                       pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
@@ -54,7 +98,9 @@ const Registro = () => {
                   <div className="col-lg-12">
                     <input
                       type="password"
-                      name="message"
+                      name="password"
+                      value={formValues.password}
+                      onChange={handleChange}
                       className="effect-1 "
                       placeholder="Ingrese su contraseña"
                       required
@@ -69,7 +115,7 @@ const Registro = () => {
                   <div className="col-lg-12">
                     <input
                       type="password"
-                      name="message"
+                      name="password"
                       className="effect-1 "
                       placeholder="Repita su contraseña"
                       required
@@ -92,6 +138,20 @@ const Registro = () => {
                   <input type="submit" value="Enviar" className="btn1" />
                 </div>
               </form>
+              {message.length > 0 &&
+            message.map((item, index) => (
+              <div
+                className={
+                  item?.ok
+                    ? "alert alert-success mt-3"
+                    : "alert alert-danger mt-3"
+                }
+                role="alert"
+                key={index}
+              >
+                {item.msg}
+              </div>
+              ))}
             </div>
           </div>
         </div>

@@ -4,10 +4,12 @@ import logoblanco from "../assets/logoblanco.png"
 import navBar from "../css/navBar.css";
 
 const NavBar = () => {
+  
+
   return (
     <nav className="navbar navbar-expand-lg fixed-top">
       <div className=" ContenedorN  container-fluid">
-        <div className="LogoContenedor ">
+        <div className="LogoContenedor pb-2 ">
 
         <a className="navbar-brand " href="#">
           <img className="imgNav " src={logoblanco} alt="Bootstrap"  height="80" />

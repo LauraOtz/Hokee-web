@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { postUsuario } from "../helpers/fetchApp";
 import login from "../css/login.css";
-
+import hokeelog from "../assets/hokeelog.jpg"
 const Registro = () => {
   const [formValues, setFormValues] = useState({
     nombre: "",
@@ -43,15 +43,20 @@ const Registro = () => {
 
 
   return (
-    <div className="registro login container py-5">
+    <div className="container registro login py-5 col-lg-12 col-md-6">
       <div className="row">
-        <div className="col-lg-12 mx-auto ">
+        <div className="col">
           <div className="card">
             <div className="card-body">
               <div className="row">
                 <div className="colC-lg-12">
                   <div className="headC text-center text-white py-3">
-                    <h3>Registro</h3>
+                      
+                    <h3>
+                    <img src={hokeelog} alt="" className="logohokke" />
+                      Registro 
+
+                    </h3>
                   </div>
                 </div>
               </div>
@@ -101,17 +106,17 @@ const Registro = () => {
                       name="password"
                       value={formValues.password}
                       onChange={handleChange}
-                      className="effect-1 "
+                      className="effect-1"
                       placeholder="Ingrese su contraseña"
                       required
                       maxlength="20"
                       role
                       minlength="6"
                     />
-                    <span className="Focus-border"></span>;
+                    <span className="Focus-border"></span>
                   </div>
                 </div>
-                <div className="form-row pt-2">
+                <div className="form-row pt-4">
                   <div className="col-lg-12">
                     <input
                       type="password"
@@ -123,7 +128,7 @@ const Registro = () => {
                       role
                       minlength="6"
                     />
-                    <span className="Focus-border"></span>;
+                    <span className="Focus-border"></span>
                   </div>
                 </div>
 

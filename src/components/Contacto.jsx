@@ -30,20 +30,20 @@ const Contacto = () => {
 
   return (
     <div className="contact container py-5">
-      <div className="row">
+      <div className="row rowcontact">
         <div className="col-lg-12 mx-auto ">
           <div className="card">
-            <div className="card-body">
+            <div className="card-body card-body1">
               <div className="row">
-                <div className="colC-lg-12">
+                <div className="">
                   <div className="headC text-center text-white py-3">
                     <h3>Contactanos</h3>
                   </div>
                 </div>
               </div>
 
-              <form className="form py-3" ref={form} onSubmit={sendEmail}>
-                <div className="form-row my-4">
+              <form className="form py-3 " ref={form} onSubmit={sendEmail}>
+                <div className="form-row my-2">
                   <div className="col-lg-12">
                     <input
                       type="text"
@@ -60,7 +60,7 @@ const Contacto = () => {
                     <span className="Focus-border"></span>
                   </div>
                 </div>
-                <div className="form-row pb-4 ">
+                <div className="form-row pb-2 ">
                   <div className="col-lg-12 ">
                     <input
                       type="email"
@@ -78,7 +78,7 @@ const Contacto = () => {
                 <div className="form-row pt-2">
                   <div className="col-lg-12">
                     <textarea
-                      rows="5"
+                      rows="4"
                       name="message"
                       className="effect-1 "
                       placeholder="Ingrese su mensaje"

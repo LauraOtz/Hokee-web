@@ -26,3 +26,7 @@
     letter-spacing: 0px;
     text-transform: none;
   }
+  .cardPr{
+    display: flex;
+    flex-direction: column;
+  }

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate} from "react-router-dom";
 import { postAuth} from "../helpers/fetchApp";
 import login from "../css/login.css";
+import hokeelog from "../assets/hokeelog.jpg"
 
 const Login = () => {
   const navigate = useNavigate();
@@ -27,15 +28,17 @@ const Login = () => {
     });
   };
   return (
-    <div className="login container py-5">
+    <div className="registro login container py-5 col-lg-12 col-md-6">
       <div className="row">
-        <div className="col-lg-12 mx-auto ">
+        <div className="  ">
           <div className="card">
             <div className="card-body">
               <div className="row">
                 <div className="colC-lg-12">
                   <div className="headC text-center text-white py-3">
-                    <h3>Iniciar sesión</h3>
+                    <h3>
+                    <img src={hokeelog} alt="" className="logohokke" />
+                      Iniciar sesión</h3>
                   </div>
                 </div>
               </div>

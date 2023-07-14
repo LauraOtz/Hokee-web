@@ -6,7 +6,7 @@
   box-shadow: 4px 4px 48px 14px rgba(99, 185, 146, 0.91) !important;
   -webkit-box-shadow: 4px 4px 48px 14px rgba(99, 185, 146, 0.91) !important;
   -moz-box-shadow: 4px 4px 48px 14px rgba(99, 185, 146, 0.91) !important;
-  margin-top: 20px;
+  
 }
 .headC {
   background-color: rgb(99, 185, 146);
@@ -52,6 +52,19 @@
   -moz-box-shadow: 3px 3px 5px 9px rgba(194, 194, 194, 0.79);
   box-shadow: 3px 3px 5px 9px rgba(194, 194, 194, 0.79);
 }
-
-
-
+/* .contact {
+display: flex;
+justify-content: center;
+height: 500px;
+position: relative;
+width: 700px !important;
+}
+.form{
+  display: flex;
+ flex-direction: column;
+ width: 600px;
+height: 400px !important;
+}
+.rowcontact{
+  position:absolute !important;
+} */

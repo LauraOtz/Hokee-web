@@ -1,13 +1,14 @@
+
 .login {
-    
-  
+
+ 
     background-size: 100% !important;
     width: 100vw !important;
 
     box-shadow: 4px 4px 48px 14px rgba(99, 185, 146, 0.91) !important;
     -webkit-box-shadow: 4px 4px 48px 14px rgba(99, 185, 146, 0.91) !important;
     -moz-box-shadow: 4px 4px 48px 14px rgba(99, 185, 146, 0.91) !important;
-    margin-top:-200px;
+    
   }
   .headC {
     background-color: rgb(99, 185, 146);
@@ -26,7 +27,7 @@
   }
   .effect-1 ~ .Focus-border {
     position: absolute;
-    bottom: 0;
+    bottom: 5;
     left: 50%;
     width: 0;
     height: 3px;
@@ -56,6 +57,17 @@
   .textCo{
     justify-content: center;
   }
-  
+  /* -------------------------registro */
+  .registro{
+    
+    max-width: 500px !important;
+         min-width: 200px;
+  }
+  .logohokke{
+    width: 50px;
+    border-radius: 20%;
+    padding-right: 5px;
+  }
+
   
   

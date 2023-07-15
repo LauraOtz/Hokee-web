@@ -42,16 +42,21 @@ const Home = () => {
       </section>
      
      
-     
-
+     <section >
+      <div className="wh">
       <a
         href=" https://api.whatsapp.com/send?phone=543816510287"
-        class="whatsapp"
+        className="whatsapp"
         target="_blank"
       >
         {" "}
         <i class="fa fa-whatsapp whatsapp-icon"></i>
       </a>
+      </div>
+
+     
+     </section>
+
       <br />
       <br />
 

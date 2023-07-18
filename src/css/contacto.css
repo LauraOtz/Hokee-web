@@ -44,8 +44,9 @@
   outline: none;
   border: none;
   border-radius: 5px;
-  height: 40px;
-  width: 145px;
+  height: 20px;
+  width: 100px;
+  
 }
 .btn1:hover {
   -webkit-box-shadow: 3px 3px 5px 9px rgba(194, 194, 194, 0.79);
@@ -59,22 +60,17 @@ display: flex;
 justify-content: center;
 height: 500px;
 position: relative;
-/* width: 700px !important; */
+width: 60% !important; 
 }
-/* .form{
-  display: flex;
- flex-direction: column;
- width: 600px;
-height: 400px !important;
-} */
+
 .rowcontact{
   position:absolute !important;
 }
-/* .contact {
-  display: flex;
-  justify-content: center;
- 
-}*/
+
 .rowcontact{
   width: 90%;
+  
 } 
+div.card{
+  height: 100% !important;
+}

@@ -34,12 +34,15 @@
     color: #ffffff;
     background: #4e4f50;
     border-radius: 100%;
+    transition: 0.3s;
     
   }
   .footer .imgCuadro:hover {
     color: #ffffff;
     background: #4e4f50;
     border-radius: 100%;
+    
+    transition: 0.3s;
     
   }
   .footer .footer-project a {

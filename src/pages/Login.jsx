@@ -28,13 +28,13 @@ const Login = () => {
     });
   };
   return (
-    <div className="registro login container py-5 col-lg-12 col-md-6">
+    <div className="login registro container py-5 col-lg-12 col-md-6">
       <div className="row">
         <div className="  ">
           <div className="card">
             <div className="card-body">
               <div className="row">
-                <div className="colC-lg-12">
+                <div className="colC col-lg-12">
                   <div className="headC text-center text-white py-3">
                     <h3>
                     <img src={hokeelog} alt="" className="logohokke" />
@@ -92,8 +92,8 @@ const Login = () => {
                     </a>
                   </div>
                 </div>
-                <div className="offset-4 col-lg-12">
-                <button className="btn btn-success btn-lg" onClick={validarDatos}>
+                <div className=" col-lg-12">
+                <button className=" btn1 btn-lg" onClick={validarDatos}>
                 Iniciar Sesion
               </button>
                   

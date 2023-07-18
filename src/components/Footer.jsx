@@ -50,7 +50,7 @@ const Footer = () => {
         </div>
         <div className="container footer-text col-md-6 col-lg-6">
           <p>
-          © Copyright 2023 HOKEE - PET PHOTOGRAPY - TODOS LOS DERECHOS RESERVADOS - BY LAURA ORTIZ - Contacto: hokee@gmail.com
+          © Copyright 2023 HOKEE - PET PHOTOGRAPY - TODOS LOS DERECHOS RESERVADOS - BY LAURA ORTIZ - Contacto: hokeepetphoto@gmail.com
           </p>
         </div>
       </div>

@@ -7,17 +7,29 @@ const Registro = () => {
     nombre: "",
     email: "",
     password: "",
+    //confirmPassword:"",
     role: "USER-ROLE",
+    
   });
 
   const [message, setMessage] = useState([]);
+  //const [password, setPassword]= useState("")
+  const [confirmPassword, setConfirmPassword]= useState("")
+  //const [error, setIsError]= useState("")
 
   const handleChange = (e) => {
+    
+
     setFormValues({
-      ...formValues,
-      [e.target.name]: e.target.value,
-    });
-  };
+        ...formValues,
+        [e.target.name]: e.target.value,
+      });
+      
+    };
+
+
+ 
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -40,8 +52,20 @@ const Registro = () => {
       }
     });
   };
+//se quiere lograr una funcion que compare las dos contraseñas (esto no funciona)- la conexion con la base de datos funciona perfectamemte.
+  function checkValidation (e){    
+  
+  
+    setConfirmPassword(e.target.value);
+    if ((values.confirm_password) === "" || String (values.password)){
+      console.log(values.confirm_password + "__" + values.password)
+          error.confirm_password = "password no coincide"
+      }
+      return error;
 
+   }
 
+   
   return (
     <div className="container registro login py-5 col-lg-12 col-md-6">
       <div className="row">
@@ -57,6 +81,7 @@ const Registro = () => {
                       Registro 
 
                     </h3>
+                    
                   </div>
                 </div>
               </div>
@@ -64,6 +89,7 @@ const Registro = () => {
               <form onSubmit={handleSubmit} className="form py-3">
                 <div className="form-row my-4">
                   <div className="col-lg-12">
+                
                     <input
                       type="text"
                       name="nombre"
@@ -105,7 +131,9 @@ const Registro = () => {
                       type="password"
                       name="password"
                       value={formValues.password}
-                      onChange={handleChange}
+                      onChange={(e) => { handleChange(e); checkValidation(e) }}
+                  
+                      
                       className="effect-1"
                       placeholder="Ingrese su contraseña"
                       required
@@ -120,7 +148,9 @@ const Registro = () => {
                   <div className="col-lg-12">
                     <input
                       type="password"
-                      name="password"
+                      name="confirmPassword"
+                      value={formValues.confirmPassword}
+                      onChange={(e) => { handleChange(e); checkValidation(e) }}
                       className="effect-1 "
                       placeholder="Repita su contraseña"
                       required

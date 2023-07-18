@@ -1,32 +1,46 @@
-import React, { useRef } from "react";
+import React, {useState } from "react";
 import emailjs from "@emailjs/browser";
+
 import login from "../css/contacto.css";
 
 // npm i @emailjs/browser
 
-const Contacto = () => {
-  const form = useRef();
+const Result = () => {
+ return(
+<p>Mensaje enviado</p>
 
+ )
+};
+function ContactComponent (props) {
+  const [result, showResult] = useState (false)
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
-      .sendForm(
-        "service_w5b2q8p",
-        "template_p4th3sl",
-        form.current,
-        "VZCDTgZoOTA3lePFn"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          alert("Mensaje enviado");
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
+   .sendForm(
+     "service_y77wgx7",
+     "template_p4th3sl",
+     e.target,
+     "VZCDTgZoOTA3lePFn"
+   )
+   .then(
+     (result) => {
+       console.log(result.text);
+       //alert("Mensaje enviado");
+     },
+     (error) => {
+       console.log(error.text);
+     }
+   );
+   e.target.reset();
+  showResult(true);
+};
+
+//hide result
+setTimeout(()=>{
+ showResult(false); 
+},3000);
+
 
   return (
     <div className="contact container py-5">
@@ -42,13 +56,15 @@ const Contacto = () => {
                 </div>
               </div>
 
-              <form className="form py-3 " ref={form} onSubmit={sendEmail}>
-                <div className="form-row my-2">
+              <form className="form py-3 " action="" onSubmit={sendEmail}>
+                <div className="form-row my-2 form-group">
                   <div className="col-lg-12">
                     <input
+                   
                       type="text"
-                      name="user_name"
-                      className="effect-1  is-valid "
+                      name="fullName"
+
+                      className="effect-1 form-control "
                       placeholder="Ingrese su nombre"
                       id="username"
                       required
@@ -60,12 +76,12 @@ const Contacto = () => {
                     <span className="Focus-border"></span>
                   </div>
                 </div>
-                <div className="form-row pb-2 ">
+                <div className="form-row pb-2 form-group">
                   <div className="col-lg-12 ">
                     <input
                       type="email"
-                      name="user_email"
-                      className="effect-1 "
+                      name="email"
+                      className="effect-1 form-control"
                       placeholder="Ingrese su correo electrónico"
                       pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
                       maxlength="30"
@@ -76,7 +92,7 @@ const Contacto = () => {
                   </div>
                 </div>
                 <div className="form-row pt-2">
-                  <div className="col-lg-12">
+                  <div className="col-lg-12 pb-4">
                     <textarea
                       rows="4"
                       name="message"
@@ -87,27 +103,29 @@ const Contacto = () => {
                       role
                       minlength="2"
                     />
-                    <span className="Focus-border"></span>;
+                    <span className="Focus-border"></span>
                   </div>
                 </div>
-                <div className="form-row pt-4 ">
-                  <div className="offset-4 col-lg-12">
+                <div className="form-row  ">
+                  <div className=" col-lg-12">
                     <p>
                       <input type="checkbox" required />
                       No soy un robot
                     </p>
                   </div>
                 </div>
-                <div className="offset-4 col-lg-12">
-                  <input type="submit" value="Enviar" className="btn1" />
+                <div className="btn col-lg-12">
+                  <input type="submit" value="Enviar" className="btn1"/>
                 </div>
+                <div>{result ? <Result/> : null}</div>
               </form>
             </div>
           </div>
         </div>
       </div>
+      
     </div>
   );
 };
 
-export default Contacto;
+export default ContactComponent;

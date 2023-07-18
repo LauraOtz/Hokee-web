@@ -32,7 +32,7 @@ body {
   font-family: 'Noto Sans Ethiopic', sans-serif !important;
   margin: 0;
   display: flex;
-  position: absolute !important;
+  /* position: absolute !important; */
   place-items: center;
  
   min-width: 320px;

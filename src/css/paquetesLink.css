@@ -1,0 +1,15 @@
+.card-img-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .parallax {
+    background-image: url("../assets/rashp1.jpg");
+    min-height: 400px;
+  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

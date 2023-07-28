@@ -1,0 +1,25 @@
+.notF {
+  display: flex;
+  position: relative;
+  width: 100vw;
+}
+.text404 {
+  font-family: "Josefin Sans", sans-serif !important;
+  font-size: 30px !important;
+}
+.text4 {
+  font-family: "Josefin Sans", sans-serif !important;
+  font-size: 40px !important;
+}
+
+@media screen and (min-width: 320px) and (max-width: 750px) {
+  .text404 {
+    font-size: 20px !important;
+  }
+  .text4 {
+    font-size: 25px !important;
+  }
+  .btn404 {
+    font-size: 10px !important;
+  }
+}

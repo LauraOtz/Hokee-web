@@ -1,25 +1,43 @@
-.itemUl{
-   
-   
-    margin-right: 5%;
-    flex-grow: 0 !important;
-    
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Josefin+Sans:wght@500&display=swap");
+
+.navbar {
+  background-color: rgba(71, 71, 71, 0.657);
+  font-family: "Josefin Sans", sans-serif;
+  color: white !important;
+}
+.ContenedorN {
+  display: flex;
+  flex-direction: column;
 }
 
-.nav-link{
-  
-    font-size: 20px !important;
-    font-weight: bold !important;
-    padding-left: 15px !important;
-    color: blanchedalmond !important;
-
-
-
+.nav-item a:hover {
+  padding-bottom: 12px;
+  border-bottom: 3px solid rgba(99, 185, 146, 0.91);
 }
-.navbar{
-   
-    height: 100px !important;
-    background-color: rgba(133, 133, 133, 0.5) !important; 
-    color: rgba(133, 133, 133, 0.5) !important;
-    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 54px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 39px -3px rgba(0,0,0,0.1) !important;
+.nav-item .active {
+  padding-bottom: 12px;
+  border-bottom: 3px solid rgba(99, 185, 146, 0.91);
 }
+.nav-item:hover {
+  cursor: pointer !important;
+}
+
+/* ----------------- scroll*/
+.navbar {
+  transition: all 300ms ease-in-out;
+}
+.scroll-down .navbar {
+  transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up .navbar {
+  filter: drop-shadow(0 -10px 20px rgb(170, 170, 170));
+}
+
+.menu-is-open {
+  overflow: hidden;
+}
+.menu-is-open .navbar {
+  filter: none;
+}
+/* ----------------------- */

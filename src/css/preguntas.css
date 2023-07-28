@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Josefin+Sans:wght@500&display=swap");
+
+.card-datosP {
+  height: 265px;
+  background-color: #f2f5f8;
+  color: #001d36;
+}
+
+.card-datosP .card-subtitle {
+  font-size: 30px;
+}
+.iconP {
+  color: rgba(99, 185, 146, 0.91);
+}
+.tituloPres {
+  font-family: "Dancing Script", cursive;
+  font-size: 20px;
+}
+.tituloPres2 {
+  font-family: "Josefin Sans", sans-serif;
+}
+.tituloPreg {
+  font-family: "Josefin Sans", sans-serif;
+}

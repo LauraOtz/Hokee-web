@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Josefin+Sans:wght@500&display=swap");
+
+.textE {
+  font-size: 20px;
+}
+.cardE {
+  padding-left: 20%;
+  padding-right: 20%;
+  border-color: white !important;
+}
+
+.card-body.cardEx {
+  padding-top: 8%;
+  padding-left: 5%;
+  font-family: "Josefin Sans", sans-serif;
+}
+.cardPr {
+  margin: 3%;
+}
+.imgcardP {
+  padding: 5%;
+}
+
+.hrp {
+  box-sizing: content-box;
+  width: 50% !important;
+  display: block;
+  unicode-bidi: isolate;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  overflow: hidden;
+}
+
+.card-text {
+  color: rgba(40, 40, 40, 0.5);
+}
+.card-title {
+  font-style: normal;
+  font-size: 15px;
+  line-height: 1.4em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.imgExp {
+  border-radius: 10%;
+  box-shadow: 1px 3px 87px -21px rgba(0, 0, 0, 0.65);
+  -webkit-box-shadow: 1px 3px 87px -21px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: 1px 3px 87px -21px rgba(0, 0, 0, 0.65);
+  transition: transform 0.2s;
+}
+.imgExp:hover {
+  transform: scale(1.2);
+}
+.Titulop {
+  font-family: "Dancing Script", cursive;
+  font-size: 35px;
+}

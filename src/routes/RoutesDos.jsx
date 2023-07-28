@@ -1,26 +1,23 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import NavBar from "../components/NavBar";
+// import NavBar from "../components/NavBar";
 import Home from "../pages/Home";
-import Galeria from "../pages/Galeria";
-import Experiencias from "../pages/Experiencias";
 import Paquetes from "../pages/Paquetes";
-import SobreMi from "../pages/SobreMi";
-import PreguntasFrecuentes from "../pages/PreguntasFrecuentes";
 import NotFound from "../pages/NotFound";
+import Gallery from "../pages/Gallery";
+// import Login from "../pages/Login";
+// import Registro from "../pages/Registro";
 
 const RoutesDos = () => {
   return (
     <>
-      <NavBar />
+      {/* <NavBar /> */}
       <Routes>
-        <Route path="/home" element={<Home />} />
-        <Route path="/galeria" element={<Galeria />} />
-        <Route path="/experiencias" element={<Experiencias />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/gallery" element={<Gallery />} />
         <Route path="/paquetes" element={<Paquetes />} />
-        <Route path="/sobremi" element={<SobreMi />} />
-        <Route path="/preguntasfrecuentes" element={<PreguntasFrecuentes />} />
-
+        {/* <Route path="/login" element={<Login />} />
+        <Route path="/registro" element={<Registro />} /> */}
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

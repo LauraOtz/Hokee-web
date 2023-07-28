@@ -1,12 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Josefin+Sans:wght@500&display=swap");
 .contact {
-  /* background-color: rgb(237, 237, 237); */
-
   background-size: 100% !important;
   width: 100% !important;
-  box-shadow: 4px 4px 48px 14px rgba(99, 185, 146, 0.91) !important;
-  -webkit-box-shadow: 4px 4px 48px 14px rgba(99, 185, 146, 0.91) !important;
-  -moz-box-shadow: 4px 4px 48px 14px rgba(99, 185, 146, 0.91) !important;
-  
+  box-shadow: 1px 3px 87px -21px rgba(0, 0, 0, 0.65);
+  -webkit-box-shadow: 1px 3px 87px -21px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: 1px 3px 87px -21px rgba(0, 0, 0, 0.65);
 }
 .headC {
   background-color: rgb(99, 185, 146);
@@ -15,6 +14,7 @@
   -webkit-box-shadow: 3px 3px 5px 9px rgba(194, 194, 194, 0.79);
   -moz-box-shadow: 3px 3px 5px 9px rgba(194, 194, 194, 0.79);
   box-shadow: 3px 3px 5px 9px rgba(194, 194, 194, 0.79);
+  font-family: "Dancing Script", cursive;
 }
 .effect-1 {
   border: 0;
@@ -38,39 +38,43 @@
   left: 0;
 }
 
-.btn1 {
+.btnH {
   background: rgb(99, 185, 146);
   color: aliceblue;
   outline: none;
   border: none;
   border-radius: 5px;
-  height: 20px;
+  height: 40px;
   width: 100px;
-  
 }
-.btn1:hover {
-  -webkit-box-shadow: 3px 3px 5px 9px rgba(194, 194, 194, 0.79);
-  -moz-box-shadow: 3px 3px 5px 9px rgba(194, 194, 194, 0.79);
-  box-shadow: 3px 3px 5px 9px rgba(194, 194, 194, 0.79);
+.btnH:hover {
+  box-shadow: 1px 3px 87px -21px rgba(0, 0, 0, 0.65);
+  -webkit-box-shadow: 1px 3px 87px -21px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: 1px 3px 87px -21px rgba(0, 0, 0, 0.65);
+  background-color: rgb(253, 181, 99) !important;
 }
-/* probar este codigo descomentarlo y ver que pasa en la parte responsive */
 
 .contact {
-display: flex;
-justify-content: center;
-height: 500px;
-position: relative;
-width: 60% !important; 
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  position: relative;
+  width: 60% !important;
 }
 
-.rowcontact{
-  position:absolute !important;
+.rowcontact {
+  position: absolute !important;
 }
 
-.rowcontact{
+.rowcontact {
   width: 90%;
-  
-} 
-div.card{
+}
+div.card {
   height: 100% !important;
+}
+.text-c {
+  font-family: "Josefin Sans", sans-serif;
+}
+.cardC {
+  padding: 0px !important ;
 }

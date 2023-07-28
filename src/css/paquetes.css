@@ -1,11 +1,149 @@
-.tituloPaq{
-    margin: 4%;
-    margin-top: 5%;
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Josefin+Sans:wght@500&display=swap");
+
+.tituloPaq {
+  font-family: "Dancing Script", cursive !important;
+  font-size: 30px;
 }
-.textoPaq{
-    margin: 4%;  
-    margin-top: 15%;
+.tituloPaq2 {
+  font-family: "Josefin Sans", sans-serif;
+  padding: 2px;
 }
-.imgPaquete{
-    margin: 10%;
+
+.textoPaq {
+  margin: 2%;
+  margin-top: 5%;
+}
+.textLinfo {
+  font-size: 10px;
+}
+.imgPaquete {
+  margin: 5%;
+}
+.imgPaq {
+  height: 100% !important;
+  background-size: cover;
+
+  object-fit: cover;
+}
+.contPaq {
+  width: 100vw;
+
+  font-family: "Josefin Sans", sans-serif;
+}
+.rowPaq {
+  background-color: #2e2e2e;
+}
+
+.contPaq {
+  display: flex;
+  justify-content: space-between;
+  height: 750px;
+  width: 100vw;
+  position: relative;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none !important;
+  color: azure !important;
+}
+
+.btn.btn2Paq {
+  background-color: transparent;
+  color: #fff;
+  border: solid 2px #fff;
+  outline: none;
+  transition: background-color 0.1s linear;
+  padding: auto;
+  border-radius: 50px;
+  height: 30px;
+  width: 120px;
+  font-size: 10px;
+
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 3%;
+}
+.btn.btn2Paq:hover {
+  box-shadow: 0px 3px 35px -3px rgba(194, 194, 194, 0.95);
+  -webkit-box-shadow: 0px 3px 35px -3px rgba(194, 194, 194, 0.95);
+  -moz-box-shadow: 0px 3px 35px -3px rgba(194, 194, 194, 0.95);
+}
+ul {
+  display: inline-block;
+}
+
+.textLi {
+  text-align: start;
+}
+.logoH {
+  padding-bottom: 5%;
+}
+.backpaq {
+  background-color: #d6d6d632;
+}
+
+/* parallax------------------------------------------ */
+
+.btnPa:hover {
+  color: #ffffff;
+  background: #4e4f50;
+  transition: 0.3s;
+}
+.text-parall {
+  font-family: "Dancing Script", cursive;
+  color: black;
+}
+.btn-parall {
+  font-family: "Josefin Sans", sans-serif !important;
+  text-align: center !important;
+}
+.btn-parall1 {
+  font-family: "Josefin Sans", sans-serif;
+  color: rgb(23, 23, 23);
+}
+
+/* --------------------------boton wh ---------- */
+.whatsappP {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 120px;
+  right: 50px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 150;
+}
+
+.whatsapp-iconP {
+  margin-top: 13px;
+  z-index: 333;
+}
+/* ------------------cards----------------- */
+.card-datosInfo {
+  height: 265px;
+  background-color: #2e2e2e !important;
+  color: #e7e7e7;
+}
+
+.card-datosP .card-subtitle {
+  font-size: 30px;
+}
+.iconP {
+  color: rgba(99, 185, 146, 0.91);
+}
+.tituloPres {
+  font-family: "Dancing Script", cursive;
+  font-size: 20px;
+}
+.tituloPres2 {
+  font-family: "Josefin Sans", sans-serif;
+}
+.tituloPreg {
+  font-family: "Josefin Sans", sans-serif;
 }

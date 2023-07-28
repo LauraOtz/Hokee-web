@@ -1,16 +1,13 @@
-body{
-background-color: black;
+body {
+  background-color: black;
 }
 .login {
-
- 
   background-size: 100% !important;
   width: 90vw !important;
 
   box-shadow: 4px 4px 48px 14px rgba(99, 185, 146, 0.91) !important;
   -webkit-box-shadow: 4px 4px 48px 14px rgba(99, 185, 146, 0.91) !important;
   -moz-box-shadow: 4px 4px 48px 14px rgba(99, 185, 146, 0.91) !important;
-  
 }
 .headC {
   background-color: rgb(99, 185, 146);
@@ -56,17 +53,17 @@ background-color: black;
   -moz-box-shadow: 3px 3px 5px 9px rgba(194, 194, 194, 0.79);
   box-shadow: 3px 3px 5px 9px rgba(194, 194, 194, 0.79);
 }
-.textCo{
+.textCo {
   justify-content: center;
 }
 /* -------------------------registro */
-.registro{
+.registro {
   margin-right: 2px !important;
- margin-left: 2px !important;
-    max-width: 600px !important;
-   min-width: 200px;
+  margin-left: 2px !important;
+  max-width: 600px !important;
+  min-width: 200px;
 }
-.logohokke{
+.logohokke {
   width: 50px;
   border-radius: 20%;
   padding-right: 5px;

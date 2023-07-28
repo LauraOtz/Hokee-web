@@ -1,7 +1,10 @@
 import React from "react";
-import otto1 from "../assets/otto1.jpg";
-import blanca3 from "../assets/blanca3.jpg";
-import slider6 from "../assets/slider6.jpg";
+import olafR from "../assets/olafR.jpg";
+import blancaR1 from "../assets/blancaR1.jpg";
+import simon1 from "../assets/simon1.jpg";
+import Flip from "react-reveal/Flip";
+import LightSpeed from "react-reveal/LightSpeed";
+import Bounce from "react-reveal/Bounce";
 
 import slider from "../css/slider.css";
 
@@ -12,75 +15,72 @@ const Slider = () => {
       className="carousel slide"
       data-bs-ride="carousel"
     >
-   
-      <div className="carousel-inner">
+      <div className="carousel-inner slide1" id="slider">
         <div className="carousel-item active" data-bs-interval="3000">
-          <img src={otto1} className="d-block w-100" alt="..." />
-          <div className="carousel-caption carru">
+          <img src={olafR} className="d-block w-100" alt="..." />
+          <div className="carousel-caption carru ">
+            <LightSpeed>
+              <div>
+                <h1 className="titulo h1Slider ">
+                  <strong>FOTOGRAFIA DE MASCOTAS</strong>
+                </h1>
+              </div>
+            </LightSpeed>
             <div>
-              <h2 className="titulo h2Slider">
-                <strong>
-                FOTOGRAFIA DE MASCOTAS
-                </strong>
-               </h2>
-            </div>
-            <div>
-              <button className="btn btnS btn2">
-                <h4 className="titulo2">Reserva tu sesión</h4>
-              </button>
-            </div>
-            <div>
-              <button className="btn btn3">
-                <h6>Quiero saber más</h6>
-              </button>
+              <Bounce left>
+                <button className="btn btnS btn3 ">
+                  <a href="/gallery">
+                    <h6> Visitar galería</h6>
+                  </a>
+                </button>
+              </Bounce>
             </div>
           </div>
         </div>
 
         <div className="carousel-item" data-bs-interval="3000">
-          <img src={blanca3} className="d-block w-100" alt="..." />
+          <img src={blancaR1} className="d-block w-100" alt="..." />
           <div className="carousel-caption d-none d-md-block carru">
+            <LightSpeed>
+              <div>
+                <h1 className="titulo h1Slider">
+                  <strong>FOTOGRAFIA DE MASCOTAS</strong>
+                </h1>
+              </div>
+            </LightSpeed>
             <div>
-              <h2 className="titulo h2Slider">
-                <strong>FOTOGRAFIA DE MASCOTAS</strong>
-                </h2>
-            </div>
-            <div>
-              <button className="btn btn2 btnS ">
-                <h4 className="titulo2">Reserva tu sesión</h4>
-              </button>
-            </div>
-            <div>
-              <button className="btn btn3">
-                <h6>Quiero saber más</h6>
-              </button>
+              <Bounce left>
+                <button className="btn btnS btn3 ">
+                  <a href="#preguntas">
+                    <h6>Quiero saber más</h6>
+                  </a>
+                </button>
+              </Bounce>
             </div>
           </div>
         </div>
 
-        <div className="carousel-item" data-bs-interval="3000">
-          <img src={slider6} className="d-block w-100" alt="..." />
+        <div className="carousel-item " data-bs-interval="3000">
+          <img src={simon1} className="d-block w-100" alt="..." />
           <div className="carousel-caption d-none d-md-block  carru ">
+            <LightSpeed>
+              <div className="">
+                <h1 className="titulo h1Slider">
+                  <strong>FOTOGRAFIA DE MASCOTAS</strong>
+                </h1>
+              </div>
+            </LightSpeed>
             <div>
-              <h2 className="titulo h2Slider">
-                <strong>
-                FOTOGRAFIA DE MASCOTAS
-                </strong>
-                </h2>
-            </div>
-            <div>
-              <button className="btn btn2 btnS">
-                <h4 className="titulo2">Reserva tu sesión</h4>
-              </button>
-            </div>
-            <div>
-              <button className="btn btn3">
-                <h6>Quiero saber más</h6>
-              </button>
+              <Bounce left>
+                <button className="btn btn2 btnS">
+                  <a href="#contacto">
+                    <h6 className="titulo2">Reserva tu sesión</h6>
+                  </a>
+                </button>
+              </Bounce>
             </div>
           </div>
         </div>
-    
       </div>
       <button
         className="carousel-control-prev"

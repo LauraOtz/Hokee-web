@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { useNavigate} from "react-router-dom";
-import { postAuth} from "../helpers/fetchApp";
+import { useNavigate } from "react-router-dom";
+import { postAuth } from "../helpers/fetchApp";
 import login from "../css/login.css";
-import hokeelog from "../assets/hokeelog.jpg"
+import iconoHokee from "../assets/iconoHokee.png"
 
 const Login = () => {
   const navigate = useNavigate();
@@ -37,8 +37,9 @@ const Login = () => {
                 <div className="colC col-lg-12">
                   <div className="headC text-center text-white py-3">
                     <h3>
-                    <img src={hokeelog} alt="" className="logohokke" />
-                      Iniciar sesión</h3>
+                      <img src={iconoHokee} alt="" className="logohokke" />
+                      Iniciar sesión
+                    </h3>
                   </div>
                 </div>
               </div>
@@ -93,25 +94,23 @@ const Login = () => {
                   </div>
                 </div>
                 <div className=" col-lg-12">
-                <button className=" btn1 btn-lg" onClick={validarDatos}>
-                Iniciar Sesion
-              </button>
-                  
+                  <button className=" btn1 btn-lg" onClick={validarDatos}>
+                    Iniciar Sesion
+                  </button>
                 </div>
               </div>
               {message && (
-            <div
-              className={
-                message?.ok
-                  ? "alert alert-success mt-3"
-                  : "alert alert-danger mt-3"
-              }
-              role="alert"
-            >
-              {message.msg}
-            </div>
-          )}
-          
+                <div
+                  className={
+                    message?.ok
+                      ? "alert alert-success mt-3"
+                      : "alert alert-danger mt-3"
+                  }
+                  role="alert"
+                >
+                  {message.msg}
+                </div>
+              )}
             </div>
           </div>
         </div>

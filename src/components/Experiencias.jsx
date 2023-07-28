@@ -1,25 +1,32 @@
 import React from "react";
 import experiencias from "../css/experiencias.css";
-import gini from "../assets/gini.jpg";
+import olie from "../assets/olie.jpg";
 import huma1 from "../assets/huma1.jpg";
 import otti from "../assets/otti.jpg";
-
-
+import LightSpeed from "react-reveal/LightSpeed";
 
 const PreguntasFrecuentes = () => {
   return (
     <>
-      <h1 className="Titulop" id="Experiencias"> Experiencias (frase emotiva)</h1>
-
+      <LightSpeed>
+        <h1 className="Titulop pt-5" id="Experiencias">
+          <b> Palabras de algunos clientes</b>
+        </h1>
+      </LightSpeed>
+      <LightSpeed>
+        <h2 className="Titulop pb-5">
+          <b>Gracias! Siempre gracias!</b>{" "}
+        </h2>
+      </LightSpeed>
       <div className="cardE mb-3">
         <div className="row g-0">
-          <div className="col-md-4">
-            <img src={gini} className="img-fluid rounded-start" alt="..." />
+          <div className="col-md-4 pt-3">
+            <img src={olie} className="img-fluid  imgExp " alt="..." />
           </div>
           <div className="col-md-8">
             <div className="card-body cardEx">
               <h5 className="card-title mb-3 ">
-                <strong> Gini Rohmer Litzmann</strong>
+                <b> Gini Rohmer Litzmann</b>
               </h5>
               <p className="card-text textE">
                 “Tremendas las fotos!!!! Estoy enamorada!!! Gracias! Hace años
@@ -37,18 +44,18 @@ const PreguntasFrecuentes = () => {
 
       <div className="cardE mb-3">
         <div className="row g-0">
-          <div className="col-md-4">
-            <img src={huma1} className="img-fluid rounded-start" alt="..." />
+          <div className="col-md-4 pt-3">
+            <img src={huma1} className="img-fluid imgExp" alt="..." />
           </div>
           <div className="col-md-8">
             <div className="card-body cardEx ">
               <h5 className="card-title mb-3">
-                <strong>Irene y Humahuaca</strong>
+                <b>Irene y Humahuaca</b>
               </h5>
               <p className="card-text textE ">
                 “Ayyyy Laurita muero de amor con cada una de las fotos! No puedo
-                sacarme la sonrisa de la boca! Te juro que captaste a la hum que
-                es ella en acda una de las fotos! Y es para siempre! Ayy me voy
+                sacarme la sonrisa de la boca! Te juro que captaste a la Huma
+                que es ella en cada una de las fotos! Y es para siempre! Me voy
                 a abrazarla!!! Bello bello bello todo!!!
               </p>
               <span className="text-dark">
@@ -61,17 +68,17 @@ const PreguntasFrecuentes = () => {
       <hr className="hrp" />
       <div className="cardE mb-3">
         <div className="row g-0">
-          <div className="col-md-4">
-            <img src={otti} className="img-fluid rounded-start" alt="..." />
+          <div className="col-md-4 pt-3">
+            <img src={otti} className="img-fluid imgExp" alt="..." />
           </div>
           <div className="col-md-8">
-            <div className="card-body cardEx">
+            <div className="card-body cardEx pb-5">
               <h5 className="card-title mb-3 ">
-                <strong> Silvia y Otti</strong>
+                <b> Silvia y Otti</b>
               </h5>
               <p className="card-text textE ">
-                “Ay Lau recién termino de trabajar y estoy viendo las fotos,
-                unas ganas de llorar. Sus ojos en todas las fotos! lo amo tanto!
+                “Lau recién termino de trabajar y estoy viendo las fotos, unas
+                ganas de llorar. Sus ojos en todas las fotos! lo amo tanto!
                 Gracias!!”
               </p>
               <span className="text-dark">
@@ -81,7 +88,7 @@ const PreguntasFrecuentes = () => {
           </div>
         </div>
       </div>
-      <hr className="hrp" />
+      {/* <hr className="hrp" /> */}
     </>
   );
 };

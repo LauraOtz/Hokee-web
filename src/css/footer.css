@@ -1,77 +1,65 @@
-/*******************************/
-/********* Footer 4 CSS ********/
-/*******************************/
-
-
-
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Josefin+Sans:wght@500&display=swap");
 
 .footer {
- 
- width: 100vw !important;
+  width: 100vw !important;
   position: relative;
 
   padding-top: 25px;
   background: #121518;
   color: #999999;
 }
-.conteinerFooter{
-
-  justify-content:center !important;
-  
+.conteinerFooter {
+  justify-content: center !important;
 }
 
-.imgLogo{
+.imgLogo {
   width: 30% !important;
   padding: 2%;
-   }
-   .imgCuadro{
-    width: 100%;
-    border-radius: 5px;
-   }
-
-
-   .footer .footer-social:hover {
-    color: #ffffff;
-    background: #4e4f50;
-    border-radius: 100%;
-    transition: 0.3s;
-    
-  }
-  .footer .imgCuadro:hover {
-    color: #ffffff;
-    background: #4e4f50;
-    border-radius: 100%;
-    
-    transition: 0.3s;
-    
-  }
-  .footer .footer-project a {
-    padding: 8px 8px 8px 0;
-    display: block;
-    width: 33.33%;
-    
-   
-   
-    float: left;
+}
+.imgCuadro {
+  width: 100%;
+  border-radius: 5px;
 }
 
+.footer .footer-social:hover {
+  color: #ffffff;
+  background: #4e4f50;
+  border-radius: 100%;
+  transition: 0.3s;
+}
+.footer .imgCuadro:hover {
+  color: #ffffff;
+  background: #4e4f50;
+  border-radius: 100%;
 
-  
+  transition: 0.3s;
+}
+.footer .footer-project a {
+  padding: 8px 8px 8px 0;
+  display: block;
+  width: 33.33%;
+
+  float: left;
+}
 
 .footer .footer-text {
- padding-bottom:5px;
- padding-top: 10px;
+  padding-bottom: 5px;
+  padding-top: 10px;
 
-  
   text-align: center;
   color: #999999;
 }
 
-
-
-.footer{
+.footer {
   display: flex;
   position: relative;
-flex-direction: column;
-width: 100% !important;
+  flex-direction: column;
+  width: 100% !important;
+}
+.text-f {
+  font-family: "Dancing Script", cursive;
+}
+.footer-text {
+  font-family: "Josefin Sans", sans-serif;
 }

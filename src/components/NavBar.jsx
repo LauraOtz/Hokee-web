@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
-import logoblanco from "../assets/logoblanco.png";
+import logoH from "../assets/logoH.png";
 import navBar from "../css/navBar.css";
 import { NavLink } from "react-router-dom";
 
@@ -34,7 +34,7 @@ const NavBar = () => {
         <a className="navbar-brand " href="/">
           <img
             className="imgNav "
-            src={logoblanco}
+            src={logoH}
             alt="Bootstrap"
             height="70"
           />

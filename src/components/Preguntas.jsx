@@ -1,14 +1,14 @@
 import React from "react";
-import LightSpeed from "react-reveal/LightSpeed";
+import { JackInTheBox } from "react-awesome-reveal";
 import preguntas from "../css/preguntas.css";
 
 const Preguntas = () => {
   return (
     <>
       <div className="container my-5" id="preguntas">
-        <LightSpeed>
+        <JackInTheBox>
           <h2 className="tituloPreg pb-2">Resolvamos algunas dudas</h2>
-        </LightSpeed>
+        </JackInTheBox>
         <div className="row ">
           <div className="col-12 col-md ">
             <div className="card card-datosP  text-center">

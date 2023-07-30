@@ -1,6 +1,6 @@
 import React from "react";
 import parallax2 from "../css/parallax2.css"
-import Bounce from 'react-reveal/Bounce';
+import { Bounce } from "react-awesome-reveal";
 
 
 const Parallax2 = () => {

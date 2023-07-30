@@ -1,7 +1,7 @@
 import React from "react";
 import Gallery2 from "./Gallery2";
 import hokeeLogo from "../assets/hokeeLogo.png";
-import Bounce from "react-reveal/Bounce";
+import {Bounce  } from "react-awesome-reveal";
 
 const Gallery = () => {
   return (

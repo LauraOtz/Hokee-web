@@ -3,21 +3,21 @@ import experiencias from "../css/experiencias.css";
 import olie from "../assets/olie.jpg";
 import huma1 from "../assets/huma1.jpg";
 import otti from "../assets/otti.jpg";
-import LightSpeed from "react-reveal/LightSpeed";
+import { Bounce } from "react-awesome-reveal";
 
 const PreguntasFrecuentes = () => {
   return (
     <>
-      <LightSpeed>
+      < Bounce>
         <h1 className="Titulop pt-5" id="Experiencias">
           <b> Palabras de algunos clientes</b>
         </h1>
-      </LightSpeed>
-      <LightSpeed>
+      </ Bounce>
+      < Bounce>
         <h2 className="Titulop pb-5">
           <b>Gracias! Siempre gracias!</b>{" "}
         </h2>
-      </LightSpeed>
+      </ Bounce>
       <div className="cardE mb-3">
         <div className="row g-0">
           <div className="col-md-4 pt-3">

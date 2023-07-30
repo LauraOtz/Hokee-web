@@ -1,17 +1,17 @@
 import React from "react";
 import yop from "../assets/yop.jpg";
 import presentacion from "../css/presentacion.css";
-import LightSpeed from "react-reveal/LightSpeed";
+import { Bounce } from "react-awesome-reveal";
 
 const Presentacion = () => {
   return (
     <>
       <div className="cardE mb-3 " id="presentacion">
-        <LightSpeed>
+        <Bounce>
           <h5 className="tituloPres  pt-5">
             ¿Estás listo para tu fantástica sesión de fotos?
           </h5>
-        </LightSpeed>
+        </Bounce>
         <div className="row g-0">
           <div className="col-md-4 imgPres">
             <img src={yop} className="img-fluid  imgExp " alt="..." />

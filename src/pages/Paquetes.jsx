@@ -3,7 +3,7 @@ import ciro from "../assets/ciro.jpg";
 import paquetes from "../css/paquetes.css";
 import Footer from "../components/Footer";
 import logoblanco from "../assets/logoblanco.png";
-import Zoom from "react-reveal/Zoom";
+import {Bounce  } from "react-awesome-reveal";
 
 const Paquetes = () => {
   return (
@@ -27,12 +27,12 @@ const Paquetes = () => {
                   <li className="text-star">
                     Participación sólo de una mascota
                   </li>
-                  <li>10 fotografías en alta calidad</li>
+                  <li>8 fotografías en alta calidad</li>
                   <li>
                     Locación a pactar en estudio, a domicilio o exteriores.{" "}
                   </li>
                 </ul>
-                <p>precio</p>
+                <p>50€</p>
               </div>
 
               <div class="col-lg-6 .col-md-6 .col-sm-12 ">
@@ -42,12 +42,12 @@ const Paquetes = () => {
                     Participación de una mascota con su grupo familiar (hasta 4
                     personas)
                   </li>
-                  <li>30 fotografías en alta calidad</li>
+                  <li>20 fotografías en alta calidad</li>
                   <li>
                     Locación a pactar en estudio, a domicilio o exteriores.{" "}
                   </li>
                 </ul>
-                <p>precio</p>
+                <p>90€</p>
               </div>
             </div>
 
@@ -55,14 +55,14 @@ const Paquetes = () => {
               <div className="row justify-content-center logoH ">
                 <div className="col-6 pt-0">
                   <a className="navbar-brand nav-link  " href="/">
-                    <Zoom>
+                    <Bounce >
                       <img
                         className="imgNav "
                         src={logoblanco}
                         alt="Bootstrap"
                         height="50"
                       />
-                    </Zoom>
+                    </Bounce >
                   </a>
                 </div>
               </div>
@@ -112,6 +112,9 @@ const Paquetes = () => {
                         No se entrega ninguna fotografía sin editar, ni se
                         modifica luego la edición. Para ver mi estilo puedes
                         revisar la galeria de esta pagina o mi Instagram.
+                      </li>
+                      <li>
+                        Pueden aplicarse cargos adicionales en sesiones en exterior o domiciliarias.
                       </li>
                     </ul>
                   </div>

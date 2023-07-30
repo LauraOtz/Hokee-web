@@ -1,6 +1,6 @@
 import React from "react";
 import experiencias from "../css/experiencias.css";
-import olie from "../assets/olie.jpg";
+import olie1 from "../assets/olie1.jpg";
 import huma1 from "../assets/huma1.jpg";
 import otti from "../assets/otti.jpg";
 import { Bounce } from "react-awesome-reveal";
@@ -21,7 +21,7 @@ const PreguntasFrecuentes = () => {
       <div className="cardE mb-3">
         <div className="row g-0">
           <div className="col-md-4 pt-3">
-            <img src={olie} className="img-fluid  imgExp " alt="..." />
+            <img src={olie1} className="img-fluid  imgExp " alt="..." />
           </div>
           <div className="col-md-8">
             <div className="card-body cardEx">

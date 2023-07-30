@@ -2,7 +2,7 @@ import React from "react";
 import ciro from "../assets/ciro.jpg";
 import paquetes from "../css/paquetes.css";
 import Footer from "../components/Footer";
-import logoblanco from "../assets/logoblanco.png";
+import logoH from "../assets/logoH.png";
 import {Bounce  } from "react-awesome-reveal";
 
 const Paquetes = () => {
@@ -58,7 +58,7 @@ const Paquetes = () => {
                     <Bounce >
                       <img
                         className="imgNav "
-                        src={logoblanco}
+                        src={logoH}
                         alt="Bootstrap"
                         height="50"
                       />

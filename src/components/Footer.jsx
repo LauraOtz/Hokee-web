@@ -1,5 +1,5 @@
 import React from "react";
-import logoi from "../assets/logoi.png";
+import {logoi} from "../assets/logoi.png";
 import uno from "../assets/uno.jpg";
 import dos from "../assets/dos.jpg";
 import tres from "../assets/tres.jpg";

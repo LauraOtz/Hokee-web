@@ -1,5 +1,5 @@
 import React from "react";
-import {logoi} from "../assets/logoi.png";
+import logoFo from "../assets/logoFo.png";
 import uno from "../assets/uno.jpg";
 import dos from "../assets/dos.jpg";
 import tres from "../assets/tres.jpg";
@@ -23,7 +23,7 @@ const Footer = () => {
                 >
                   {" "}
                   <img
-                    src={logoi}
+                    src={logoFo}
                     className="imgLogo footer-social"
                     alt="..."
                   />

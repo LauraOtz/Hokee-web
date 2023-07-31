@@ -36,9 +36,16 @@ const Registro = () => {
           password: "",
           role: "USER-ROLE",
         });
-        setTimeout(() => {
-          setMessage([]);
-        }, 2000);
+        try{
+
+          setTimeout(() => {
+            setMessage([]);
+          }, 2000);
+        }
+        catch (err){
+          console.log("usario no registrado")
+        }
+        console.log("Usuario registrado")
       }
     });
   };

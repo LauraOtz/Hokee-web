@@ -123,7 +123,7 @@ const Registro = () => {
                       value={formValues.password}
                       onChange={(e) => {
                         handleChange(e);
-                        checkValidation(e);
+                      
                       }}
                       className="effect-1"
                       placeholder="Ingrese su contraseña"
@@ -143,7 +143,7 @@ const Registro = () => {
                       value={formValues.confirmPassword}
                       onChange={(e) => {
                         handleChange(e);
-                        checkValidation(e);
+                       
                       }}
                       className="effect-1 "
                       placeholder="Repita su contraseña"

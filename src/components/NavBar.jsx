@@ -58,94 +58,96 @@ const NavBar = () => {
         >
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0 itemNav">
             <li className="nav-item">
-              <Link
-                activeClass="active"
-                to="slider"
-                spy={true}
-                smooth={true}
+              <a
+                // activeClass="active"
+                href="#slider"
+                // spy={value.toString()}
+                // smooth={true}
                 offset={-50}
                 duration={500}
                 className="nav-link"
               >
                 Inicio
-              </Link>
+              </a>
             </li>
             <li className="nav-item">
-              <Link
-                activeClass="active"
-                to="presentacion"
-                spy={true}
-                smooth={true}
+              <a
+                // activeClass="active"
+                href="#presentacion"
+                // spy={value.toString()}
+                // smooth={true}
                 offset={-50}
                 duration={500}
                 className="nav-link"
               >
                 Conoceme
-              </Link>
+              </a>
             </li>
 
             <li className="nav-item">
-              <Link
-                activeClass="active"
-                to="Experiencias"
-                spy={true}
-                smooth={true}
+              <a
+                // activeClass="active"
+                href="#Experiencias"
+                // spy={value.toString()}
+                // smooth={true}
                 offset={-30}
                 duration={500}
                 className="nav-link"
               >
                 Experiencias
-              </Link>
+              </a>
             </li>
             <li className="nav-item">
-              <Link
-                activeClass="active"
-                to="preguntas"
-                spy={true}
-                smooth={true}
+              <a
+                // activeClass="active"
+                href="#preguntas"
+                // spy={value.toString()}
+                // smooth={true}
                 offset={-100}
                 duration={500}
                 className="nav-link"
               >
                 Preguntas
-              </Link>
+              </a>
             </li>
             <li className="nav-item">
-              <Link
-                activeClass="active"
-                to="contacto"
-                spy={true}
-                smooth={true}
+              <a
+                // activeClass="active"
+                href="#contacto"
+                // spy={value.toString()}
+                // smooth={true}
                 offset={-100}
                 duration={500}
                 className="nav-link"
               >
                 Contacto
-              </Link>
+              </a>
             </li>
             <li className="nav-item">
-              <NavLink
+              <a
                 to="/gallery"
-                spy={true}
-                smooth={true}
+                // spy={value.toString()}
+                // smooth={true}
                 offset={50}
                 duration={500}
                 className="nav-link"
               >
                 Galería
-              </NavLink>
+              </a>
             </li>
             <li className="nav-item">
-              <NavLink
-                to="paquetes"
-                spy={true}
-                smooth={true}
+              <a
+                href="/paquetes"
+                className="nav-link"
+                // spy={value.toString()}
+                // smooth={true}
                 offset={50}
                 duration={500}
-                className="nav-link"
+                
               >
                 Paquetes
-              </NavLink>
+              </a>
+              <a href=""></a>
             </li>
           </ul>
         </div>

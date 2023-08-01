@@ -16,12 +16,13 @@ const RoutesDos = () => {
         <Route path="/" element={<Home />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/paquetes" element={<Paquetes />} />
-        {/* <Route path="/login" element={<Login />} />
-        <Route path="/registro" element={<Registro />} /> */}
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>
   );
 };
+
+{/* <Route path="/login" element={<Login />} />
+<Route path="/registro" element={<Registro />} /> */}
 
 export default RoutesDos;

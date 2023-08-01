@@ -1,8 +1,8 @@
 import React from "react";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
 import logoH from "../assets/logoH.png";
 import navBar from "../css/navBar.css";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   const body = document.body;

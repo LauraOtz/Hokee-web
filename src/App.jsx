@@ -5,7 +5,7 @@ import Login from "./pages/Login";
 import Registro from "./pages/Registro";
 import Gallery from "./pages/Gallery";
 import Paquetes from "./pages/Paquetes";
-import ProtectedRoutes from "./routes/ProtectedRoutes";
+// import ProtectedRoutes from "./routes/ProtectedRoutes";
 
 function App() {
   return (
@@ -14,9 +14,9 @@ function App() {
         <Route
           path="/*"
           element={
-            <ProtectedRoutes>
+       
               <RoutesDos />
-            </ProtectedRoutes>
+            
           }
         />
 

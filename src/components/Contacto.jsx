@@ -66,8 +66,8 @@ function ContactComponent(props) {
                       id="username"
                       required
                       pattern="[a-zA-Z0-9]+"
-                      minlength="2"
-                      maxlength="20"
+                      minLength="2"
+                      maxLength="20"
                     />
 
                     <span className="Focus-border"></span>
@@ -81,7 +81,7 @@ function ContactComponent(props) {
                       className="effect-1 form-control"
                       placeholder="Correo electrónico"
                       pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
-                      maxlength="30"
+                      maxLength="30"
                       required
                     />
 
@@ -96,9 +96,9 @@ function ContactComponent(props) {
                       className="effect-1 "
                       placeholder="Mensaje"
                       required
-                      maxlength="400"
-                      role
-                      minlength="2"
+                      maxLength="400"
+                    
+                      minLength="2"
                     />
                     <span className="Focus-border"></span>
                   </div>

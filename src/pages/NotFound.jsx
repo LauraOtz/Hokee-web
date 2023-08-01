@@ -8,8 +8,8 @@ const NotFound = () => {
     <div className="notF fixed-top">
       <img src={cuca404} className="card-img " alt="..." />
       <div className="card-img-overlay ">
-        <div class="container text-white   ">
-          <div class="row justify-content-center pb-2">
+        <div className="container text-white   ">
+          <div className="row justify-content-center pb-2">
             <div className="col-6 ">
               <h2 className=" text-white text4 pt-3">Oops</h2>
               <p className="  text-white pt-3 text404 ">

@@ -64,7 +64,7 @@ const Home = () => {
             target="_blank"
           >
             {" "}
-            <i class="fa fa-whatsapp whatsapp-icon"></i>
+            <i className="fa fa-whatsapp whatsapp-icon"></i>
           </a>
         </div>
       </section>

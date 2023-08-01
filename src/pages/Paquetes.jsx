@@ -12,16 +12,16 @@ const Paquetes = () => {
       <div className="contPaq notF">
         <img src={ciro} className="card-img  imgPaq" alt="..." />
         <div className="card-img-overlay ">
-          <div class="container card-text text-white textoPaq position-absolute backpaq ">
-            <div class="row justify-content-center pb-2">
+          <div className="container card-text text-white textoPaq position-absolute backpaq ">
+            <div className="row justify-content-center pb-2">
               <div className="col-6">
                 <h2 className="card-title tituloPaq text-white pt-3">
                   Quiero mi sesión!
                 </h2>
               </div>
             </div>
-            <div class="row justify-content-center logoPaq ">
-              <div class="col-lg-6  .col-md-6 .col-sm-12  ">
+            <div className="row justify-content-center logoPaq ">
+              <div className="col-lg-6  .col-md-6 .col-sm-12  ">
                 <h2>Corazón de melón</h2>
                 <ul className="textLi">
                   <li className="text-star">
@@ -35,7 +35,7 @@ const Paquetes = () => {
                 <p>50€</p>
               </div>
 
-              <div class="col-lg-6 .col-md-6 .col-sm-12 ">
+              <div className="col-lg-6 .col-md-6 .col-sm-12 ">
                 <h2>Corazón de chocolate</h2>
                 <ul className="textLi">
                   <li>
@@ -51,7 +51,7 @@ const Paquetes = () => {
               </div>
             </div>
 
-            <div class="row justify-content-center ">
+            <div className="row justify-content-center ">
               <div className="row justify-content-center logoH ">
                 <div className="col-6 pt-0">
                   <a className="navbar-brand nav-link  " href="/">
@@ -71,7 +71,7 @@ const Paquetes = () => {
         </div>
       </div>
       <div>
-        <div class="row rowPaq">
+        <div className="row rowPaq">
           <div className="col-12 ">
             <h2 className=" tituloPaq2  pt-4 text-white">
               Ten en cuenta esta info
@@ -141,7 +141,7 @@ const Paquetes = () => {
             target="_blank"
           >
             {" "}
-            <i class="fa fa-whatsapp whatsapp-iconP"></i>
+            <i className="fa fa-whatsapp whatsapp-iconP"></i>
           </a>
         </div>
       </section>

@@ -55,7 +55,7 @@ const Login = () => {
                       className="effect-1 "
                       placeholder="Ingrese su correo electrónico"
                       //pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
-                      maxlength="30"
+                      maxLength="30"
                       required
                     />
 
@@ -72,9 +72,9 @@ const Login = () => {
                       className="effect-1 "
                       placeholder="Ingrese su contraseña"
                       required
-                      maxlength="20"
+                      maxLength="20"
                       role
-                      minlength="6"
+                      minLength="6"
                     />
                     <span className="Focus-border"></span>;
                   </div>

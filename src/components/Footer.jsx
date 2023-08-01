@@ -11,7 +11,7 @@ import footer from "../css/footer.css";
 const Footer = () => {
   return (
     <>
-      <div class="footer">
+      <div className="footer">
         <div className="container  d-flex ">
           <div className="row conteinerFooter">
             <div className=" col-md-6 col-lg-3">
@@ -19,7 +19,7 @@ const Footer = () => {
                 <h2 className="pt-3 text-f">Sígueme </h2>
                 <a
                   href="https://www.instagram.com/hokee.fotografiademascotas/"
-                  Target="_blank"
+                  target="_blank"
                 >
                   {" "}
                   <img
@@ -30,41 +30,41 @@ const Footer = () => {
                 </a>
               </div>
             </div>
-            <div class="col-md-6 col-lg-3">
-              <div class="footer-project">
+            <div className="col-md-6 col-lg-3">
+              <div className="footer-project">
                 <a
                   href="https://www.instagram.com/hokee.fotografiademascotas/"
-                  Target="_blank"
+                  target="_blank"
                 >
                   <img src={uno} className="imgCuadro" alt="..." />
                 </a>
                 <a
                   href="https://www.instagram.com/hokee.fotografiademascotas/"
-                  Target="_blank"
+                  target="_blank"
                 >
                   <img src={dos} className="imgCuadro" alt="..." />
                 </a>
                 <a
                   href="https://www.instagram.com/hokee.fotografiademascotas/"
-                  Target="_blank"
+                  target="_blank"
                 >
                   <img src={tres} className="imgCuadro" alt="..." />
                 </a>
                 <a
                   href="https://www.instagram.com/hokee.fotografiademascotas/"
-                  Target="_blank"
+                  target="_blank"
                 >
                   <img src={cuatro} className="imgCuadro" alt="..." />
                 </a>
                 <a
                   href="https://www.instagram.com/hokee.fotografiademascotas/"
-                  Target="_blank"
+                  target="_blank"
                 >
                   <img src={cinco} className="imgCuadro" alt="..." />
                 </a>
                 <a
                   href="https://www.instagram.com/hokee.fotografiademascotas/"
-                  Target="_blank"
+                  target="_blank"
                 >
                   <img src={seis} className="imgCuadro" alt="..." />
                 </a>

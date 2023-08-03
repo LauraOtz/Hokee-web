@@ -14,12 +14,12 @@ const RoutesDos = () => {
       {/* <NavBar /> */}
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+        <Route path="/login" element={<Login />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/paquetes" element={<Paquetes />} />
-        <Route path="*" element={<NotFound />} />
-        <Route path="/login" element={<Login />} />
         <Route path="/registro" element={<Registro />} />
-      </Routes>
     </>
   );
 };

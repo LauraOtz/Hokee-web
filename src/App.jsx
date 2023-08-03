@@ -11,22 +11,13 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route
-          path="/*"
-          element={
-       
-              <RoutesDos />
-            
-          }
-        />
-
+        <Route path="/*" element={<RoutesDos />} />
         <Route path="/login" element={<Login />} />
         <Route path="/registro" element={<Registro />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/paquetes" element={<Paquetes />} />
       </Routes>
-      </BrowserRouter>
-      
+    </BrowserRouter>
   );
 }
 

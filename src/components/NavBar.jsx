@@ -125,7 +125,7 @@ const NavBar = () => {
             </li>
             <li className="nav-item">
               <a
-                to="/gallery"
+                href="/gallery"
                 // spy={value.toString()}
                 // smooth={true}
                 offset={50}

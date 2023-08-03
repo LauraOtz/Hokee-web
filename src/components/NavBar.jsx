@@ -147,6 +147,30 @@ const NavBar = () => {
                 Paquetes
               </NavLink>
             </li>
+            <li className="nav-item">
+              <NavLink
+                to="/login"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+                className="nav-link"
+              >
+                Iniciar sesión
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                to="/registro"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+                className="nav-link"
+              >
+                Registrarse
+              </NavLink>
+            </li>
           </ul>
         </div>
       </div>

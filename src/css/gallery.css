@@ -121,3 +121,7 @@ a.avolver:hover {
 .avolver {
   font-family: "Josefin Sans", sans-serif;
 }
+
+img {
+  pointer-events: none;
+}

@@ -1,8 +1,12 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { postUsuario } from "../helpers/fetchApp";
 import login from "../css/login.css";
-import iconoHokee from "../assets/iconoHokee.png"
+import iconoHokee from "../assets/iconoHokee.png";
 const Registro = () => {
+  const navigate = useNavigate();
+  const [visible, setVisible] = useState(true);
+
   const [formValues, setFormValues] = useState({
     nombre: "",
     email: "",
@@ -36,20 +40,22 @@ const Registro = () => {
           password: "",
           role: "USER-ROLE",
         });
-        alert("usuario registrado")
-        // try{
+        // alert("usuario registrado")
 
-        //   setTimeout(() => {
-        //     setMessage([]);
-        //   }, 2000);
-        // }
-        // catch (err){
-        //   console.log("usario no registrado")
-        // }
-        // console.log("Usuario registrado")
+        try {
+          setTimeout(() => {
+            setMessage([]);
+          }, 2000);
+        } catch (err) {
+          console.log("Error al registrar usuario");
+        }
+        console.log("Usuario registrado");
       }
+      navigate("/login");
     });
   };
+  // -------------------------------------------
+
   //se quiere lograr una funcion que compare las dos contraseñas (esto no funciona)- la conexion con la base de datos funciona perfectamemte.
   // function checkValidation(e) {
   //   setConfirmPassword(e.target.value);
@@ -86,7 +92,7 @@ const Registro = () => {
                       value={formValues.nombre}
                       onChange={handleChange}
                       className="effect-1  is-valid "
-                      placeholder="Ingrese su nombre"
+                      placeholder="Nombre y apellido"
                       id="username"
                       required
                       pattern="[a-zA-Z0-9]+"
@@ -106,7 +112,7 @@ const Registro = () => {
                       value={formValues.email}
                       onChange={handleChange}
                       className="effect-1 "
-                      placeholder="Ingrese su correo electrónico"
+                      placeholder="Correo electrónico"
                       pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
                       maxLength="30"
                       required
@@ -115,27 +121,38 @@ const Registro = () => {
                     <span className="Focus-border"></span>
                   </div>
                 </div>
-                <div className="form-row pt-2">
-                  <div className="col-lg-12">
-                    <input
-                      type="password"
-                      name="password"
-                      value={formValues.password}
-                      onChange={(e) => {
-                        handleChange(e);
-                      
-                      }}
-                      className="effect-1"
-                      placeholder="Ingrese su contraseña"
-                      required
-                      maxLength="20"
-                      role
-                      minLength="6"
-                    />
-                    <span className="Focus-border"></span>
+
+                <div className="container" onClick={() => setVisible(!visible)}>
+                  <div className="row">
+                    <div className="col ">
+                      <input
+                        name="password"
+                        value={formValues.password}
+                        onChange={(e) => {
+                          handleChange(e);
+                        }}
+                        type={visible ? "text" : "password"}
+                        className="effect-1"
+                        placeholder="Contraseña"
+                        required
+                        maxLength="20"
+                        role
+                        minLength="6"
+                      />
+                    </div>
+                    <div className=" col col-1 iconPass">
+                      {visible ? (
+                        <i class="fa fa-eye fa-2x" aria-hidden="true"></i>
+                      ) : (
+                        <i class="fa fa-lock fa-2x" aria-hidden="true"></i>
+                      )}
+                    </div>
                   </div>
+                  <span className="Focus-border"></span>
                 </div>
-                <div className="form-row pt-4">
+
+                {/* ----------------------------------------------- */}
+                {/* <div className="form-row pt-4">
                   <div className="col-lg-12">
                     <input
                       type="password"
@@ -154,11 +171,11 @@ const Registro = () => {
                     />
                     <span className="Focus-border"></span>
                   </div>
-                </div>
+                </div> */}
 
                 <div className="form-row  pt-4">
                   <div className="col-lg-12">
-                    <a href="" className="text">
+                    <a href="/" className="text text-dark">
                       <p>Volver</p>
                     </a>
                   </div>

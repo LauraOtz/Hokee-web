@@ -17,13 +17,7 @@ body {
   -moz-box-shadow: 3px 3px 5px 9px rgba(194, 194, 194, 0.79);
   box-shadow: 3px 3px 5px 9px rgba(194, 194, 194, 0.79);
 }
-.effect-1 {
-  border: 0;
-  outline: none;
-  width: 100%;
-  padding: 7px 0;
-  border-bottom: 1px solid rgb(56, 55, 55);
-}
+
 .effect-1 ~ .Focus-border {
   position: absolute;
   bottom: 5;
@@ -67,4 +61,19 @@ body {
   width: 50px;
   border-radius: 20%;
   padding-right: 5px;
+}
+
+/* ----------------------------------------- */
+
+.effect-1 {
+  border: 0;
+  outline: none;
+  /* width: 100%; */
+  padding: 7px;
+  border-bottom: 1px solid rgb(56, 55, 55);
+}
+.iconPass {
+  padding: 0px !important;
+  margin: 0px !important;
+  text-align: end;
 }

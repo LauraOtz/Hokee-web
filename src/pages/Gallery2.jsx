@@ -121,7 +121,7 @@ const Gallery2 = () => {
   }, []);
   const handlecontextmenu = (e) => {
     e.preventDefault();
-    alert("boton derecho deshabilitado");
+    alert("El botón derecho ha sido deshabilitado");
   };
 
   return (

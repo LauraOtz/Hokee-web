@@ -18,29 +18,7 @@ const PreguntasFrecuentes = () => {
           <b>Gracias! Siempre gracias!</b>{" "}
         </h2>
       </ Bounce>
-      <div className="cardE mb-3">
-        <div className="row g-0">
-          <div className="col-md-4 pt-3">
-            <img src={olie1} className="img-fluid  imgExp " alt="..." />
-          </div>
-          <div className="col-md-8">
-            <div className="card-body cardEx">
-              <h5 className="card-title mb-3 ">
-                <b> Gini Rohmer Litzmann</b>
-              </h5>
-              <p className="card-text textE">
-                “Tremendas las fotos!!!! Estoy enamorada!!! Gracias! Hace años
-                quería sacarles fotos así a mis pequeños, gracias por cumplir mi
-                sueño!"
-              </p>
-              <span className="text-dark">
-                San Miguel de Tucumán - Argentina - 2020
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <hr className="hrp" />
+      
 
       <div className="cardE mb-3">
         <div className="row g-0">
@@ -57,6 +35,29 @@ const PreguntasFrecuentes = () => {
                 sacarme la sonrisa de la boca! Te juro que captaste a la Huma
                 que es ella en cada una de las fotos! Y es para siempre! Me voy
                 a abrazarla!!! Bello bello bello todo!!!
+              </p>
+              <span className="text-dark">
+                San Miguel de Tucumán - Argentina - 2020
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr className="hrp" />
+      <div className="cardE mb-3">
+        <div className="row g-0">
+          <div className="col-md-4 pt-3">
+            <img src={olie1} className="img-fluid  imgExp " alt="..." />
+          </div>
+          <div className="col-md-8">
+            <div className="card-body cardEx">
+              <h5 className="card-title mb-3 ">
+                <b> Gini Rohmer Litzmann</b>
+              </h5>
+              <p className="card-text textE">
+                “Tremendas las fotos!!!! Estoy enamorada!!! Gracias! Hace años
+                quería sacarles fotos así a mis pequeños, gracias por cumplir mi
+                sueño!"
               </p>
               <span className="text-dark">
                 San Miguel de Tucumán - Argentina - 2020

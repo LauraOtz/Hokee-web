@@ -1,8 +1,8 @@
 import React from "react";
-// import { Link } from "react-scroll";
+import { Link } from "react-scroll";
 import logoH from "../assets/logoH.png";
 import navBar from "../css/navBar.css";
-// import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   const body = document.body;
@@ -58,96 +58,94 @@ const NavBar = () => {
         >
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0 itemNav">
             <li className="nav-item">
-              <a
-                // activeClass="active"
-                href="#slider"
-                // spy={value.toString()}
-                // smooth={true}
+              <Link
+                activeClass="active"
+                to="slider"
+                spy={true}
+                smooth={true}
                 offset={-50}
                 duration={500}
                 className="nav-link"
               >
                 Inicio
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a
-                // activeClass="active"
-                href="#presentacion"
-                // spy={value.toString()}
-                // smooth={true}
+              <Link
+                activeClass="active"
+                to="presentacion"
+                spy={true}
+                smooth={true}
                 offset={-50}
                 duration={500}
                 className="nav-link"
               >
                 Conoceme
-              </a>
+              </Link>
             </li>
 
             <li className="nav-item">
-              <a
-                // activeClass="active"
-                href="#Experiencias"
-                // spy={value.toString()}
-                // smooth={true}
+              <Link
+                activeClass="active"
+                to="Experiencias"
+                spy={true}
+                smooth={true}
                 offset={-30}
                 duration={500}
                 className="nav-link"
               >
                 Experiencias
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a
-                // activeClass="active"
-                href="#preguntas"
-                // spy={value.toString()}
-                // smooth={true}
+              <Link
+                activeClass="active"
+                to="preguntas"
+                spy={true}
+                smooth={true}
                 offset={-100}
                 duration={500}
                 className="nav-link"
               >
                 Preguntas
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a
-                // activeClass="active"
-                href="#contacto"
-                // spy={value.toString()}
-                // smooth={true}
+              <Link
+                activeClass="active"
+                to="contacto"
+                spy={true}
+                smooth={true}
                 offset={-100}
                 duration={500}
                 className="nav-link"
               >
                 Contacto
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a
-                href="/gallery"
-                // spy={value.toString()}
-                // smooth={true}
+              <NavLink
+                to="/gallery"
+                spy={true}
+                smooth={true}
                 offset={50}
                 duration={500}
                 className="nav-link"
               >
                 Galería
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <a
-                href="/paquetes"
-                className="nav-link"
-                // spy={value.toString()}
-                // smooth={true}
+              <NavLink
+                to="paquetes"
+                spy={true}
+                smooth={true}
                 offset={50}
                 duration={500}
-                
+                className="nav-link"
               >
                 Paquetes
-              </a>
-              <a href=""></a>
+              </NavLink>
             </li>
           </ul>
         </div>

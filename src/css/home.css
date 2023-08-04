@@ -16,3 +16,7 @@
   margin-top: 13px;
   z-index: 333;
 }
+
+img {
+  pointer-events: none;
+}

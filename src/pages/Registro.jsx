@@ -95,7 +95,7 @@ const Registro = () => {
                       placeholder="Nombre y apellido"
                       id="username"
                       required
-                      pattern="[a-zA-Z0-9]+"
+                      // pattern="[a-zA-Z0-9]+"
                       minLength="2"
                       maxLength="20"
                     />
@@ -136,15 +136,15 @@ const Registro = () => {
                         placeholder="Contraseña"
                         required
                         maxLength="20"
-                        role
+                      
                         minLength="6"
                       />
                     </div>
                     <div className=" col col-1 iconPass">
                       {visible ? (
-                        <i class="fa fa-eye fa-2x" aria-hidden="true"></i>
+                        <i className="fa fa-eye fa-2x" aria-hidden="true"></i>
                       ) : (
-                        <i class="fa fa-lock fa-2x" aria-hidden="true"></i>
+                        <i className="fa fa-lock fa-2x" aria-hidden="true"></i>
                       )}
                     </div>
                   </div>
@@ -176,7 +176,7 @@ const Registro = () => {
                 <div className="form-row  pt-4">
                   <div className="col-lg-12">
                     <a href="/" className="text text-dark">
-                      <p>Volver</p>
+                      <p>Volver al inicio</p>
                     </a>
                   </div>
                 </div>

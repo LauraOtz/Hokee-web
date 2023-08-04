@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Josefin+Sans:wght@500&display=swap");
 
 div#root {
-  max-width: 100% !important;
+  /* max-width: 100% !important; */
   padding: 0rem !important;
 }
 .btn.btn2 {
@@ -59,10 +59,13 @@ div#root {
   height: 100vh;
 }
 
+
+
+
 .carousel-inner .carousel-item img {
   height: 100%;
-  background-size: cover;
-  object-fit: cover;
+  background-size: cover !important;
+  object-fit: cover !important;
   position: absolute;
 }
 h1.h1Slider {

@@ -5,13 +5,14 @@
   height: 265px;
   background-color: #f2f5f8;
   color: #001d36;
+  padding: 1%;
 }
 
 .card-datosP .card-subtitle {
   font-size: 30px;
 }
 .iconP {
-  color: rgba(99, 185, 146, 0.91);
+  color: rgba(99, 185, 146, 0.91) !important;
 }
 .tituloPres {
   font-family: "Dancing Script", cursive;

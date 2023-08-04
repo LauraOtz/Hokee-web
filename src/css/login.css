@@ -4,14 +4,14 @@ body {
 .login {
   background-size: 100% !important;
   width: 90vw !important;
-
-  box-shadow: 4px 4px 48px 14px rgba(99, 185, 146, 0.91) !important;
-  -webkit-box-shadow: 4px 4px 48px 14px rgba(99, 185, 146, 0.91) !important;
-  -moz-box-shadow: 4px 4px 48px 14px rgba(99, 185, 146, 0.91) !important;
+  box-shadow: 1px 3px 87px -21px rgba(0, 0, 0, 0.65);
+  -webkit-box-shadow: 1px 3px 87px -21px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: 1px 3px 87px -21px rgba(0, 0, 0, 0.65);
 }
 .headC {
   background-color: rgb(99, 185, 146);
   border-radius: 5px;
+  font-family: "Josefin Sans", sans-serif;
   margin-top: -140px;
   -webkit-box-shadow: 3px 3px 5px 9px rgba(194, 194, 194, 0.79);
   -moz-box-shadow: 3px 3px 5px 9px rgba(194, 194, 194, 0.79);

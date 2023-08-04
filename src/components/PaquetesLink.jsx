@@ -4,7 +4,7 @@ import paquetesLink from "../css/paquetesLink.css";
 const PaquetesLink = () => {
   return (
     <section id="novedades" className="ancla">
-      <div className="container-fluid">
+      <div className="container-fluid contPa">
         <div className="row">
           <div className="col p-0 card">
             <div className="parallax"></div>

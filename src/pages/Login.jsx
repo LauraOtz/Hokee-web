@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { postAuth } from "../helpers/fetchApp";
 import login from "../css/login.css";
-import iconoHokee from "../assets/iconoHokee.png"
+import iconoHokee from "../assets/iconoHokee.png";
 
 const Login = () => {
   const navigate = useNavigate();
+  const [visible, setVisible] = useState(true);
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -53,7 +54,7 @@ const Login = () => {
                       onChange={(e) => setEmail(e.target.value)}
                       //name="user_email"
                       className="effect-1 "
-                      placeholder="Ingrese su correo electrónico"
+                      placeholder="Correo electrónico"
                       //pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
                       maxLength="30"
                       required
@@ -62,37 +63,53 @@ const Login = () => {
                     <span className="Focus-border"></span>
                   </div>
                 </div>
-                <div className="form-row pt-2">
-                  <div className="col-lg-12">
-                    <input
-                      //type="password"
-                      value={password}
-                      onChange={(e) => setPassword(e.target.value)}
-                      //name="message"
-                      className="effect-1 "
-                      placeholder="Ingrese su contraseña"
-                      required
-                      maxLength="20"
-                      role
-                      minLength="6"
-                    />
-                    <span className="Focus-border"></span>;
+                <div className="container" onClick={() => setVisible(!visible)}>
+                  <div className="row">
+                    <div className="col ">
+                      <input
+                        name="password"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                        type={visible ? "text" : "password"}
+                        className="effect-1"
+                        placeholder="Contraseña"
+                        required
+                        maxLength="20"
+                        minLength="6"
+                      />
+                    </div>
+                    <div className=" col col-1 iconPass">
+                      {visible ? (
+                        <i className="fa fa-eye fa-2x" aria-hidden="true"></i>
+                      ) : (
+                        <i className="fa fa-lock fa-2x" aria-hidden="true"></i>
+                      )}
+                    </div>
                   </div>
+                  <span className="Focus-border"></span>
                 </div>
                 <div className="form-row pt-4 ">
                   <div className="col-lg-12">
-                    <a href="" className="text">
+                    <NavLink to="/registro" className="text text-dark">
                       <p>Registre su usuario aquí</p>
-                    </a>
+                    </NavLink>
                   </div>
                 </div>
-                <div className="form-row  ">
+                <div className="form-row ">
                   <div className="col-lg-12">
-                    <a href="" className="text">
+                    <NavLink to="/" className="text text-dark">
+                      <p>Volver al inicio</p>
+                    </NavLink>
+                  </div>
+                </div>
+                {/* funcionalidad a relizar */}
+                {/* <div className="form-row text-dark ">
+                  <div className="col-lg-12">
+                    <a href="" className="text text-dark">
                       <p>¿Olvidó su contraseña?</p>
                     </a>
                   </div>
-                </div>
+                </div> */}
                 <div className=" col-lg-12">
                   <button className=" btn1 btn-lg" onClick={validarDatos}>
                     Iniciar Sesion

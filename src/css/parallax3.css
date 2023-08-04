@@ -13,3 +13,8 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media screen and (min-width: 300px) and (max-width: 850px) {
+  .parallax3{
+    background-size:  auto !important;
+  }
+  }

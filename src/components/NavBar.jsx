@@ -41,7 +41,7 @@ const NavBar = () => {
         </a>
 
         <button
-          className="navbar-toggler mt-2"
+          className="navbar-toggler mt-2 btnNav"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -159,18 +159,7 @@ const NavBar = () => {
                 Iniciar sesión
               </NavLink>
             </li>
-            <li className="nav-item">
-              <NavLink
-                to="/registro"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
-                className="nav-link"
-              >
-                Registrarse
-              </NavLink>
-            </li>
+       
           </ul>
         </div>
       </div>

@@ -18,7 +18,7 @@ const Slider = () => {
     >
       <div className="carousel-inner slide1" id="slider">
         <div className="carousel-item active" data-bs-interval="3000">
-          <img src={olafR} className="d-block w-100" alt="..." />
+          <img src={olafR} className="d-block w-100 img-fluid imgS mx-auto" alt="..." />
           <div className="carousel-caption carru ">
             <Bounce  >
               <div>
@@ -40,7 +40,7 @@ const Slider = () => {
         </div>
 
         <div className="carousel-item" data-bs-interval="3000">
-          <img src={blancaR1} className="d-block w-100" alt="..." />
+          <img src={blancaR1} className="d-block w-100 img-fluid imgS mx-auto" alt="..." />
           <div className="carousel-caption d-none d-md-block carru">
             <Bounce  >
               <div>
@@ -62,7 +62,7 @@ const Slider = () => {
         </div>
 
         <div className="carousel-item " data-bs-interval="3000">
-          <img src={simon1} className="d-block w-100" alt="..." />
+          <img src={simon1} className="d-block w-100 img-fluid imgS mx-auto" alt="..." />
           <div className="carousel-caption d-none d-md-block  carru ">
             <Bounce >
               <div className="">

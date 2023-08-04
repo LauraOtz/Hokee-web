@@ -14,7 +14,7 @@ const PreguntasFrecuentes = () => {
         </h1>
       </ Bounce>
       < Bounce>
-        <h2 className="Titulop pb-5">
+        <h2 className="Titulop pb-5 tituloP2">
           <b>Gracias! Siempre gracias!</b>{" "}
         </h2>
       </ Bounce>

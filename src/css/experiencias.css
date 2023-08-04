@@ -9,6 +9,10 @@
   padding-right: 20%;
   border-color: white !important;
 }
+.tituloP2{
+  font-family: "Josefin Sans", sans-serif !important;
+  font-size: 25px !important;
+}
 
 .card-body.cardEx {
   padding-top: 8%;

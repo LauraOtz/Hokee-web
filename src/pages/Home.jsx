@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React from "react";
 import Slider from "../components/Slider";
 import Presentacion from "../components/Presentacion";
 import Contacto from "../components/Contacto";
@@ -13,16 +13,17 @@ import Parallax4 from "../components/Parallax4";
 import "../css/home.css";
 
 const Home = () => {
-  useEffect(() => {
-    document.addEventListener("contextmenu", handlecontextmenu);
-    return () => {
-      document.removeEventListener("contextmenu", handlecontextmenu);
-    };
-  }, []);
-  const handlecontextmenu = (e) => {
-    e.preventDefault();
-    alert("El botón derecho ha sido deshabilitado");
-  };
+  // bloquear boton derecho
+  // useEffect(() => {
+  //   document.addEventListener("contextmenu", handlecontextmenu);
+  //   return () => {
+  //     document.removeEventListener("contextmenu", handlecontextmenu);
+  //   };
+  // }, []);
+  // const handlecontextmenu = (e) => {
+  //   e.preventDefault();
+  //   alert("El botón derecho ha sido deshabilitado");
+  // };
   return (
     <>
       <NavBar />

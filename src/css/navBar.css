@@ -41,3 +41,12 @@
   filter: none;
 }
 /* ----------------------- */
+@media screen and (min-width: 300px) and (max-width: 570px) {
+.ContenedorN{
+ flex-direction: row;
+}
+.btnNav{
+  background-color: rgba(240, 248, 255, 0.743) !important;
+}
+
+}

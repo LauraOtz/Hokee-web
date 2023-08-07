@@ -13,18 +13,3 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* @media screen and (min-width: 300px) and (max-width: 850px) {
-  .parallax3{
-    background-size:  auto !important;
-  }
-  
-  } */
-  /* @media screen and (min-width: 300px) and (max-width: 550px) {
-    .parallax3 {
-   background-attachment: local !important;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-  }
-   */

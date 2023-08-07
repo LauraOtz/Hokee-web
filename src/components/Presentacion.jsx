@@ -25,16 +25,16 @@ const Presentacion = () => {
                 programadora en proceso, éste sitio web lo hice yo, es el
                 primero! espero les guste!
               </p>
-              <p className=" textoPre">
+              {/* <p className=" textoPre">
                 Mi amor por los animales viene conmigo desde pequeña, la paz que
                 me transmiten y el amor que siento por ellos es algo muy dificil
                 de explicar, sé que si amaste a un compañero de 4 patas
                 entiendes de lo que hablo.
-              </p>
+              </p> */}
 
               <p className=" textoPre">
                 Hace unos años descubrí mi pasión por la fotografía, un tiempo
-                después llegó la inspiración de retratar animales, y ya no hubo
+                después llegó la inspiración de retratar perritos, y ya no hubo
                 vuelta atrás, descubrí el mejor trabajo del mundo! podría
                 hacerlo cada día por siempre, sólo con el fin de vivirlo. He
                 tenido el privilegio de conocer peronas hermosas y mascotas
@@ -43,14 +43,13 @@ const Presentacion = () => {
                 creeme que no estoy exgerando.
               </p>
               <p className=" textoPre">
-                Agradezco profundamente haber encontrado esta pasión, poder
-                experimentarla y a través de ella darles a ustedes recuerdos
-                maravillosos que van a llenar sus corazones para siempre.
+                Agradezco profundamente haber encontrado esta pasión y a través de ella darles a ustedes recuerdos
+                maravillosos que van a llenar sus corazones por siempre.
               </p>
               <p className=" textoPre">
-                Siéntete libre de ponerte en contacto conmigo, será un placer
-                resolver todas tus dudas y conocer tu historia. Te espero para
-                crear el recuerdo que te hará sonreir para siempre. Te lo vas a
+               Te espero para
+                crear el recuerdo que te hará sonreir para siempre! será un placer
+                resolver todas tus dudas y conocer tu historia.  Te lo vas a
                 perder?
               </p>
             </div>

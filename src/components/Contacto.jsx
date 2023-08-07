@@ -61,7 +61,7 @@ function ContactComponent(props) {
                     <input
                       type="text"
                       name="fullName"
-                      className="effect-1 form-control "
+                      className="effect-1 "
                       placeholder="Nombre"
                       id="username"
                       required
@@ -78,7 +78,7 @@ function ContactComponent(props) {
                     <input
                       type="email"
                       name="email"
-                      className="effect-1 form-control"
+                      className="effect-1"
                       placeholder="Correo electrónico"
                       pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
                       maxLength="30"

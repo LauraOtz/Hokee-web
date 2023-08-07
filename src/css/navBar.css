@@ -40,6 +40,11 @@
 .menu-is-open .navbar {
   filter: none;
 }
+
+
+.nav-link{
+  display: inline-block !important;
+}
 /* ----------------------- */
 @media screen and (min-width: 300px) and (max-width: 570px) {
 .ContenedorN{

@@ -9,12 +9,12 @@ const PreguntasFrecuentes = () => {
   return (
     <>
       < Bounce>
-        <h1 className="Titulop pt-5" id="Experiencias">
+        <h1 className="Titulop pt-5 px-2" id="Experiencias">
           <b> Palabras de algunos clientes</b>
         </h1>
       </ Bounce>
       < Bounce>
-        <h2 className="Titulop pb-5 tituloP2">
+        <h2 className="Titulop pb-3 tituloP2">
           <b>Gracias! Siempre gracias!</b>{" "}
         </h2>
       </ Bounce>
@@ -31,7 +31,7 @@ const PreguntasFrecuentes = () => {
                 <b>Irene y Humahuaca</b>
               </h5>
               <p className="card-text textE ">
-                “Ayyyy Laurita muero de amor con cada una de las fotos! No puedo
+                “Laurita muero de amor con cada una de las fotos! No puedo
                 sacarme la sonrisa de la boca! Te juro que captaste a la Huma
                 que es ella en cada una de las fotos! Y es para siempre! Me voy
                 a abrazarla!!! Bello bello bello todo!!!

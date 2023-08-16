@@ -60,7 +60,7 @@ function ContactComponent(props) {
                   <div className="col-lg-12">
                     <input
                       type="text"
-                      name="fullName"
+                      name="user_name"
                       className="effect-1 "
                       placeholder="Nombre"
                       id="username"

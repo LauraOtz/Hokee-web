@@ -136,7 +136,7 @@ const Paquetes = () => {
       <section>
         <div className="wh">
           <a
-            href=" https://api.whatsapp.com/send?phone=543816510287"
+            href=" https://api.whatsapp.com/send?phone=3466351305"
             className="whatsappP"
             target="_blank"
           >

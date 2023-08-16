@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { postUsuario } from "../helpers/fetchApp";
 import login from "../css/login.css";
 import iconoHokee from "../assets/iconoHokee.png";
+import { faWarning } from "@fortawesome/free-solid-svg-icons";
 const Registro = () => {
   const navigate = useNavigate();
   const [visible, setVisible] = useState(true);
@@ -40,16 +41,16 @@ const Registro = () => {
           password: "",
           role: "USER-ROLE",
         });
-        // alert("usuario registrado")
+        //alert("usuario registrado")
 
         try {
           setTimeout(() => {
             setMessage([]);
           }, 2000);
         } catch (err) {
-          console.log("Error al registrar usuario");
+          alert("Error al registrar usuario");
         }
-        console.log("Usuario registrado");
+        alert("Usuario registrado");
       }
       navigate("/login");
     });

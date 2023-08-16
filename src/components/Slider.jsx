@@ -3,11 +3,10 @@ import olafR from "../assets/olafR.jpg";
 import blancaR1 from "../assets/blancaR1.jpg";
 import simon1 from "../assets/simon1.jpg";
 import { JackInTheBox } from "react-awesome-reveal";
-import {Bounce  } from "react-awesome-reveal";
-
-
-
+import { Bounce } from "react-awesome-reveal";
+import { NavLink } from "react-router-dom";
 import slider from "../css/slider.css";
+import { Link } from "react-scroll";
 
 const Slider = () => {
   return (
@@ -18,43 +17,51 @@ const Slider = () => {
     >
       <div className="carousel-inner slide1" id="slider">
         <div className="carousel-item active" data-bs-interval="3000">
-          <img src={olafR} className="d-block w-100 img-fluid imgS mx-auto" alt="..." />
+          <img
+            src={olafR}
+            className="d-block w-100 img-fluid imgS mx-auto"
+            alt="..."
+          />
           <div className="carousel-caption carru ">
-            <Bounce  >
+            <Bounce>
               <div>
                 <h1 className="titulo h1Slider ">
                   <strong>FOTOGRAFIA DE MASCOTAS</strong>
                 </h1>
               </div>
-            </Bounce  >
+            </Bounce>
             <div>
-              <JackInTheBox >
+              <JackInTheBox>
                 <button className="btn btnS btn3 ">
-                  <a href="/gallery">
+                  <NavLink to="/gallery">
                     <h6> Visitar galería</h6>
-                  </a>
+                  </NavLink>
                 </button>
-              </JackInTheBox >
+              </JackInTheBox>
             </div>
           </div>
         </div>
 
         <div className="carousel-item" data-bs-interval="3000">
-          <img src={blancaR1} className="d-block w-100 img-fluid imgS mx-auto" alt="..." />
+          <img
+            src={blancaR1}
+            className="d-block w-100 img-fluid imgS mx-auto"
+            alt="..."
+          />
           <div className="carousel-caption d-none d-md-block carru">
-            <Bounce  >
+            <Bounce>
               <div>
                 <h1 className="titulo h1Slider">
                   <strong>FOTOGRAFIA DE MASCOTAS</strong>
                 </h1>
               </div>
-            </Bounce  >
+            </Bounce>
             <div>
               <JackInTheBox>
                 <button className="btn btnS btn3 ">
-                  <a href="#preguntas">
+                  <Link to="preguntas">
                     <h6>Quiero saber más</h6>
-                  </a>
+                  </Link>
                 </button>
               </JackInTheBox>
             </div>
@@ -62,21 +69,25 @@ const Slider = () => {
         </div>
 
         <div className="carousel-item " data-bs-interval="3000">
-          <img src={simon1} className="d-block w-100 img-fluid imgS mx-auto" alt="..." />
+          <img
+            src={simon1}
+            className="d-block w-100 img-fluid imgS mx-auto"
+            alt="..."
+          />
           <div className="carousel-caption d-none d-md-block  carru ">
-            <Bounce >
+            <Bounce>
               <div className="">
                 <h1 className="titulo h1Slider">
                   <strong>FOTOGRAFIA DE MASCOTAS</strong>
                 </h1>
               </div>
-            </Bounce >
+            </Bounce>
             <div>
-              <JackInTheBox >
+              <JackInTheBox>
                 <button className="btn btn2 btnS">
-                  <a href="#contacto">
+                  <Link to="contacto">
                     <h6 className="titulo2">Reserva tu sesión</h6>
-                  </a>
+                  </Link>
                 </button>
               </JackInTheBox>
             </div>

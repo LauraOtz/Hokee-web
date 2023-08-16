@@ -28,6 +28,44 @@ const Login = () => {
       }
     });
   };
+// ----------------------------------------------------
+function modificarNav() {
+  if (logUser) {
+    let listContainer = document.getElementById("listaMenu");
+    //reemplazar
+    let login = document.getElementById("loginNav");
+    let registro = document.getElementById("regNav");
+    login.style.display = "none";
+    registro.style.display = "none";
+    // Opciones de Usuario
+    let btnUser = document.createElement("li");
+    btnUser.classList = "nav-item";
+    let optionUser = `<a class="nav-link botones active" href="#" data-bs-toggle="modal" data-bs-target="#cerrarSesion">Hello ${logUser.nombre} ${logUser.apellido}</a>`;
+    btnUser.innerHTML = optionUser;
+    listContainer.appendChild(btnUser);
+
+    // if(logUser){
+    if (logUser.rol === "admin") {
+      let btnAdmin = document.createElement("li");
+      btnAdmin.classList = "nav-item";
+      let opcionAdmin=""
+      if(window.location.pathname.split("/").pop()=='index.html'){
+        opcionAdmin = `<a class="nav-link botones active"
+       href="./pages/admin.html">Admin</a>`;
+      }else{
+        opcionAdmin = `<a class="nav-link botones active"
+       href="../pages/admin.html">Admin</a>`;
+      }
+      
+      btnAdmin.innerHTML = opcionAdmin;
+      listContainer.appendChild(btnAdmin);
+    }
+    // }
+  }
+}
+
+
+
   return (
     <div className="login registro container py-5 col-lg-12 col-md-6">
       <div className="row">

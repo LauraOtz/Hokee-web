@@ -22,7 +22,7 @@ function ContactComponent(props) {
       .then(
         (result) => {
           console.log(result.text);
-          //alert("Mensaje enviado");
+          // alert("Mensaje enviado");
         },
         (error) => {
           console.log(error.text);

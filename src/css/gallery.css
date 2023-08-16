@@ -41,6 +41,10 @@
     -moz-column-width: 100%;
     column-width: 100%;
   }
+  .pics:hover {
+  
+    transform:none;
+  }
 }
 /* model */
 .model {

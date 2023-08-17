@@ -59,20 +59,20 @@ const NavBar = () => {
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0 itemNav">
             <li className="nav-item">
               <Link
-                activeClass="active"
+                // activeClass="active"
                 to="slider"
                 spy={true}
                 smooth={true}
-                offset={-50}
+                offset={-70}
                 duration={500}
-                className="nav-link"
+                className="nav-link "
               >
                 Inicio
               </Link>
             </li>
             <li className="nav-item">
               <Link
-                activeClass="active"
+                // activeClass="active"
                 to="presentacion"
                 spy={true}
                 smooth={true}
@@ -86,7 +86,7 @@ const NavBar = () => {
 
             <li className="nav-item">
               <Link
-                activeClass="active"
+                // activeClass="active"
                 to="Experiencias"
                 spy={true}
                 smooth={true}
@@ -99,7 +99,7 @@ const NavBar = () => {
             </li>
             <li className="nav-item">
               <Link
-                activeClass="active"
+                // activeClass="active"
                 to="preguntas"
                 spy={true}
                 smooth={true}
@@ -112,7 +112,7 @@ const NavBar = () => {
             </li>
             <li className="nav-item">
               <Link
-                activeClass="active"
+                // activeClass="active"
                 to="contacto"
                 spy={true}
                 smooth={true}

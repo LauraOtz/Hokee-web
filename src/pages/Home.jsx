@@ -70,7 +70,7 @@ const Home = () => {
       <section>
         <div className="wh">
           <a
-            href=" https://api.whatsapp.com/send?phone=3466351305"
+            href=" https://api.whatsapp.com/send?phone=34663531305"
             className="whatsapp"
             target="_blank"
           >

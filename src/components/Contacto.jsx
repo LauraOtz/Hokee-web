@@ -106,7 +106,7 @@ function ContactComponent(props) {
                 <div className="form-row  ">
                   <div className=" col-lg-12">
                     <p>
-                      <input type="checkbox" required />
+                      <input type="checkbox" required className="check"/>
                       No soy un robot
                     </p>
                   </div>

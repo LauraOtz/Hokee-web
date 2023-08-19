@@ -22,6 +22,7 @@
   width: 100%;
   padding: 7px 0;
   border-bottom: 1px solid rgb(56, 55, 55) !important;
+  background-color: white !important;
 }
 .effect-1 ~ .Focus-border {
   position: absolute;
@@ -84,4 +85,9 @@ div.card {
   .contact{
     width: 95% !important;
   }
+}
+
+input {
+background-color: white !important;
+ 
 }

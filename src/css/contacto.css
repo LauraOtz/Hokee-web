@@ -87,10 +87,7 @@ div.card {
   }
 }
 
-input {
-background-color: white !important;
- 
-}
-.check{
+
+input .check{
   background-color: white !important;
 }

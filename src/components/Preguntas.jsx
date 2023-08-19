@@ -56,7 +56,7 @@ const Preguntas = () => {
 
                 <p>
                   La mascota debe ser acompañada sí o sí de su humano de mayor
-                  confianza. No puede venir con alguien ageno a él.{" "}
+                  confianza. No puede venir con alguien ajeno a él.{" "}
                 </p>
                 <p>
                   Todas las fotos se comparten en una galería, desde ahí

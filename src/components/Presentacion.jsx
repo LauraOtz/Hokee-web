@@ -30,9 +30,9 @@ const Presentacion = () => {
               <p className=" textoPre">
               Agradezco profundamente haber encontrado esta pasión y a través de ella darles a ustedes recuerdos maravillosos que van a llenar sus corazones por siempre.
               </p>
-              <p className=" textoPre">
+              {/* <p className=" textoPre">
               Te espero para crear el recuerdo que te hará sonreír para siempre. ¡Será un placer resolver todas tus dudas y conocer tu historia! ¿Te lo vas a perder?
-              </p>
+              </p> */}
             </div>
           </div>
         </div>

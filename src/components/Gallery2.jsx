@@ -113,16 +113,16 @@ const Gallery2 = () => {
     setTempImgsrc(imgSrc);
     setModel(true);
   };
-  useEffect(() => {
-    document.addEventListener("contextmenu", handlecontextmenu);
-    return () => {
-      document.removeEventListener("contextmenu", handlecontextmenu);
-    };
-  }, []);
-  const handlecontextmenu = (e) => {
-    e.preventDefault();
-    alert("El botón derecho ha sido deshabilitado");
-  };
+  // useEffect(() => {
+  //   document.addEventListener("contextmenu", handlecontextmenu);
+  //   return () => {
+  //     document.removeEventListener("contextmenu", handlecontextmenu);
+  //   };
+  // }, []);
+  // const handlecontextmenu = (e) => {
+  //   e.preventDefault();
+  //   alert("El botón derecho ha sido deshabilitado");
+  // };
 
   return (
     <>

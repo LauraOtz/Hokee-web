@@ -4,7 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "../pages/Home";
 import Paquetes from "../pages/Paquetes";
 import NotFound from "../pages/NotFound";
-import Gallery from "../pages/Gallery";
+import Gallery from "../components/Gallery";
 import Login from "../pages/Login";
 import Registro from "../pages/Registro";
 

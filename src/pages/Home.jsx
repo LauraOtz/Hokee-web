@@ -10,6 +10,8 @@ import Experiencias from "../components/Experiencias";
 import Parallax2 from "../components/Parallax2";
 import Parallax3 from "../components/Parallax3";
 import Parallax4 from "../components/Parallax4";
+import Gallery from "../components/Gallery";
+
 import "../css/home.css";
 
 const Home = () => {
@@ -54,6 +56,9 @@ const Home = () => {
 
       <section id="PaquetesLink4">
         <Parallax4 />
+      </section>
+      <section>
+      <Gallery/>
       </section>
 
       <section>

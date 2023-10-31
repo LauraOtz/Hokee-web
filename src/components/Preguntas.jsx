@@ -9,6 +9,9 @@ const Preguntas = () => {
         <JackInTheBox>
           <h2 className="tituloPreg pb-2">Resolvamos algunas dudas</h2>
         </JackInTheBox>
+          <h3 className="tituloPreg">¿Dónde me encuentro?</h3>
+          <p className="tituloPreg2">Vivo en Valencia, España. Las fotos se realizan en <strong>exteriores</strong> parques o plazas, en el lugar que acordemos por dicha zona.</p>
+          <p className="tituloPreg2" > Tambien puedes elegis la ftografia de estudio. ambas se ecuentran en la sección galeria para que las conozcas.</p>
         <div className="row ">
           <div className="col-12 col-md ">
             <div className="card card-datosP  text-center">
@@ -24,7 +27,7 @@ const Preguntas = () => {
                 </p>
                 <p>
                   Puedes traer accesorios y la ropita de tu peludo que más te
-                  gusten
+                  gusten.
                 </p>
               </div>
             </div>
@@ -42,7 +45,7 @@ const Preguntas = () => {
                   de tu mascota sin apuros. Ven con tiempo disponible y
                   disfruta!
                 </p>
-                <p>El trabajo se entrega en una semana aproximadamente</p>
+                <p>El trabajo se entrega en una semana aproximadamente.</p>
               </div>
             </div>
           </div>
@@ -59,9 +62,7 @@ const Preguntas = () => {
                   confianza. No puede venir con alguien ajeno a él.{" "}
                 </p>
                 <p>
-                  Todas las fotos se comparten en una galería, desde ahí
-                  seleccionas la cantidad que quieras para ser editadas y
-                  entregadas.
+                Puedes elegir tu mismo las fotos que quieras o dejar que yo seleccione las mejores. Siempre podrás sumar más fotos a la entrega.
                 </p>
               </div>
             </div>

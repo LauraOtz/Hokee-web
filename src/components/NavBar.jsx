@@ -80,7 +80,7 @@ const NavBar = () => {
                 duration={500}
                 className="nav-link"
               >
-                Conoceme
+                Conóceme
               </Link>
             </li>
 
@@ -147,7 +147,8 @@ const NavBar = () => {
                 Paquetes
               </NavLink>
             </li>
-            <li className="nav-item">
+            {/* inicio de sesion suspendido */}
+            {/* <li className="nav-item">
               <NavLink
                 to="/login"
                 spy={true}
@@ -158,7 +159,7 @@ const NavBar = () => {
               >
                 Iniciar sesión
               </NavLink>
-            </li>
+            </li> */}
        
           </ul>
         </div>

@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import RoutesDos from "../src/routes/RoutesDos";
 import Login from "./pages/Login";
 import Registro from "./pages/Registro";
-import Gallery from "./pages/Gallery";
+import Gallery from "./components/Gallery";
 import Paquetes from "./pages/Paquetes";
 // import ProtectedRoutes from "./routes/ProtectedRoutes";
 

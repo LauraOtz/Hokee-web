@@ -124,8 +124,8 @@ const NavBar = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <NavLink
-                to="/gallery"
+              <Link
+                to="gallery"
                 spy={true}
                 smooth={true}
                 offset={50}
@@ -133,7 +133,7 @@ const NavBar = () => {
                 className="nav-link"
               >
                 Galería
-              </NavLink>
+              </Link>
             </li>
             <li className="nav-item">
               <NavLink

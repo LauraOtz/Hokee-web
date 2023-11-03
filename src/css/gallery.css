@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Josefin+Sans:wght@500&display=swap");
 .gallery {
-  -webkit-column-count: 9;
-  -moz-column-count: 9;
-  column-count: 9;
+  -webkit-column-count: 8;
+  -moz-column-count: 8;
+  column-count: 8;
   -webkit-column-width: 16.6%;
   -moz-column-width:  16.6%;
   column-width:  16.6%;
@@ -17,17 +17,17 @@
 
 @media (max-width: 991px) {
   .gallery {
-    -webkit-column-count: 6;
-    -moz-column-count: 6;
-    column-count: 6;
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
   }
 }
 
 @media (max-width: 480px) {
   .gallery {
-    -webkit-column-count: 4;
-    -moz-column-count: 4;
-    column-count: 4;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
     -webkit-column-width: 100%;
     -moz-column-width: 100%;
     column-width: 100%;

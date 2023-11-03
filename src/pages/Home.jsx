@@ -31,6 +31,12 @@ const Home = () => {
       <NavBar />
 
       <Slider />
+      <section id="PaquetesLink4">
+        <Parallax4 />
+      </section>
+      <section>
+      <Gallery/>
+      </section>
 
       <section>
         <Presentacion />
@@ -46,23 +52,20 @@ const Home = () => {
       {/* --------------parallax2----------- */}
       {/* --------------parallax3----------- */}
 
-      <section id="PaquetesLink2">
-        <Parallax2 />
-      </section>
+     
 
       <section id="PaquetesLink3">
         <Parallax3 />
       </section>
 
-      <section id="PaquetesLink4">
-        <Parallax4 />
-      </section>
-      <section>
-      <Gallery/>
-      </section>
+    
 
       <section>
         <Preguntas />
+      </section>
+      
+      <section id="PaquetesLink2">
+        <Parallax2 />
       </section>
 
       <section id="Contacto">

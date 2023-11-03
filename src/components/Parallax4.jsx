@@ -10,16 +10,16 @@ const Parallax4 = () => {
           <div className="col p-0 card">
             <div className="parallax2"></div>
             <div className="card-img-overlay text-center text-parall">
-              <h2 className="titulopa2">
+              <h3 className="titulopa2">
                 No es solo una sesión de fotos, es una expresión de amor
-              </h2>
-              <h2 className="titulopa3"></h2>
+              </h3>
+              
                 <Bounce left>
                 <button
                   type="button"
                   className="btn btn-light btn-card  mt-3 btn-parall "
                 >
-                  <a className=" text-center" href="/gallery">
+                  <a className=" text-center" href="https://api.whatsapp.com/send?phone=34663531305">
                     <b>QUIERO ENVIARTE UN WHATSAPP</b>
                   </a>
                 </button>

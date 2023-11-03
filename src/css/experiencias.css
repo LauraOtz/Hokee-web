@@ -2,12 +2,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Josefin+Sans:wght@500&display=swap");
 
 .textE {
-  font-size: 20px;
+  font-size: 16px;
 }
 .cardE {
   padding-left: 20%;
   padding-right: 20%;
   border-color: white !important;
+}
+.cardPr{
+  padding-left: 10%;
+  padding-right: 10%;
 }
 .tituloP2{
   font-family: "Josefin Sans", sans-serif !important;

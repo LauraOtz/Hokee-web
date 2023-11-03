@@ -21,7 +21,7 @@ const Gallery = () => {
       </div> */}
         <Bounce>
         <h1 style={{ textAlign: "center" }} className="pb-5 pt-5 tituloGallery">
-          Celebra su amor
+          Galería de 4 patas
         </h1>
       </Bounce>
       <Gallery2 />

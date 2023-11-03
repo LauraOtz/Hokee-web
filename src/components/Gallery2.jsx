@@ -36,21 +36,21 @@ import g32 from "../assets/gallery/g32.jpg";
 import g33 from "../assets/gallery/g33.jpg";
 import g34 from "../assets/gallery/g34.jpg";
 import g35 from "../assets/gallery/g35.jpg";
-import g36 from "../assets/gallery/g30.jpg";
-import g37 from "../assets/gallery/g37.jpg";
-import g38 from "../assets/gallery/g38.jpg";
-import g39 from "../assets/gallery/g39.jpg";
-import g40 from "../assets/gallery/g40.jpg";
-import g41 from "../assets/gallery/g41.jpg";
-import g42 from "../assets/gallery/g42.jpg";
-import g43 from "../assets/gallery/g43.jpg";
-import g44 from "../assets/gallery/g44.jpg";
-import g45 from "../assets/gallery/g45.jpg";
-import g46 from "../assets/gallery/g46.jpg";
-import g47 from "../assets/gallery/g47.jpg";
-import g48 from "../assets/gallery/g48.jpg";
-import g49 from "../assets/gallery/g49.jpg";
-import g50 from "../assets/gallery/g50.jpg";
+// import g36 from "../assets/gallery/g30.jpg";
+// import g37 from "../assets/gallery/g37.jpg";
+// import g38 from "../assets/gallery/g38.jpg";
+// import g39 from "../assets/gallery/g39.jpg";
+// import g40 from "../assets/gallery/g40.jpg";
+// import g41 from "../assets/gallery/g41.jpg";
+// import g42 from "../assets/gallery/g42.jpg";
+// import g43 from "../assets/gallery/g43.jpg";
+// import g44 from "../assets/gallery/g44.jpg";
+// import g45 from "../assets/gallery/g45.jpg";
+// import g46 from "../assets/gallery/g46.jpg";
+// import g47 from "../assets/gallery/g47.jpg";
+// import g48 from "../assets/gallery/g48.jpg";
+// import g49 from "../assets/gallery/g49.jpg";
+// import g50 from "../assets/gallery/g50.jpg";
 import "../css/gallery.css";
 import "../css/home.css";
 
@@ -91,21 +91,21 @@ const Gallery2 = () => {
     { id: 33, imgSrc: g33 },
     { id: 34, imgSrc: g34 },
     { id: 35, imgSrc: g35 },
-    { id: 36, imgSrc: g36 },
-    { id: 37, imgSrc: g37 },
-    { id: 38, imgSrc: g38 },
-    { id: 39, imgSrc: g39 },
-    { id: 40, imgSrc: g40 },
-    { id: 41, imgSrc: g41 },
-    { id: 42, imgSrc: g42 },
-    { id: 43, imgSrc: g43 },
-    { id: 44, imgSrc: g44 },
-    { id: 45, imgSrc: g45 },
-    { id: 46, imgSrc: g46 },
-    { id: 47, imgSrc: g47 },
-    { id: 48, imgSrc: g48 },
-    { id: 49, imgSrc: g49 },
-    { id: 50, imgSrc: g50 },
+    // { id: 36, imgSrc: g36 },
+    // { id: 37, imgSrc: g37 },
+    // { id: 38, imgSrc: g38 },
+    // { id: 39, imgSrc: g39 },
+    // { id: 40, imgSrc: g40 },
+    // { id: 41, imgSrc: g41 },
+    // { id: 42, imgSrc: g42 },
+    // { id: 43, imgSrc: g43 },
+    // { id: 44, imgSrc: g44 },
+    // { id: 45, imgSrc: g45 },
+    // { id: 46, imgSrc: g46 },
+    // { id: 47, imgSrc: g47 },
+    // { id: 48, imgSrc: g48 },
+    // { id: 49, imgSrc: g49 },
+    // { id: 50, imgSrc: g50 },
   ];
   const [model, setModel] = useState(false);
   const [tempimgSrc, setTempImgsrc] = useState("");

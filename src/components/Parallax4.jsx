@@ -20,7 +20,7 @@ const Parallax4 = () => {
                   className="btn btn-light btn-card  mt-3 btn-parall "
                 >
                   <a className=" text-center" href="/gallery">
-                    <b>Visitar galeria</b>
+                    <b>QUIERO ENVIARTE UN WHATSAPP</b>
                   </a>
                 </button>
               </Bounce>

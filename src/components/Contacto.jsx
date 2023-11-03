@@ -38,15 +38,20 @@ function ContactComponent(props) {
   }, 3000);
 
   return (
-    <div className="contact container py-5" id="contacto">
+    <>
+    
+         <h5 className="titulopa3">El recuerdo que hagamos hoy será tu sonrisa de mañana</h5>
+ <div className="contact container py-5" id="contacto">
       <div className="row rowcontact">
         <div className="col-lg-12 mx-auto">
           <div className="card cardC">
             <div className="card-body card-body1">
+              
               <div className="row">
                 <div className="">
                   <div className="headC text-center text-white py-3">
-                    <h1>Contactanos</h1>
+                    <h3>Contactanos</h3>
+                 
                   </div>
                 </div>
               </div>
@@ -121,6 +126,8 @@ function ContactComponent(props) {
         </div>
       </div>
     </div>
+    </>
+   
   );
 }
 

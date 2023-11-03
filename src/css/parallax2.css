@@ -8,18 +8,18 @@
 }
 .parallax2 {
   background-color: rgb(237, 237, 237);
-  min-height: 250px;
+  min-height: 200px;
 }
 .titulopa2 {
-  font-size: 38px;
+  font-size: 30px;
 }
 .titulopa3 {
-  font-size: 20px;
+  font-size: 16px;
   font-family: "Josefin Sans", sans-serif;
 }
 .btn-parall {
   background-color: rgb(96, 221, 164) !important;
-  font-size: 20px !important;
+  font-size: 18px !important;
 }
 .btn-parall:hover {
   box-shadow: 1px 3px 87px -21px rgba(0, 0, 0, 0.65);

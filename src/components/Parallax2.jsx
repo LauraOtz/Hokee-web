@@ -6,7 +6,7 @@ import { Bounce } from "react-awesome-reveal";
 const Parallax2 = () => {
   return (
     <section id="novedades" className="ancla">
-  <div className="container-fluid">
+  <div className="container-fluid mb-5">
     <div className="row">
       <div className="col p-0 card">
         

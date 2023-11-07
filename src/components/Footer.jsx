@@ -1,11 +1,11 @@
 import React from "react";
 import logoFo from "../assets/logoFo.png";
-import uno from "../assets/uno.jpg";
-import dos from "../assets/dos.jpg";
-import tres from "../assets/tres.jpg";
-import cuatro from "../assets/cuatro.jpg";
-import cinco from "../assets/cinco.jpg";
-import seis from "../assets/seis.jpg";
+import perro_bulldog from "../assets/instagram/perro_bulldog.jpg"
+import dos_gatos from "../assets/instagram/dos_gatos.jpg"
+import perro_con_panuelo from "../assets/instagram/perro_con_panuelo.jpg"
+import perro_marron from "../assets/instagram/perro_marron.jpg"
+import perro_mono from "../assets/instagram/perro_mono.jpg"
+import salchicha_perro from "../assets/instagram/salchicha_perro.jpg"
 import footer from "../css/footer.css";
 
 const Footer = () => {
@@ -36,37 +36,37 @@ const Footer = () => {
                   href="https://www.instagram.com/hokee.fotografiademascotas/"
                   target="_blank"
                 >
-                  <img src={uno} className="imgCuadro" alt="..." />
+                  <img src={salchicha_perro} className="imgCuadro" alt="perro salchicha" />
                 </a>
                 <a
                   href="https://www.instagram.com/hokee.fotografiademascotas/"
                   target="_blank"
                 >
-                  <img src={dos} className="imgCuadro" alt="..." />
+                  <img src={dos_gatos} className="imgCuadro" alt="dos gatos" />
                 </a>
                 <a
                   href="https://www.instagram.com/hokee.fotografiademascotas/"
                   target="_blank"
                 >
-                  <img src={tres} className="imgCuadro" alt="..." />
+                  <img src={perro_bulldog} className="imgCuadro" alt="perro bulldog" />
                 </a>
                 <a
                   href="https://www.instagram.com/hokee.fotografiademascotas/"
                   target="_blank"
                 >
-                  <img src={cuatro} className="imgCuadro" alt="..." />
+                  <img src={perro_con_panuelo} className="imgCuadro" alt="perro con paniuelo" />
                 </a>
                 <a
                   href="https://www.instagram.com/hokee.fotografiademascotas/"
                   target="_blank"
                 >
-                  <img src={cinco} className="imgCuadro" alt="..." />
+                  <img src={perro_marron} className="imgCuadro" alt="perro marron" />
                 </a>
                 <a
                   href="https://www.instagram.com/hokee.fotografiademascotas/"
                   target="_blank"
                 >
-                  <img src={seis} className="imgCuadro" alt="..." />
+                  <img src={perro_mono} className="imgCuadro" alt="perro con monio" />
                 </a>
               </div>
             </div>

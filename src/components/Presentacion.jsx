@@ -1,5 +1,5 @@
 import React from "react";
-import yop from "../assets/yop.jpg";
+import mujer_perro from "../assets/mujer_perro.jpg";
 import presentacion from "../css/presentacion.css";
 import { Bounce } from "react-awesome-reveal";
 
@@ -14,7 +14,7 @@ const Presentacion = () => {
         </Bounce>
         <div className="row g-0">
           <div className="col-md-4 imgPres">
-            <img src={yop} className="img-fluid  imgExp " alt="..." />
+            <img src={mujer_perro} className="img-fluid  imgExp " alt="Laura con su perro pequeño" />
           </div>
           <div className="col-md-8 col-sm-12">
             <div className="card-body cardEx">

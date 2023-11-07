@@ -1,8 +1,8 @@
 import React from "react";
 import experiencias from "../css/experiencias.css";
-import olie1 from "../assets/olie1.jpg";
-import huma1 from "../assets/huma1.jpg";
-import otti from "../assets/otti.jpg";
+import olie from "../assets/experiencias/olie.jpg";
+import huma from "../assets/experiencias/huma.jpg";
+import otti_gato from "../assets/experiencias/otti_gato.jpg";
 import { Bounce } from "react-awesome-reveal";
 
 const PreguntasFrecuentes = () => {
@@ -23,7 +23,7 @@ const PreguntasFrecuentes = () => {
       <div className="cardE mb-3">
         <div className="row g-0">
           <div className="col-md-4 pt-3">
-            <img src={huma1} className="img-fluid imgExp" alt="..." />
+            <img src={huma} className="img-fluid imgExp" alt="perro salchicha con vestido" />
           </div>
           <div className="col-md-8">
             <div className="card-body cardEx ">
@@ -47,7 +47,7 @@ const PreguntasFrecuentes = () => {
       <div className="cardE mb-3">
         <div className="row g-0">
           <div className="col-md-4 pt-3">
-            <img src={olie1} className="img-fluid  imgExp " alt="..." />
+            <img src={olie} className="img-fluid  imgExp " alt="perro pequeño" />
           </div>
           <div className="col-md-8">
             <div className="card-body cardEx">
@@ -70,7 +70,7 @@ const PreguntasFrecuentes = () => {
       <div className="cardE mb-3">
         <div className="row g-0">
           <div className="col-md-4 pt-3">
-            <img src={otti} className="img-fluid imgExp" alt="..." />
+            <img src={otti_gato} className="img-fluid imgExp" alt="gato en fondo negro" />
           </div>
           <div className="col-md-8">
             <div className="card-body cardEx pb-5">

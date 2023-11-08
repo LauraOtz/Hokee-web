@@ -14,27 +14,22 @@
 }
 
 .imgLogo {
-  width: 30% !important;
+  width: 35%;
   padding: 2%;
 }
+
+
 .imgCuadro {
   width: 100%;
-  border-radius: 5px;
+
+  border-radius: 100%;
 }
 
-.footer .footer-social:hover {
-  color: #ffffff;
-  background: #4e4f50;
-  border-radius: 100%;
+.aF:hover {
   transition: 0.3s;
+  transform: scale(1.2);
 }
-.footer .imgCuadro:hover {
-  color: #ffffff;
-  background: #4e4f50;
-  border-radius: 100%;
 
-  transition: 0.3s;
-}
 .footer .footer-project a {
   padding: 8px 8px 8px 0;
   display: block;
@@ -44,7 +39,7 @@
 }
 
 .footer .footer-text {
-  padding-bottom: 5px;
+ 
   padding-top: 10px;
 
   text-align: center;

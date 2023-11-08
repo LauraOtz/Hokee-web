@@ -10,12 +10,12 @@ const PreguntasFrecuentes = () => {
     <>
       < Bounce>
         <h1 className="Titulop pt-5 px-2" id="Experiencias">
-          <b> Palabras de algunos clientes</b>
+          <b>Sus Palabras </b>
         </h1>
       </ Bounce>
       < Bounce>
         <h2 className="Titulop pb-3 tituloP2">
-          <b>Gracias! Siempre gracias!</b>{" "}
+          <b>¡Gracias! ¡Siempre gracias!</b>{" "}
         </h2>
       </ Bounce>
       

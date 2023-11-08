@@ -20,9 +20,9 @@ const Gallery = () => {
         </div>
       </div> */}
         <Bounce>
-        <h1 style={{ textAlign: "center" }} className="pb-5 pt-5 tituloGallery">
-          Galería de 4 patas
-        </h1>
+        <h2 style={{ textAlign: "center" }} className="pb-5 pt-5 tituloGallery">
+        Retratos Peludos<br />Galería
+        </h2>
       </Bounce>
       <Gallery2 />
     

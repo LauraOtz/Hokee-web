@@ -26,16 +26,16 @@ const Slider = () => {
             <Bounce>
               <div>
                 <h1 className="titulo h1Slider ">
-                  <strong>FOTOGRAFIA DE MASCOTAS</strong>
+                  <strong>FOTOGRAFIA DE MASCOTAS<br />EN VALENCIA</strong>
                 </h1>
               </div>
             </Bounce>
             <div>
               <JackInTheBox>
                 <button className="btn btnS btn3 ">
-                  <NavLink to="/gallery">
+                  <Link  to="gallery">
                     <h6> Visitar galería</h6>
-                  </NavLink>
+                  </Link>
                 </button>
               </JackInTheBox>
             </div>
@@ -52,7 +52,7 @@ const Slider = () => {
             <Bounce>
               <div>
                 <h1 className="titulo h1Slider">
-                  <strong>FOTOGRAFIA DE MASCOTAS</strong>
+                  <strong>FOTOGRAFIA DE MASCOTAS <br />EN VALENCIA</strong>
                 </h1>
               </div>
             </Bounce>
@@ -78,7 +78,7 @@ const Slider = () => {
             <Bounce>
               <div className="">
                 <h1 className="titulo h1Slider">
-                  <strong>FOTOGRAFIA DE MASCOTAS</strong>
+                  <strong>FOTOGRAFIA DE MASCOTAS<br />EN VALENCIA</strong>
                 </h1>
               </div>
             </Bounce>

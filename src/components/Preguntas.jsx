@@ -8,13 +8,14 @@ const Preguntas = () => {
       <div className="container my-5" id="preguntas">
          
         <JackInTheBox>
-          <h2 className="tituloPreg">Las sesiones de fotos a tu peludo se realizan en <strong>Valencia</strong> </h2>
+          <h2 className="tituloPreg"><strong>Sesiones de fotos para tu mascota en Valencia</strong> </h2>
         </JackInTheBox>
+        <h3 className="tituloPreg pb-2">Resolvamos algunas dudas</h3>
           <p className="tituloPreg2">Pueden ser <strong>perros, gatos, conejos</strong> o ¡espero tu propuesta! </p>
           <p className="tituloPreg2" >Acordamos un lugar verde en exteriores, hacemos una versión street o puedes elegir estudio. </p>
-          <p className="tituloPreg2" >En la galería puedes ver ambos estilos, y si me sigues en <a href="https://www.instagram.com/hokee.fotografiademascotas/"><b>Instagram</b></a> podrás ver más fotos, stories de backstage en vivo y conocer más de este precioso mundo.</p>
-          <p className="tituloPreg2" >Para ver en detalle qué incluyen los paquetes y precios pincha aquí <a href="paquetes">Paquetes</a></p>
-          <h3 className="tituloPreg pb-2">Resolvamos algunas dudas</h3>
+          <p className="tituloPreg2" >En la <a href="#gallery">Galería</a> puedes ver ambos estilos, y si me sigues en <a href="https://www.instagram.com/hokee.fotografiademascotas/"><b>Instagram</b></a> podrás ver más fotos, stories de backstage en vivo y conocer más de este precioso mundo.</p>
+          <p className="tituloPreg2" >Para ver en detalle qué incluyen los paquetes y precios pincha aquí: <a href="/paquetes">Paquetes</a></p>
+         
         <div className="row ">
           <div className="col-12 col-md ">
             <div className="card card-datosP  text-center">

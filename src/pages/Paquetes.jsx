@@ -79,7 +79,7 @@ const Paquetes = () => {
             {/* --------------------------------- */}
             <div className="row textInfo">
               <div className="col-12 col-md">
-                <div className="card card-datosInfo  text-center ">
+                <div className=" card-datosInfo  text-center ">
                   <div className="card-body  mt-3">
                     <ul className="textLi">
                       <li>
@@ -101,7 +101,7 @@ const Paquetes = () => {
                 </div>
               </div>
               <div className="col-12 col-md">
-                <div className="card card-datosInfo  text-center ">
+                <div className=" card-datosInfo  text-center ">
                   <div className="card-body  mt-3">
                     <ul className="textLi">
                       <li>

@@ -10,7 +10,7 @@ const Parallax4 = () => {
           <div className="col p-0 card">
             <div className="parallax2"></div>
             <div className="card-img-overlay text-center text-parall">
-              <h3 className="titulopa2">
+              <h3 className="titulopa2 pt-3">
                 No es solo una sesión de fotos, es una expresión de amor
               </h3>
               

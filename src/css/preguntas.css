@@ -24,6 +24,9 @@
 .tituloPreg {
   font-family: "Josefin Sans", sans-serif;
 }
+.tituloPreg2 a{
+  color: rgba(99, 185, 146, 0.91) !important;
+}
 /* .tituloPreg2{
   font-family: "Josefin Sans", sans-serif;
 } */

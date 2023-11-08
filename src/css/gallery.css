@@ -11,7 +11,7 @@
 }
 .imgG {
   width: 100%;
-  /* border-radius: 10%; */
+  
 }
 
 
@@ -33,7 +33,7 @@
     column-width: 100%;
   }
   .pics:hover {
-  
+
     transform:none;
   }
 }
@@ -87,7 +87,7 @@
   font-family: "Josefin Sans", sans-serif;
 }
 
-.avolver {
+/* .avolver {
   position: fixed;
   width: 160px;
   height: 60px;
@@ -115,8 +115,5 @@ a.avolver:hover {
 }
 .avolver {
   font-family: "Josefin Sans", sans-serif;
-}
+} */
 
-img {
-  pointer-events: none;
-}

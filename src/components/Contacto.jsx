@@ -39,98 +39,92 @@ function ContactComponent(props) {
 
   return (
     <>
+      <div className="contact container py-5" id="contacto">
     
-         {/* <h5 className="titulopa3">El recuerdo que hagamos hoy será tu sonrisa de mañana</h5> */}
- <div className="contact container py-5" id="contacto">
-  <div>
-    
-  </div>
-      <div className="row rowcontact">
-        <div className="col-lg-12 mx-auto">
-          <div className="card cardC">
-            <div className="card-body card-body1">
+        <div className="row rowcontact">
+          <div className="col-lg-12 mx-auto">
+            <div className="card cardC">
+              <div className="card-body card-body1">
+                <div className="row">
+                  <div className="">
+                    <div className="headC text-center text-white py-3">
+                      <h4>CONTÁCTAME</h4>
+                      <h5 className="titulopa3">Déjame aquí tus dudas y me pondré en contacto contigo</h5>
+                    </div>
+                  </div>
+                </div>
+
+                <form
+                  className="form py-3 text-c "
+                  action=""
+                  onSubmit={sendEmail}
+                >
+                  <div className="form-row my-2 form-group text-c">
+                    <div className="col-lg-12">
+                      <input
+                        type="text"
+                        name="user_name"
+                        className="effect-1 "
+                        placeholder="Nombre"
+                        id="username"
+                        required
+                        pattern="[a-zA-Z0-9]+"
+                        minLength="2"
+                        maxLength="20"
+                      />
+
+                      <span className="Focus-border"></span>
+                    </div>
+                  </div>
+                  <div className="form-row pb-2 form-group">
+                    <div className="col-lg-12 ">
+                      <input
+                        type="email"
+                        name="email"
+                        className="effect-1"
+                        placeholder="Correo electrónico"
+                        pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
+                        maxLength="30"
+                        required
+                      />
+
+                      <span className="Focus-border"></span>
+                    </div>
+                  </div>
+                  <div className="form-row pt-2">
+                    <div className="col-lg-12 pb-4">
+                      <textarea
+                        rows="4"
+                        name="message"
+                        className="effect-1 "
+                        placeholder="Mensaje"
+                        required
+                        maxLength="400"
+                        minLength="2"
+                      />
+                      <span className="Focus-border"></span>
+                    </div>
+                  </div>
+                  <div className="form-row  ">
+                    <div className=" col-lg-12">
+                      <p>
+                        <input type="checkbox" required className="check" />
+                        No soy un robot
+                      </p>
+                    </div>
+                  </div>
+                  <div className="btn col-lg-12">
+                    <input type="submit" value="Enviar" className="btnH" />
+                  </div>
               
-              <div className="row">
-                <div className="">
-                  <div className="headC text-center text-white py-3">
-                    <h3>Contactanos</h3>
-                 
-                  </div>
-                </div>
+                  <div>{result ? <Result /> : null}</div>
+                </form>
               </div>
-
-              <form
-                className="form py-3 text-c "
-                action=""
-                onSubmit={sendEmail}
-              >
-                <div className="form-row my-2 form-group text-c">
-                  <div className="col-lg-12">
-                    <input
-                      type="text"
-                      name="user_name"
-                      className="effect-1 "
-                      placeholder="Nombre"
-                      id="username"
-                      required
-                      pattern="[a-zA-Z0-9]+"
-                      minLength="2"
-                      maxLength="20"
-                    />
-
-                    <span className="Focus-border"></span>
-                  </div>
-                </div>
-                <div className="form-row pb-2 form-group">
-                  <div className="col-lg-12 ">
-                    <input
-                      type="email"
-                      name="email"
-                      className="effect-1"
-                      placeholder="Correo electrónico"
-                      pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
-                      maxLength="30"
-                      required
-                    />
-
-                    <span className="Focus-border"></span>
-                  </div>
-                </div>
-                <div className="form-row pt-2">
-                  <div className="col-lg-12 pb-4">
-                    <textarea
-                      rows="4"
-                      name="message"
-                      className="effect-1 "
-                      placeholder="Mensaje"
-                      required
-                      maxLength="400"
-                    
-                      minLength="2"
-                    />
-                    <span className="Focus-border"></span>
-                  </div>
-                </div>
-                <div className="form-row  ">
-                  <div className=" col-lg-12">
-                    <p>
-                      <input type="checkbox" required className="check"/>
-                      No soy un robot
-                    </p>
-                  </div>
-                </div>
-                <div className="btn col-lg-12">
-                  <input type="submit" value="Enviar" className="btnH" />
-                </div>
-                <div>{result ? <Result /> : null}</div>
-              </form>
             </div>
           </div>
         </div>
       </div>
-    </div>
     </>
-   
   );
 }
 

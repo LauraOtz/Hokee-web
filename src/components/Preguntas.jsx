@@ -8,7 +8,7 @@ const Preguntas = () => {
       <div className="container my-5" id="preguntas">
          
         <JackInTheBox>
-          <h2 className="tituloPreg">Las sesiones de fotos a tu peludo se realizan en <strong>Valencia</strong> </h2>
+          <h2 className="tituloPreg"><strong>Sesiones de fotos para tu mascota en Valencia</strong> </h2>
         </JackInTheBox>
           <p className="tituloPreg2">Pueden ser <strong>perros, gatos, conejos</strong> o ¡espero tu propuesta! </p>
           <p className="tituloPreg2" >Acordamos un lugar verde en exteriores, hacemos una versión street o puedes elegir estudio. </p>

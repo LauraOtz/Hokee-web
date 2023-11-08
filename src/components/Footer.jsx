@@ -82,7 +82,7 @@ const Footer = () => {
         <div className="container footer-text col-md-6 col-lg-12 ">
           <p>
             © Copyright 2023 HOKEE - FOTOGRAFÍA DE MASCOTAS - TODOS LOS DERECHOS
-            RESERVADOS - DESARROLLADO POR <a href="www.pixela.es">PIXELA</a>
+            RESERVADOS - DESARROLLADO POR <a href="https://www.pixela.es">PIXELA</a>
           </p>
         </div>
       </div>

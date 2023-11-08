@@ -34,7 +34,7 @@ const Home = () => {
       <section id="PaquetesLink4">
         <Parallax4 />
       </section>
-      <section>
+      <section id="gallery">
       <Gallery/>
       </section>
 

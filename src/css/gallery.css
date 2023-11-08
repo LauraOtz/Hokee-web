@@ -87,7 +87,7 @@
   font-family: "Josefin Sans", sans-serif;
 }
 
-/* .avolver {
+.avolver {
   position: fixed;
   width: 160px;
   height: 60px;
@@ -106,14 +106,12 @@
   z-index: 1111;
 }
 a.avolver:hover {
-  box-shadow: 0px 3px 35px -3px rgba(194, 194, 194, 0.95);
-  -webkit-box-shadow: 0px 3px 35px -3px rgba(194, 194, 194, 0.95);
-  -moz-box-shadow: 0px 3px 35px -3px rgba(194, 194, 194, 0.95);
+ 
   color: #ffffff;
   background: #4e4f50;
   transition: 0.3s;
 }
 .avolver {
   font-family: "Josefin Sans", sans-serif;
-} */
+}
 

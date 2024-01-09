@@ -47,10 +47,10 @@ const Gallery2 = () => {
     { id: 2, imgSrc: fotoGaleria2 },
     { id: 3, imgSrc: fotoGaleria3},
     { id: 4, imgSrc: fotoGaleria4 },
-    { id: 5, imgSrc: fotoGaleria5 },
+    
     { id: 6, imgSrc: fotoGaleria6 },
     { id: 7, imgSrc: fotoGaleria7 },
-    { id: 8, imgSrc: fotoGaleria8 },
+ 
     { id: 9, imgSrc: fotoGaleria9 },
     { id: 10, imgSrc: fotoGaleria10 },
     { id: 11, imgSrc: fotoGaleria11 },
@@ -59,7 +59,7 @@ const Gallery2 = () => {
     { id: 14, imgSrc: fotoGaleria14 },
     { id: 15, imgSrc: fotoGaleria15 },
     { id: 16, imgSrc: fotoGaleria16 },
-    { id: 17, imgSrc: fotoGaleria17 },
+    
     { id: 18, imgSrc: fotoGaleria18 },
     { id: 19, imgSrc: fotoGaleria19 },
     { id: 20, imgSrc: fotoGaleria20 },
@@ -79,6 +79,9 @@ const Gallery2 = () => {
     { id: 34, imgSrc: fotoGaleria34 },
     { id: 35, imgSrc: fotoGaleria35 },
     { id: 36, imgSrc: fotoGaleria36 },
+    { id: 17, imgSrc: fotoGaleria17 },
+    { id: 8, imgSrc: fotoGaleria8 },
+    { id: 5, imgSrc: fotoGaleria5 }
    
   ];
   const [model, setModel] = useState(false);

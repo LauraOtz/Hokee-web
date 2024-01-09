@@ -49,7 +49,7 @@ function ContactComponent(props) {
                   <div className="">
                     <div className="headC text-center text-white py-3">
                       <h4>CONTÁCTAME</h4>
-                      <h5 className="titulopa3">Déjame aquí tus dudas y me pondré en contacto contigo</h5>
+                      {/* <h5 className="titulopa3"></h5> */}
                     </div>
                   </div>
                 </div>
@@ -97,7 +97,7 @@ function ContactComponent(props) {
                         rows="4"
                         name="message"
                         className="effect-1 "
-                        placeholder="Mensaje"
+                        placeholder="Déjame aquí tus dudas y me pondré en contacto contigo"
                         required
                         maxLength="400"
                         minLength="2"
@@ -109,7 +109,7 @@ function ContactComponent(props) {
                     <div className=" col-lg-12">
                       <p>
                         <input type="checkbox" required className="check" />
-                        No soy un robot
+                        Acepto los <b>Términos y condiciones</b>
                       </p>
                     </div>
                   </div>
